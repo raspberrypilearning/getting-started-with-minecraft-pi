@@ -124,7 +124,7 @@ Your Minecraft Pi Python program is beginning to take shape! Now you are going t
 
 	This will import the time time module allowing you to add pauses to your program.
 
-3.	Now go to the bottom of your code, and type underneath the last line the following code:
+3.	Now go to the bottom of your code, and type underneath the last line the following:
 
 	```python
 	time.sleep (1)
@@ -140,6 +140,55 @@ Your Minecraft Pi Python program is beginning to take shape! Now you are going t
 5.	Run your code in LXTerminal, ensuring that Minecraft Pi is already running, by typing `python chat.py`
 
 	What happens?
+	
+	`mc.player.getPos()` will return the players location in the minecraft world. This information is then stored in 		the variable pos so that you can send that information to the chat window in Minecraft in the line
+	`mc.postToChat(posTemplate.format(pos.x, pos.y, pos.z))`
 
 
+## Step 3: Drop Flower Blocks
+
+So far you have located your players position and posted information to the chat window. Now you will write some python code to drop flower blocks.
+
+To do this we can create a loop that checks the players location and sets a flower block at that players position every 0.1 of a second.
+
+**Activity Checklist:**
+
+1.	Create a new python file by typing `nano flowers.py` in an LXTerminal window. 
+
+2.	Type the following code to connect your python program to Minecraft Pi:
+
+	```python
+	import mcpi.minecraft as minecraft
+	import time
+	mc = minecraft.Minecraft.create()
+	```
+	
+3.	Underneath type the following variable:
+
+	```python
+	flower = 38
+	```
+	
+	Minecraft blocks use values to identify them. Minecraft Block ID 38 is a flower. We used a variable here to store 	the value as well as remind us what it is! This is useful if you were using lots of different types on block in your 	program.
+
+4.	Navigate to the bottom of your program and type while True: to begin the loop. The capital letter T used here is 		important, make sure you use the same capital letters in your code!
+
+	The code entered after this needs to be indented. If you are using nano you will need to press the tab button on 		the keyboard:
+
+	```python
+	while True:
+		pos = mc.player.getTilePos()
+		mc.setBlock(pos.x, pos.y, pos.z, flowers, 1)
+		time.sleep(0.1)
+	```
+
+5.	Save and exit nano by pressing `CTRL + X`, then `Y` for yes, and `Enter`.
+
+6.	Ensure that you have minecraft Pi running and are in a world, then run your code by typing the following into an 		LXTerminal Window:
+
+	```
+	python flowers.py
+	```
+	
+	
 
