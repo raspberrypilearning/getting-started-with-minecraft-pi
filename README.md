@@ -100,3 +100,46 @@ To begin, you will need to be able to write Python code into a text editor. For 
 
 10.	To run your program in the LXTerminal window type `python chat.py`
 
+
+## Step 2: Finding a Players Location
+
+Your Minecraft Pi Python program is beginning to take shape! Now you are going to add some code to locate where the player is in the Minecraft world.
+
+
+**Activity Checklist:**
+
+1.	Open flowers.py in a text editor like nano. You can do this from an LXTerminal window by navigating to the correct folder like this:
+
+	```
+	cd mcpi/api/python
+	```
+
+	You can check to see if the file is there by typing the command `ls`. Then type `nano chat.py`
+
+2.	At the top of the file, underneath `import mcpi.minecraft as minecraft`, type the following code:
+
+	```python
+	import time
+	```
+
+	This will import the time time module allowing you to add pauses to your program.
+
+3.	Now go to the bottom of your code, and type underneath the last line the following code:
+
+	```python
+	time.sleep (1)
+	pos = mc.player.getPos()
+	posTemplate = "You are located @ x: {0} / y: {1} / z: {2}"
+	mc.postToChat(posTemplate.format(pos.x, pos.y, pos.z))
+	```
+ 
+	The command getPos, short for get position will locate the co-ordinates of your player in Minecraft. This 			information will then be displayed in the chat window in Minecraft. 
+
+4.	Save your program. If you are using nano press `CTRL+X`, then `Y`, and `Enter`.
+
+5.	Run your code in LXTerminal, ensuring that Minecraft Pi is already running, by typing `python chat.py`
+
+	What happens?
+
+
+
