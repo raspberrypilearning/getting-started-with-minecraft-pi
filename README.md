@@ -43,8 +43,6 @@ First check that you have all the parts you need to get your Raspberry Pi set up
 
 7.	Once you have logged in, type startx to load the desktop.
 
-![alt text](Screen-Shot-2012-12-24-at-10.59.55-1024x722.png "Connecting your Raspberry Pi")
-
 
 ##Step 1: Post a message to Minecraft Pi
 
