@@ -1,4 +1,4 @@
-# Programming the Minecraft World
+# Getting Started with Programming the Minecraft World
 
 **Introduction:**
 
