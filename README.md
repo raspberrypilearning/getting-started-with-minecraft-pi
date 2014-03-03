@@ -189,4 +189,8 @@ To do this we can create a loop that checks the players location and sets a flow
 	```
 	
 	
+## Things to try:
 
+- Adapt the code do that flower blocks are only dropped on grass.
+- Replace the flower block number with a number for another type of block.
+- Drop TNT blocks!
