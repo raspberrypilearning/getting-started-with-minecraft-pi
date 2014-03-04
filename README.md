@@ -176,7 +176,7 @@ To do this we can create a loop that checks the players location and sets a flow
 	```python
 	while True:
 		pos = mc.player.getTilePos()
-		mc.setBlock(pos.x, pos.y, pos.z, flowers, 1)
+		mc.setBlock(pos.x, pos.y, pos.z, flower, 1)
 		time.sleep(0.1)
 	```
 
