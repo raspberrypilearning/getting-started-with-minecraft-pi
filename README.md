@@ -20,7 +20,6 @@ First check that you have all the parts you need to get your Raspberry Pi set up
 - USB Mouse
 - HDMI cable
 - A Monitor or TV
-- Some headphones 
 
 **Activity Checklist:**
 
@@ -30,18 +29,16 @@ First check that you have all the parts you need to get your Raspberry Pi set up
 
 3.	Plug in a USB keyboard and Mouse into the USB slots on the Pi.
 
-4.	Plug in your headphones to the 3.5mm sound output jack.
+4.	Plug in the micro USB power supply and you should see some text appear on your screen.
 
-5.	Plug in the micro USB power supply and you should see some text appear on your screen.
-
-6.	When prompted to login type:
+5.	When prompted to login type:
 
 	```
 	Login: pi
 	Password: raspberry
 	```
 
-7.	Once you have logged in, type startx to load the desktop.
+6.	Once you have logged in, type startx to load the desktop.
 
 
 ##Step 1: Post a message to Minecraft Pi
@@ -176,7 +173,7 @@ To do this we can create a loop that checks the players location and sets a flow
 	```python
 	while True:
 		pos = mc.player.getTilePos()
-		mc.setBlock(pos.x, pos.y, pos.z, flowers, 1)
+		mc.setBlock(pos.x, pos.y, pos.z, flower, 1)
 		time.sleep(0.1)
 	```
 
