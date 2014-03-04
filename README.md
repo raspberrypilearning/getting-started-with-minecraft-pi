@@ -157,32 +157,27 @@ To do this we can create a loop that checks the players location and sets a flow
 
 	```python
 	import mcpi.minecraft as minecraft
+	import mcpi.block as block
 	import time
 	mc = minecraft.Minecraft.create()
 	```
-	
-3.	Underneath type the following variable:
 
-	```python
-	flower = 38
-	```
-	
-	Minecraft blocks use values to identify them. Minecraft Block ID 38 is a flower. We used a variable here to store 	the value as well as remind us what it is! This is useful if you were using lots of different types on block in your 	program.
-
-4.	Navigate to the bottom of your program and type while True: to begin the loop. The capital letter T used here is 		important, make sure you use the same capital letters in your code!
+3.	Navigate to the bottom of your program and type while True: to begin the loop. The capital letter T used here is 		important, make sure you use the same capital letters in your code!
 
 	The code entered after this needs to be indented. If you are using nano you will need to press the tab button on 		the keyboard:
 
 	```python
 	while True:
 		pos = mc.player.getTilePos()
-		mc.setBlock(pos.x, pos.y, pos.z, flower, 1)
+		mc.setBlock(pos.x, pos.y, pos.z, block.FLOWER_CYAN.id, 1)
 		time.sleep(0.1)
 	```
 
-5.	Save and exit nano by pressing `CTRL + X`, then `Y` for yes, and `Enter`.
+	Minecraft blocks use values to identify them. The block python module contains all the id's of the blocks 			we can use. The Id of a cyan flower (FLOWER_CYAN) block is 38.  Using the block module makes it easy to 		use the right Id and is useful when using lots of different types of blocks.
 
-6.	Ensure that you have minecraft Pi running and are in a world, then run your code by typing the following into an 		LXTerminal Window:
+4.	Save and exit nano by pressing `CTRL + X`, then `Y` for yes, and `Enter`.
+
+5.	Ensure that you have minecraft Pi running and are in a world, then run your code by typing the following into an 		LXTerminal Window:
 
 	```
 	python flowers.py
