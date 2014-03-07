@@ -51,7 +51,7 @@ First check that you have all the parts you need to get your Raspberry Pi set up
 	tar -zvxf minecraft-pi-0.1.1.tar.gz
 	```
 	
-	You will require an internet connection to be able to download and install MCPI. 
+	*Note: You will require an internet connection to be able to download and install the files.* 
 
 ##Step 1: Post a message to Minecraft Pi
 
