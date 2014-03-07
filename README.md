@@ -44,16 +44,16 @@ First check that you have all the parts you need to get your Raspberry Pi set up
 7.	Once you have logged in, type startx to load the desktop.
 
 
-8. 	If Minecraft Pi is not pre-installed then you can download the files you need and extract them by opening LXTerminal and typying in the following commands:
+8. 	If Minecraft Pi is not already installed then you can download the files you need and extract them by opening LXTerminal and typying in the following commands:
 
 	```
-	wget --trust-server-names http://goo.gl/o2aene
-	tar -zvxf minecraft-pi-0.1.1.tar.gz
+	wget http://goo.gl/o2aene -O mcpi.tar.gz --no-check-certificate
+	tar -xzf mcpitar.gz
 	```
 	
-	*Note: You will require an internet connection to be able to download and install the files.* 
+	*Note: You will require an internet connection to be able to download and install the files.*
 
-##Step 1: Post a message to Minecraft Pi
+## Step 1: Post a message to Minecraft Pi
 
 We are going to have some fun with Minecraft Pi and the chat window.
 
@@ -65,7 +65,6 @@ To begin, you will need to be able to write Python code into a text editor. For 
 
   ```
   cd mcpi
-
   ./mincraft-pi
   ```
 
