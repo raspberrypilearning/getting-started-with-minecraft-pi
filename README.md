@@ -48,7 +48,7 @@ First check that you have all the parts you need to get your Raspberry Pi set up
 
 	```
 	wget http://goo.gl/o2aene -O mcpi.tar.gz --no-check-certificate
-	tar -xzf mcpitar.gz
+	tar -xzf mcpi.tar.gz
 	```
 	
 	*Note: You will require an internet connection to be able to download and install the files.*
