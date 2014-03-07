@@ -43,15 +43,15 @@ First check that you have all the parts you need to get your Raspberry Pi set up
 
 7.	Once you have logged in, type startx to load the desktop.
 
-##Step 0.5: Download Minecraft Pi
-If not already installed you can install Minecraft Pi by opening LXTerminal and type in the following command:
 
+8. 	If Minecraft Pi is not pre-installed then you can download the files you need and extract them by opening LXTerminal and typying in the following commands:
+
+	```
 	wget --trust-server-names http://goo.gl/o2aene
 	tar -zvxf minecraft-pi-0.1.1.tar.gz
-
-You will require an internet connection to be able to download and install MCPI.
-If already installed skip to Step 1 below.
-
+	```
+	
+	You will require an internet connection to be able to download and install MCPI. 
 
 ##Step 1: Post a message to Minecraft Pi
 
