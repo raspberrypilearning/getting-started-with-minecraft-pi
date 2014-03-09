@@ -139,7 +139,7 @@ Your Minecraft Pi Python program is beginning to take shape! Now you are going t
 	mc.postToChat(posTemplate.format(pos.x, pos.y, pos.z))
 	```
  
-	The command getPos, short for get position will locate the co-ordinates of your player in Minecraft. This 			information will then be displayed in the chat window in Minecraft. 
+	The command ```getPos```, (get position) will locate the co-ordinates of your player in Minecraft. This information will then be displayed in the chat window in Minecraft. 
 
 4.	Save your program. If you are using nano press `CTRL+X`, then `Y`, and `Enter`.
 
@@ -147,9 +147,7 @@ Your Minecraft Pi Python program is beginning to take shape! Now you are going t
 
 	What happens?
 	
-	`mc.player.getPos()` will return the players location in the minecraft world. This information is then stored in 		the variable pos so that you can send that information to the chat window in Minecraft in the line
-	`mc.postToChat(posTemplate.format(pos.x, pos.y, pos.z))`
-
+	`mc.player.getPos()` will return the players location in the minecraft world. This information is then stored in the variable ```pos``` so that you can send that information to the chat window in Minecraft in the line `mc.postToChat(posTemplate.format(pos.x, pos.y, pos.z))`
 
 ## Step 3: Drop Flower Blocks
 
