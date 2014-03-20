@@ -44,7 +44,7 @@ First check that you have all the parts you need to get your Raspberry Pi set up
 7.	Once you have logged in, type startx to load the desktop.
 
 
-8. 	If Minecraft Pi is not already installed then you can download the files you need and extract them by opening LXTerminal and typying in the following commands:
+8. 	If Minecraft Pi is not already installed then you can download the files you need and extract them by opening LXTerminal and typing in the following commands:
 
 	```
 	wget http://goo.gl/o2aene -O mcpi.tar.gz --no-check-certificate
@@ -106,15 +106,13 @@ To begin, you will need to be able to write Python code into a text editor. For 
 
 10.	To run your program in the LXTerminal window type `python chat.py`
 
-
 ## Step 2: Finding a Players Location
 
 Your Minecraft Pi Python program is beginning to take shape! Now you are going to add some code to locate where the player is in the Minecraft world.
 
-
 **Activity Checklist:**
 
-1.	Open flowers.py in a text editor like nano. You can do this from an LXTerminal window by navigating to the correct folder like this:
+1.	Open `chat.py` in a text editor like nano. You can do this from an LXTerminal window by navigating to the correct folder like this:
 
 	```
 	cd mcpi/api/python
@@ -197,6 +195,6 @@ To do this we can create a loop that checks the players location and sets a flow
 	
 ## Things to try:
 
-- Adapt the code do that flower blocks are only dropped on grass.
+- Adapt the code so that flower blocks are only dropped on grass.
 - Replace the flower block number with a number for another type of block.
 - Drop TNT blocks!
