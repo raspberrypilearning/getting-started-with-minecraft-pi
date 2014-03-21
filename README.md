@@ -115,7 +115,7 @@ Your Minecraft Pi Python program is beginning to take shape! Now you are going t
 
 ###Activity Checklist:
 
-1.	Open flowers.py in a text editor like nano. You can do this from an LXTerminal window by navigating to the correct folder like this:
+1.	Open chat.py in a text editor like nano. You can do this from an LXTerminal window by navigating to the correct folder like this:
 
 	```
 	cd mcpi/api/python
