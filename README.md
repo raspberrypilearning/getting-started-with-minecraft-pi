@@ -1,6 +1,6 @@
 # Getting Started with Programming the Minecraft World
 
-**Introduction:**
+##Introduction:
 
 With Raspberry Pi you are able to write programs that take effect in the world of Minecraft! You will create a program to post a message to the chat screen, locate your player in a world, and have that player drop flowers when they walk on grass.
 
@@ -14,15 +14,15 @@ To get going with your Raspberry Pi, you will need to connect cables and add an 
 First check that you have all the parts you need to get your Raspberry Pi set up and working:
 
 - Raspberry Pi
-- Micro USB power adapter
-- An SD Card with Raspbian already set up through NOOBS
-- USB Keyboard
-- USB Mouse
+- Micro USB power adaptor
+- An SD card with Raspbian already set up through NOOBS
+- USB keyboard
+- USB mouse
 - HDMI cable
-- A Monitor or TV
+- A monitor or TV
 - Some headphones 
 
-**Activity Checklist:**
+###Activity Checklist:
 
 1.	Place the SD card into the slot of your Raspberry Pi. It will only fit one way so be careful not to break the card. 
 
@@ -59,7 +59,7 @@ We are going to have some fun with Minecraft Pi and the chat window.
 
 To begin, you will need to be able to write Python code into a text editor. For this you can use the text editor nano in a terminal window.
 
-**Activity Checklist:**
+###Activity Checklist:
 
 1.	Begin by opening LXTerminal and running Minecraft Pi if it is not already running, by typing the following lines:
 
@@ -112,7 +112,7 @@ To begin, you will need to be able to write Python code into a text editor. For 
 Your Minecraft Pi Python program is beginning to take shape! Now you are going to add some code to locate where the player is in the Minecraft world.
 
 
-**Activity Checklist:**
+###Activity Checklist:
 
 1.	Open flowers.py in a text editor like nano. You can do this from an LXTerminal window by navigating to the correct folder like this:
 
@@ -155,7 +155,7 @@ So far you have located your players position and posted information to the chat
 
 To do this we can create a loop that checks the players location and sets a flower block at that players position every 0.1 of a second.
 
-**Activity Checklist:**
+###Activity Checklist:
 
 1.	Create a new python file by typing `nano flowers.py` in an LXTerminal window. 
 
