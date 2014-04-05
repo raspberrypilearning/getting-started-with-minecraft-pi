@@ -4,24 +4,9 @@
 
 With Raspberry Pi you are able to write programs that take effect in the world of Minecraft! You will create a program to post a message to the chat screen, locate your player in a world, and have that player drop flowers when they walk on grass.
 
-A Raspberry Pi is a small computer that we can use to create exciting technology. It was created in the UK by the Raspberry Pi Foundation to help young people like you learn how to code.
-
-This small computer features amazing HD (high-definition) quality video and playback, sports high quality audio and has the ability to play 3D games.
-
-To get going with your Raspberry Pi, you will need to connect cables and add an SD card before logging in.
-
 ## Step 0: Setting Up your Pi
 
-First check that you have all the parts you need to get your Raspberry Pi set up and working:
-
-- Raspberry Pi
-- Micro USB power adaptor
-- An SD card with Raspbian already set up through NOOBS
-- USB keyboard
-- USB mouse
-- HDMI cable
-- A monitor or TV
-- Some headphones
+You will need to set up your Raspberry Pi to take part in this activity. See the [Raspberry Pi Start Guide here](http://www.raspberrypi.org/help/quick-start-guide/) to get you up and running.
 
 ### Activity Checklist
 
