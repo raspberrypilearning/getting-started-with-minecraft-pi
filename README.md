@@ -4,7 +4,7 @@
 
 With Raspberry Pi you are able to write programs that take effect in the world of Minecraft! You will create a program to post a message to the chat screen, locate your player in a world, and have that player drop flowers when they walk on grass.
 
-## Step 0: Setting Up your Pi
+## Step 0: Setting Up your Raspberry Pi
 
 You will need to set up your Raspberry Pi to take part in this activity. See the [Raspberry Pi Start Guide here](http://www.raspberrypi.org/help/quick-start-guide/) to get you up and running.
 
