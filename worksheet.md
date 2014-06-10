@@ -6,9 +6,7 @@ With Raspberry Pi you are able to write programs that take effect in the world o
 
 We are going to have some fun with Minecraft Pi and the chat window.
 
-To begin, you will need to be able to write Python code into a text editor. For this you can use the text editor nano in a terminal window.
-
-1. Begin by double clicking the LXTerminal icon on the desktop to open a terminal window and entering the following commands to run Minecraft:
+1. Start by double clicking the LXTerminal icon on the desktop to open a terminal window and entering the following commands to run Minecraft:
 
     ```bash
     cd mcpi
