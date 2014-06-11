@@ -51,8 +51,8 @@ Your Minecraft Pi Python program is beginning to take shape! Now you are going t
 
 	```python
 	sleep(1)
-	pos = mc.player.getPos()
-	mc.postToChat("You are located @ x: %s / y: %s / z: %s" % pos)
+	x, y, z = mc.player.getPos()
+	mc.postToChat("You are located @ x: %s / y: %s / z: %s" % (x, y, z))
 	```
 
 	The command `getPos` (get position) will locate the co-ordinates of your player in Minecraft. This information will then be displayed in the chat window.
@@ -84,13 +84,11 @@ To do this we can create a loop that checks the player's location, and sets a fl
 	```python
 	while True:
 		x, y, z = mc.player.getTilePos()
-		mc.setBlock(x, y, z, flower, 1)
+		mc.setBlock(x, y, z, flower)
 		sleep(0.1)
 	```
 
     The code beneath the `while` line needs to be indented. IDLE will do this for you, but make sure you don't lose the indentation.
-
-    Also note that we used a different way of getting the player's coordinates this time. This is a clever way of getting all three bits of information in to separate variables, called variable unpacking. Because we know there are three parts, we can ask for them in this way.
 
 1. Save and run the code. Then run around and see what happens...
 
