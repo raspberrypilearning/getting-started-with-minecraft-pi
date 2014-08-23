@@ -61,7 +61,7 @@ Your Minecraft Pi Python program is beginning to take shape! Now you are going t
 
 	What happens?
 
-	`mc.player.getPos()` will return the player's location in the Minecraft world. This information is then stored in the variable `pos` so that you can send that information to the chat window in Minecraft with `mc.postToChat`.
+	`mc.player.getPos()` will return the player's location in the Minecraft world. This information is then stored in the variables `x, y and z` so that you can send that information to the chat window in Minecraft with `mc.postToChat`.
 
 ## Step 3: Drop Flower Blocks
 
