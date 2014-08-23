@@ -33,7 +33,7 @@ We are going to have some fun with Minecraft Pi and the chat window.
 
     Remember to use capital letters in the right places in the code!
 
-1. Now save your file with `Ctrl + S` and run with `F5`.
+1. Now save your file with `Ctrl+X Ctrl+S` and then run with `F5`.
 
 ## Step 2: Finding a Player's Location
 
