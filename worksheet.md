@@ -97,7 +97,7 @@ Try teleporting to somewhere else!
 
 ### Set block
 
-You can set blocks at a given set of coordinates with `mc.setBlock()`:
+You can place a single block at a given set of coordinates with `mc.setBlock()`:
 
 ```python
 x, y, z = mc.player.getPos()
@@ -165,7 +165,7 @@ Try some more numbers and watch the block change!
 
 Other blocks which have extra properties are wood (`17`): oak, spruce, birch, etc; tall grass (`31`): shrub, grass, fern; torch (`50`): pointing east, west, north, south; and more. See the [API reference](http://www.stuffaboutcode.com/p/minecraft-api-reference.html) for full details.
 
-### Set blocks
+### Set multiple blocks
 
 As well as setting a single block with `setBlock` you can fill in a volume of space in one go with `setBlocks`:
 
@@ -181,7 +181,9 @@ This will fill in a 10 x 10 x 10 cube of solid stone.
 
 You can create bigger volumes with the `setBlocks` function but it may take longer to generate!
 
-### Dropping blocks as you walk
+## Dropping blocks as you walk
+
+Now you know how to drop blocks, let's use our moving location to drop blocks when you walk.
 
 The following code will drop a flower behind you wherever you walk:
 
@@ -266,7 +268,7 @@ Now we can walk forward and if we walk on grass, we'll leave a flower behind. If
 
 ![](images/mcpi-flowers-grass.png)
 
-### TNT blocks
+## Playing with TNT blocks
 
 Another interesting block is TNT! To place a normal TNT block use:
 
