@@ -4,7 +4,7 @@ Minecraft is a popular sandbox open world-building game. A free version of Minec
 
 ![Minecraft Pi banner](images/minecraft-pi-banner.png)
 
-## Run
+## Run Minecraft
 
 To run Minecraft double click the desktop icon or enter `minecraft-pi` in the terminal.
 
@@ -40,9 +40,9 @@ You can also double tap the space bar to fly in to the air. You'll stop flying w
 
 With the sword in your hand you can click on blocks in front of you to remove them (or to dig) and with a block in your hand you can use right click to place that block in front of you, or left click to remove a block.
 
-## Programming interface
+## Use the Python programming interface
 
-With Minecraft running, and the world created, bring your focus away from the game by pressing the `Tab` key, which will free your mouse. Open IDLE (not IDLE3) on the Desktop and move the windows so they're side-by-side.
+With Minecraft running, and the world created, bring your focus away from the game by pressing the `Tab` key, which will free your mouse. Open IDLE (not IDLE3) from the application menu or from the Desktop and move the windows so they're side-by-side.
 
 You can either type commands directly in to the Python window or create a file so you can save your code and run it again another time.
 
@@ -299,10 +299,14 @@ Now you'll see a big cube full of TNT blocks. Go and activate one of the blocks 
 
 ![](images/mcpi-tnt-explode.png)
 
-## Networked game
+## What next?
+
+There's plenty you can do now you know your way around the Minecraft world and how to use the Python interface.
+
+### Networked game
 
 If multiple people connect Raspberry Pis to a local network they can join the same Minecraft world and play together. Players can see each other in the Minecraft world.
 
-## API reference
+### API reference
 
 For a more extensive documentation of functions and a full list of block IDs see an API reference at [stuffaboutcode.com](http://www.stuffaboutcode.com/p/minecraft-api-reference.html).
