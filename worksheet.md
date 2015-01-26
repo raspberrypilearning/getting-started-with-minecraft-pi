@@ -22,7 +22,7 @@ Use the mouse to look around and use the following keys on the keyboard:
 | :---:        | :-----:              |
 | W            | Forward              |
 | A            | Left                 |
-| S            | Down                 |
+| S            | Backward             |
 | D            | Right                |
 | E            | Inventory            |
 | Space        | Jump                 |
