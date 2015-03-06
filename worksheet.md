@@ -133,6 +133,8 @@ You should see the grey stone block change in front of your eyes!
 You can use a variable to store an ID to make the code more readable. The IDs are retrievable through `block`:
 
 ```python
+from mcpi import block
+
 dirt = block.DIRT.id
 mc.setBlock(x, y, z, dirt)
 ```
