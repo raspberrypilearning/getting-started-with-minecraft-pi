@@ -314,3 +314,9 @@ If multiple people connect Raspberry Pis to a local network they can join the sa
 ### API reference
 
 For a more extensive documentation of functions and a full list of block IDs see an API reference at [stuffaboutcode.com](http://www.stuffaboutcode.com/p/minecraft-api-reference.html).
+
+## Further resources
+
+If you want to learn more about programming Minecraft check out the Raspberry Pi learning resource [Making a game with Minecraft Pi](../making-a-game-with-minecraft-pi/).
+
+![Minecraft Whac-a-Block Game](images/minecraft-whac-a-block.png)
