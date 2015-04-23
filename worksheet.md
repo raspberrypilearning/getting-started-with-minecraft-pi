@@ -6,7 +6,7 @@ Minecraft is a popular sandbox open-world building game. A free version of Minec
 
 ## Run Minecraft
 
-To run Minecraft double click the desktop icon or enter `minecraft-pi` in the terminal.
+To run Minecraft, double click the desktop icon or enter `minecraft-pi` in the terminal.
 
 ![](images/mcpi-start.png)
 
