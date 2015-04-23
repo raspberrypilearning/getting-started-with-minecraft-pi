@@ -108,7 +108,7 @@ Now a stone block should appear beside where you're standing. If it's not immedi
 
 ![](images/mcpi-setblock.png)
 
-The arguments passed the `set block` are `x`, `y`, `z` and `id`. The `(x, y, z)` refers to the position in the world (we specified one block away from where the player is standing with `x + 1`) and the `id` refers to the type of block we'd like to place. `1` is stone.
+The arguments passed to `set block` are `x`, `y`, `z` and `id`. The `(x, y, z)` refers to the position in the world (we specified one block away from where the player is standing with `x + 1`) and the `id` refers to the type of block we'd like to place. `1` is stone.
 
 Other blocks you can try:
 
