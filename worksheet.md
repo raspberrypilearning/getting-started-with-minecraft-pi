@@ -309,7 +309,7 @@ There's plenty you can do now you know your way around the Minecraft world and h
 
 ### Networked game
 
-If multiple people connect Raspberry Pis to a local network they can join the same Minecraft world and play together. Players can see each other in the Minecraft world.
+If multiple people connect Raspberry Pis to a local network, they can join the same Minecraft world and play together. Players can see each other in the Minecraft world.
 
 ### API reference
 
