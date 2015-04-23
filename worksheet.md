@@ -203,7 +203,7 @@ while True:
     sleep(0.1)
 ```
 
-Now walk forward for a while and turn around to see the flowers left behind.
+Now walk forward for a while and turn around to see the flowers you have left behind you.
 
 ![](images/mcpi-flowers.png)
 
@@ -257,7 +257,7 @@ while True:
     sleep(0.1)
 ```
 
-Perhaps next we could turn the tile we're standing on in to grass if it isn't already:
+Perhaps next we could turn the tile we're standing on into grass if it isn't grass already:
 
 ```python
 if block_beneath == grass:
@@ -266,7 +266,7 @@ else:
     mc.setBlock(x, y-1, z, grass)
 ```
 
-Now we can walk forward and if we walk on grass, we'll leave a flower behind. If it's not grass, it turns in to grass. Then when we turn around and walk back, we leave a flower behind as it's now grass.
+Now we can walk forward and if we walk on grass, we'll leave a flower behind. If the next block is not grass, it turns into grass. When we turn around and walk back, we now leave a flower behind us.
 
 ![](images/mcpi-flowers-grass.png)
 
