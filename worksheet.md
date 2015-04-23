@@ -281,14 +281,14 @@ mc.setBlock(x, y, z, tnt)
 
 ![](images/mcpi-tnt.png)
 
-However this TNT block is fairly boring. Try applying `data` as `1`:
+However, this TNT block is fairly boring. Try applying `data` as `1`:
 
 ```python
 tnt = 46
 mc.setBlock(x, y, z, tnt, 1)
 ```
 
-Now use your sword and left click the TNT block - it will be activated and will explode in a matter of seconds!
+Now use your sword and left click the TNT block: it will be activated and will explode in a matter of seconds!
 
 Now try making a big cube of TNT blocks!
 
