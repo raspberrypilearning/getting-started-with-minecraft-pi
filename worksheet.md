@@ -42,7 +42,7 @@ With the sword in your hand, you can click on blocks in front of you to remove t
 
 ## Use the Python programming interface
 
-With Minecraft running, and the world created, bring your focus away from the game by pressing the `Tab` key, which will free your mouse. Open IDLE (not IDLE3) from the application menu or from the Desktop and move the windows so they're side-by-side.
+With Minecraft running, and the world created, bring your focus away from the game by pressing the `Tab` key, which will free your mouse. Open Python 3 from the application menu and move the windows so they're side-by-side.
 
 You can either type commands directly into the Python window or create a file so you can save your code and run it again another time.
 
