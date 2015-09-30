@@ -1,12 +1,12 @@
 # Getting Started with Minecraft Pi
 
-Minecraft is a popular sandbox open world-building game. A free version of Minecraft is available for the Raspberry Pi; it also comes with a programming interface. This means you can write commands and scripts in Python code to build things in the game automatically. It's a great way to learn Python!
+Minecraft is a popular sandbox open-world building game. A free version of Minecraft is available for the Raspberry Pi; it also comes with a programming interface. This means you can write commands and scripts in Python code to build things in the game automatically. It's a great way to learn Python!
 
 ![Minecraft Pi banner](images/minecraft-pi-banner.png)
 
 ## Run Minecraft
 
-To run Minecraft double click the desktop icon or enter `minecraft-pi` in the terminal.
+To run Minecraft, double click the desktop icon or enter `minecraft-pi` in the terminal.
 
 ![](images/mcpi-start.png)
 
@@ -34,19 +34,19 @@ You can select an item from the quick draw panel with the mouse's scroll wheel (
 
 ![](images/mcpi-inventory.png)
 
-You can also double tap the space bar to fly in to the air. You'll stop flying when you release the space bar and if you double tap it again you'll fall back to the ground.
+You can also double tap the space bar to fly into the air. You'll stop flying when you release the space bar, and if you double tap it again you'll fall back to the ground.
 
 ![](images/mcpi-flying.png)
 
-With the sword in your hand you can click on blocks in front of you to remove them (or to dig) and with a block in your hand you can use right click to place that block in front of you, or left click to remove a block.
+With the sword in your hand, you can click on blocks in front of you to remove them (or to dig). With a block in your hand, you can use right click to place that block in front of you, or left click to remove a block.
 
 ## Use the Python programming interface
 
-With Minecraft running, and the world created, bring your focus away from the game by pressing the `Tab` key, which will free your mouse. Open IDLE (not IDLE3) from the application menu or from the Desktop and move the windows so they're side-by-side.
+With Minecraft running, and the world created, bring your focus away from the game by pressing the `Tab` key, which will free your mouse. Open Python 3 from the application menu and move the windows so they're side-by-side.
 
-You can either type commands directly in to the Python window or create a file so you can save your code and run it again another time.
+You can either type commands directly into the Python window or create a file so you can save your code and run it again another time.
 
-If you want create a file go to `File > New window` and `File > Save`. You'll probably want to save this in your home folder or a new project folder.
+If you want create a file, go to `File > New window` and `File > Save`. You'll probably want to save this in your home folder or a new project folder.
 
 Start by importing the Minecraft library, creating a connection to the game and testing it by posting the message "Hello world" to the screen:
 
@@ -58,7 +58,7 @@ mc = Minecraft.create()
 mc.postToChat("Hello world")
 ```
 
-If you're entering commands directly in to the Python window, just hit `Enter` after each line. If it's a file, save with `Ctrl + S` and run with `F5`. When your code runs, you should see your message on screen in the game.
+If you're entering commands directly into the Python window, just hit `Enter` after each line. If it's a file, save with `Ctrl + S` and run with `F5`. When your code runs, you should see your message on screen in the game.
 
 ![](images/mcpi-idle.png)
 
@@ -108,7 +108,7 @@ Now a stone block should appear beside where you're standing. If it's not immedi
 
 ![](images/mcpi-setblock.png)
 
-The arguments passed the `set block` are `x`, `y`, `z` and `id`. The `(x, y, z)` refers to the position in the world (we specified one block away from where the player is standing with `x + 1`) and the `id` refers to the type of block we'd like to place. `1` is stone.
+The arguments passed to `set block` are `x`, `y`, `z` and `id`. The `(x, y, z)` refers to the position in the world (we specified one block away from where the player is standing with `x + 1`) and the `id` refers to the type of block we'd like to place. `1` is stone.
 
 Other blocks you can try:
 
@@ -203,7 +203,7 @@ while True:
     sleep(0.1)
 ```
 
-Now walk forward for a while and turn around to see the flowers left behind.
+Now walk forward for a while and turn around to see the flowers you have left behind you.
 
 ![](images/mcpi-flowers.png)
 
@@ -257,7 +257,7 @@ while True:
     sleep(0.1)
 ```
 
-Perhaps next we could turn the tile we're standing on in to grass if it isn't already:
+Perhaps next we could turn the tile we're standing on into grass if it isn't grass already:
 
 ```python
 if block_beneath == grass:
@@ -266,7 +266,7 @@ else:
     mc.setBlock(x, y-1, z, grass)
 ```
 
-Now we can walk forward and if we walk on grass, we'll leave a flower behind. If it's not grass, it turns in to grass. Then when we turn around and walk back, we leave a flower behind as it's now grass.
+Now we can walk forward and if we walk on grass, we'll leave a flower behind. If the next block is not grass, it turns into grass. When we turn around and walk back, we now leave a flower behind us.
 
 ![](images/mcpi-flowers-grass.png)
 
@@ -281,14 +281,14 @@ mc.setBlock(x, y, z, tnt)
 
 ![](images/mcpi-tnt.png)
 
-However this TNT block is fairly boring. Try applying `data` as `1`:
+However, this TNT block is fairly boring. Try applying `data` as `1`:
 
 ```python
 tnt = 46
 mc.setBlock(x, y, z, tnt, 1)
 ```
 
-Now use your sword and left click the TNT block - it will be activated and will explode in a matter of seconds!
+Now use your sword and left click the TNT block: it will be activated and will explode in a matter of seconds!
 
 Now try making a big cube of TNT blocks!
 
@@ -309,8 +309,12 @@ There's plenty you can do now you know your way around the Minecraft world and h
 
 ### Networked game
 
-If multiple people connect Raspberry Pis to a local network they can join the same Minecraft world and play together. Players can see each other in the Minecraft world.
+If multiple people connect Raspberry Pis to a local network, they can join the same Minecraft world and play together. Players can see each other in the Minecraft world.
 
 ### API reference
 
 For a more extensive documentation of functions and a full list of block IDs see an API reference at [stuffaboutcode.com](http://www.stuffaboutcode.com/p/minecraft-api-reference.html).
+
+### Make a game
+
+Try out another resource and make a Whac-a-mole game: [Minecraft Whac-a-Block](https://www.raspberrypi.org/learning/minecraft-whac-a-block-game/).
