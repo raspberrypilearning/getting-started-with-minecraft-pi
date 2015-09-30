@@ -51,9 +51,9 @@ If you want create a file go to `File > New window` and `File > Save`. You'll pr
 Start by importing the Minecraft library, creating a connection to the game and testing it by posting the message "Hello world" to the screen:
 
 ```python
-from mcpi import minecraft
+from mcpi.minecraft import Minecraft
 
-mc = minecraft.Minecraft.create()
+mc = Minecraft.create()
 
 mc.postToChat("Hello world")
 ```
@@ -190,10 +190,10 @@ Now you know how to drop blocks, let's use our moving location to drop blocks wh
 The following code will drop a flower behind you wherever you walk:
 
 ```python
-from mcpi import minecraft
+from mcpi.minecraft import Minecraft
 from time import sleep
 
-mc = minecraft.Minecraft.create()
+mc = Minecraft.create()
 
 flower = 38
 
