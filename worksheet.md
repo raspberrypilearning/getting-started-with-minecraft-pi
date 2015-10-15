@@ -366,7 +366,7 @@ mc.setBlock(x+3, y+5, z, air)
 
 ```
 
-You cand adjust the `sleep` parameters to allow more or less lava to flow.
+You can adjust the `sleep` parameters to allow more or less lava to flow.
 
 ![lava](images/lava.png)
 
