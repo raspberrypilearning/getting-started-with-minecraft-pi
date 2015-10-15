@@ -6,9 +6,9 @@ Minecraft is a popular sandbox open-world building game. A free version of Minec
 
 ## Run Minecraft
 
-To run Minecraft, double click the desktop icon or enter `minecraft-pi` in the terminal.
+To run Minecraft Pi, open it from the desktop menu or type `minecraft-pi` in the terminal.
 
-![](images/mcpi-start.png)
+![](images/menu.png)
 
 When Minecraft Pi has loaded, click on **Start Game**, followed by **Create new**. You'll notice that the containing window is offset slightly. This means to drag the window around you have to grab the title bar behind the Minecraft window.
 
@@ -128,21 +128,44 @@ You should see the grey stone block change in front of your eyes!
 
 ![](images/mcpi-setblock2.png)
 
-#### Blocks as variables
+#### Block constants
 
-You can use a variable to store an ID to make the code more readable. The IDs are retrievable through `block`:
+You can use a inbuilt block constants to set your blocks, if you know their names. You'll need another `import` line first though.
 
 ```python
 from mcpi import block
-
-dirt = block.DIRT.id
-mc.setBlock(x, y, z, dirt)
 ```
 
-Or if you know the ID, you can just set it directly:
+Now you can write the following to place a block: 
+
+```python
+mc.setBlock(x+3, y, z, block.STONE.id)
+```
+
+Block ids are pretty easy to guess, just use ALL CAPS, but here are a few examples to get you used to the way they are named.
+
+```
+WOOD_PLANKS
+WATER_STATIONARY
+GOLD_ORE
+GOLD_BLOCK
+DIAMOND_BLOCK
+NETHER_REACTOR_CORE
+```
+
+### Block as variable
+
+If you know the id of a block it can be useful to set it as a variable. You can use the name or the integer id.
 
 ```python
 dirt = 3
+mc.setBlock(x, y, z, dirt)
+```
+
+or
+
+```python
+dirt = block.DIRT.id
 mc.setBlock(x, y, z, dirt)
 ```
 
@@ -302,6 +325,48 @@ mc.setBlocks(x+1, y+1, z+1, x+11, y+11, z+11, tnt, 1)
 Now you'll see a big cube full of TNT blocks. Go and activate one of the blocks and then run away to watch the show! It'll be really slow to render the graphics as so many things are changing at once.
 
 ![](images/mcpi-tnt-explode.png)
+
+## Fun with flowing lava.
+
+One block that's a lot of fun to play with is flowing lava.
+
+```python
+from mcpi.minecraft import Minecraft
+
+mc = Minecraft.create()
+
+x, y, z = mc.player.getPos()
+
+lava = 10
+
+mc.setBlock(x+3, y+3, z, lava)
+```
+
+Find the block you've just placed, and you should see lava flowing from the block to the ground.
+
+The cool thing about lava is that when it cools down it becomes rock. Move to another location in your world and try this:
+
+```python
+from mcpi.minecraft import Minecraft
+from time import sleep
+
+mc = Minecraft.create()
+
+x, y, z = mc.player.getPos()
+
+lava = 10
+water = 8
+air = 0
+
+mc.setBlock(x+3, y+3, z, lava)
+sleep(20)
+mc.setBlock(x+3,y+5, z, water)
+sleep(4)
+mc.setBlock(x+3, y+5, z, air)
+
+```
+
+You cand adjust the `sleep` parameters to allow more or less lava to flow.
 
 ## What next?
 
