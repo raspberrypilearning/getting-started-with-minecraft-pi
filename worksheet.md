@@ -368,6 +368,8 @@ mc.setBlock(x+3, y+5, z, air)
 
 You cand adjust the `sleep` parameters to allow more or less lava to flow.
 
+![lava](images/lava.png)
+
 ## What next?
 
 There's plenty you can do now you know your way around the Minecraft world and how to use the Python interface.
