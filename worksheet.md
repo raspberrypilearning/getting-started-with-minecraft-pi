@@ -247,7 +247,7 @@ print(this_block)
 This tells you the location of the block you're standing *in* (this will be `0` - an air block). We want to know what type of block we're standing *on*. For this we subtract 1 from the `y` value and use `getBlock()` to determine what type of block we're standing on:
 
 ```python
-x, y, z = mc.player.getpos()  # player position (x, y, z)
+x, y, z = mc.player.getPos()  # player position (x, y, z)
 block_beneath = mc.getBlock(x, y-1, z)  # block ID
 print(block_beneath)
 ```
