@@ -60,7 +60,7 @@ mc.postToChat("Hello world")
 
 If you're entering commands directly into the Python window, just hit `Enter` after each line. If it's a file, save with `Ctrl + S` and run with `F5`. When your code runs, you should see your message on screen in the game.
 
-![](images/mcpi-idle.png)
+![](images/helloworld.gif)
 
 ### Find your location
 
@@ -263,7 +263,7 @@ while True:
     print(block_beneath)
 ```
 
-![](images/mcpi-block-test.png)
+![](images/blockbeneath.gif)
 
 We can use an `if` statement to choose whether or not we plant a flower:
 
