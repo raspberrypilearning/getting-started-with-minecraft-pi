@@ -10,7 +10,3 @@ If multiple people connect Raspberry Pis to a local network, they can join the s
 
 For a more extensive documentation of functions and a full list of block IDs see an API reference at [stuffaboutcode.com](http://www.stuffaboutcode.com/p/minecraft-api-reference.html).
 
-### Make a game
-
-Try out another resource and make a Whac-a-mole game: [Minecraft Whac-a-Block](https://projects.raspberrypi.org/en/projects/minecraft-whac-a-block-game/).
-
