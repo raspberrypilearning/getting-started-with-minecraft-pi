@@ -5,7 +5,7 @@ description: Get your first taste of programming the world of Minecraft
 original_url: https://raspberrypi.org/learning/getting-started-with-minecraft-pi
 theme: red
 duration: 2
-listed: false
+listed: true
 ingredient: false
 copyedit: true
 curriculum: creator, design-0, programming-0, phys-comp-0, manufacture-0, community-0
