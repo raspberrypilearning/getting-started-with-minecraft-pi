@@ -53,4 +53,4 @@ If you're entering commands directly in to the Python window, just hit `Enter` a
 
 ![](images/mcpi-idle.png)
 
-If you see "Hello world" in the Minecraft window, you're good to proceed to the [worksheet](worksheet.md).
+If you see "Hello world" in the Minecraft window, you're good to proceed to the next step.
