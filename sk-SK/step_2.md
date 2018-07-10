@@ -1,54 +1,49 @@
-## What you will need
+## Čo budete potrebovať
 
-### Software
+### softvér
 
-#### Software installation
+#### Inštalácia softvéru
 
-Minecraft has been installed by default in Raspbian since September 2014.
+Služba Minecraft bola predvolene nainštalovaná v spoločnosti Raspbian od septembra 2014.
 
-![Minecraft Pi desktop icon](images/minecraft-pi-shortcut.png)
+![Ikona Minecraft Pi na pracovnej ploche](images/minecraft-pi-shortcut.png)
 
-If you're using an older version of Raspbian, open a terminal window and type the following commands (you must be online):
+Ak používate staršiu verziu Raspbian, otvorte okno terminálu a zadajte nasledujúce príkazy (musíte byť online):
 
 ```bash
-sudo apt-get update
-sudo apt-get install minecraft-pi
+sudo apt-get aktualizácia sudo apt-get nainštalovať minecraft-pi
 ```
 
-Once that finishes, Minecraft Pi and the Python library should be installed.
+Akonáhle to skončí, Minecraft Pi a Python knižnica by mala byť inštalovaná.
 
 #### Test Minecraft
 
-To run Minecraft double click the desktop icon or enter `minecraft-pi` in the terminal.
+Na spustenie aplikácie Minecraft dvakrát kliknite na ikonu pracovnej plochy alebo do terminálu zadajte `minecraft-pi`.
 
 ![](images/mcpi-start.png)
 
-When Minecraft Pi has loaded, click on **Start Game**, followed by **Create new**. You'll notice that the containing window is offset slightly. This means to drag the window around you have to grab the title bar behind the Minecraft window.
+Keď Minecraft Pi naloží, kliknite na **Spustiť hru**, potom **Vytvoriť nové**. Všimnete si, že okno s obsahom je mierne posunuté. To znamená pretiahnuť okno okolo vás musí chytiť titulku za oknom Minecraft.
 
 ![](images/mcpi-game.png)
 
-You are now in a game of Minecraft!
+Teraz ste v hre Minecraft!
 
 #### Test Python
 
-With Minecraft running, and the world created, bring your focus away from the game by pressing the `Tab` key, which will free your mouse. Open IDLE (not IDLE3) on the Desktop and move the windows so they're side-by-side.
+Spustenie Minecraft a vytvorenie sveta prinesie vašu pozornosť od hry stlačením klávesu `Tab` , ktorý vám uvoľní myš. Otvorte IDLE (nie IDLE3) na pracovnej ploche a presuňte okná tak, aby boli vedľa seba.
 
-You can either type commands directly in to the Python window or create a file so you can save your code and run it again another time.
+Môžete buď zadávať príkazy priamo do okna Pythonu, alebo vytvoriť súbor, aby ste mohli uložiť kód a spustiť ho znova inokedy.
 
-If you want create a file go to `File > New window` and `File > Save`. You'll probably want to save this in your home folder or a new project folder.
+Ak chcete vytvoriť súbor, prejdite na `Súbor > Nové okno` a `Súbor > Uložiť`. Pravdepodobne budete chcieť uložiť to vo vašom domovskom priečinku alebo v novom priečinku projektu.
 
-Start by importing the Minecraft library, creating a connection to the game and testing it by posting the message "Hello world" to the screen:
+Začnite tým, že importujete knižnicu Minecraft, vytvoríte pripojenie k hre a testujete ju odoslaním správy "Hello world" na obrazovku:
 
 ```python
-from mcpi import minecraft
-
-mc = minecraft.Minecraft.create()
-
-mc.postToChat("Hello world")
+z mcpi import minecraft mc = minecraft.Minecraft.create () mc.postToChat ("Hello world")
 ```
 
-If you're entering commands directly in to the Python window, just hit `Enter` after each line. If it's a file, save with `Ctrl + S` and run with `F5`. When your code runs, you should see your message on screen in the game.
+Ak zadávate príkazy priamo do okna Pythonu, stlačte `Po každom riadku zadajte`. Ak je to súbor, uložte s `Ctrl + S` a spustite s `F5`. Po spustení kódu by ste mali vidieť svoju správu na obrazovke v hre.
 
 ![](images/mcpi-idle.png)
 
-If you see "Hello world" in the Minecraft window, you're good to proceed to the next step.
+Ak vidíte okno "Dobrý deň svet" v okne Minecraft, je dobré pokračovať v ďalšom kroku.
