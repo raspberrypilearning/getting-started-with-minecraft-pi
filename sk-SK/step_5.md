@@ -1,162 +1,142 @@
-## Use the Python programming interface
+## Použite rozhranie programovania Python
 
-With Minecraft running, and the world created, bring your focus away from the game by pressing the `Tab` key, which will free your mouse. Open Python 3 from the application menu and move the windows so they're side-by-side.
+Spustenie Minecraft a vytvorenie sveta prinesie vašu pozornosť od hry stlačením klávesu `Tab` , ktorý vám uvoľní myš. Otvorte program Python 3 z ponuky aplikácie a presuňte okná tak, aby boli vedľa seba.
 
-You can either type commands directly into the Python window or create a file so you can save your code and run it again another time.
+Môžete buď zadávať príkazy priamo do okna Pythonu alebo vytvoriť súbor, aby ste mohli uložiť kód a spustiť ho znova inokedy.
 
-If you want create a file, go to `File > New window` and `File > Save`. You'll probably want to save this in your home folder or a new project folder.
+Ak chcete vytvoriť súbor, prejdite na `Súbor > Nové okno` a `Súbor > Uložiť`. Pravdepodobne budete chcieť uložiť to vo vašom domovskom priečinku alebo v novom priečinku projektu.
 
-Start by importing the Minecraft library, creating a connection to the game and testing it by posting the message "Hello world" to the screen:
+Začnite tým, že importujete knižnicu Minecraft, vytvoríte pripojenie k hre a testujete ju odoslaním správy "Hello world" na obrazovku:
 
 ```python
-from mcpi.minecraft import Minecraft
-
-mc = Minecraft.create()
-
-mc.postToChat("Hello world")
+z mcpi.minecraft import Minecraft mc = Minecraft.create () mc.postToChat ("Hello world")
 ```
 
-If you're entering commands directly into the Python window, just hit `Enter` after each line. If it's a file, save with `Ctrl + S` and run with `F5`. When your code runs, you should see your message on screen in the game.
+Ak zadávate príkazy priamo do okna Pythonu, stlačte `Po každom riadku zadajte`. Ak je to súbor, uložte s `Ctrl + S` a spustite s `F5`. Po spustení kódu by ste mali vidieť svoju správu na obrazovke v hre.
 
 ![](images/helloworld.gif)
 
-### Find your location
+### Nájdite svoju polohu
 
-To find your location, type:
-
-```python
-pos = mc.player.getPos()
-```
-
-`pos` now contains your location; access each part of the set of coordinates with `pos.x`, `pos.y` and `pos.z`.
-
-Alternatively, a nice way to get the coordinates into separate variables is to use Python's unpacking technique:
+Ak chcete nájsť svoju polohu, napíšte:
 
 ```python
-x, y, z = mc.player.getPos()
+pos = mc.player.getPos ()
 ```
 
-Now `x`, `y`, and `z` contain each part of your position coordinates. `x` and `z` are the walking directions (forward/back and left/right) and `y` is up/down.
+`pos` teraz obsahuje vaše miesto; prístup ku každej časti súboru súradníc s `poz. x`, `pos.y` a `poz.`.
 
-Note that `getPos()` returns the location of the player at the time, and if you move position you have to call the function again or use the stored location.
-
-### Teleport
-
-As well as finding out your current location you can specify a particular location to teleport to.
+Alternatívne je pekný spôsob, ako dostať súradnice do samostatných premenných, pomocou technológie rozbaľovania Pythonu:
 
 ```python
-x, y, z = mc.player.getPos()
-mc.player.setPos(x, y+100, z)
+x, y, z = mc.player.getPos ()
 ```
 
-This will transport your player to 100 spaces in the air. This will mean you'll teleport to the middle of the sky and fall straight back down to where you started.
+Teraz `x`, `y`a `z` obsahujú každú časť vašich súradníc polohy. `x` a `z` sú smerovanie chôdze (dopredu / dozadu a doľava / doprava) a `y` je hore / dole.
 
-Try teleporting to somewhere else!
+Všimnite si, že `getPos ()` vracia miesto prehrávača v danom čase, a ak presuniete pozíciu, musíte znovu zavolať funkciu alebo použiť uložené miesto.
 
-### Set block
+### teleport
 
-You can place a single block at a given set of coordinates with `mc.setBlock()`:
+Okrem zistenia vašej aktuálnej polohy môžete určiť konkrétne miesto na teleportovanie.
 
 ```python
-x, y, z = mc.player.getPos()
-mc.setBlock(x+1, y, z, 1)
+x, y, z = mc.player.getPos () mc.player.setPos (x, y + 100, z)
 ```
 
-Now a stone block should appear beside where you're standing. If it's not immediately in front of you it may be beside or behind you. Return to the Minecraft window and use the mouse to spin around on the spot until you see a grey block directly in front of you.
+Tento prehrávač prenesiete do 100 miest vo vzduchu. To znamená, že teleportujete do stredu oblohy a spadnete rovno späť na miesto, kde ste začali.
+
+Skúste teleportovať niekde inde!
+
+### Nastavte blok
+
+Môžete umiestniť jeden blok na danú súpravu súradníc s `mc.setBlock ()`:
+
+```python
+x, y, z = mc.player.getPos () mc.setBlock (x + 1, y, z, 1)
+```
+
+Teraz by sa mal objaviť kamenný blok vedľa miesta, kde stojíte. Ak to nie je hneď pred tebou, môže to byť vedľa teba alebo za tebou. Vráťte sa do okna Minecraft a pomocou myši otočte sa na mieste, kým neuvidíte šedý blok priamo pred vami.
 
 ![](images/mcpi-setblock.png)
 
-The arguments passed to `set block` are `x`, `y`, `z` and `id`. The `(x, y, z)` refers to the position in the world (we specified one block away from where the player is standing with `x + 1`) and the `id` refers to the type of block we'd like to place. `1` is stone.
+Argumenty odovzdané `set bloku` sú `x`, `r`, `z` a `číslo`. `(x, y, z)` vzťahuje na pozíciu na svete (určili sme jeden blok od miesta, kde hráč stojí `x + 1`) a `id` týka typu bloku, ktorý by sme rád umiestniť. `1` je kameň.
 
-Other blocks you can try:
+Ďalšie bloky si môžete vyskúšať:
 
-    Air:   0
-    Grass: 2
-    Dirt:  3
+    Vzduch: 0 Tráva: 2 Nečistota: 3
     
 
-Now with the block in sight, try changing it to something else:
+Teraz s blokom v očiach skúste zmeniť ho na niečo iné:
 
 ```python
-mc.setBlock(x+1, y, z, 2)
+mc.setblok (x + 1, y, z, 2)
 ```
 
-You should see the grey stone block change in front of your eyes!
+Mali by ste vidieť zmenu sivého kamenného bloku pred tvojimi očami!
 
 ![](images/mcpi-setblock2.png)
 
-#### Block constants
+#### Blokové konštanty
 
-You can use a inbuilt block constants to set your blocks, if you know their names. You'll need another `import` line first though.
-
-```python
-from mcpi import block
-```
-
-Now you can write the following to place a block:
+Môžete použiť vstavané blokové konštanty na nastavenie blokov, ak poznáte ich názvy. Budete potrebovať ďalšie `import` riadok prvej hoci.
 
 ```python
-mc.setBlock(x+3, y, z, block.STONE.id)
+z importného bloku mcpi
 ```
 
-Block ids are pretty easy to guess, just use ALL CAPS, but here are a few examples to get you used to the way they are named.
+Teraz môžete napísať nasledovné a umiestniť blok:
 
-    WOOD_PLANKS
-    WATER_STATIONARY
-    GOLD_ORE
-    GOLD_BLOCK
-    DIAMOND_BLOCK
-    NETHER_REACTOR_CORE
+```python
+mc.setBlock (x + 3, y, z, blok.STONE.id)
+```
+
+Bloky ids sú docela ľahké uhádnuť, stačí použiť ALL CAPS, ale tu je niekoľko príkladov, ako si zvyknúť na spôsob, akým sú pomenované.
+
+    WOOD_PLANKS WATER_STATIONARY GOLD_ORE GOLD_BLOCK DIAMOND_BLOCK NETHER_REACTOR_CORE
     
 
-### Block as variable
+### Blokovať ako premennú
 
-If you know the id of a block it can be useful to set it as a variable. You can use the name or the integer id.
-
-```python
-dirt = 3
-mc.setBlock(x, y, z, dirt)
-```
-
-or
+Ak poznáte id bloku, môže byť užitočné nastaviť ho ako premennú. Môžete použiť meno alebo celé číslo id.
 
 ```python
-dirt = block.DIRT.id
-mc.setBlock(x, y, z, dirt)
+špina = 3 mc.setBlock (x, y, z, špina)
 ```
 
-### Special blocks
-
-There are some blocks which have extra properties, such as Wool which has an extra setting you can specify the colour. To set this use the optional fourth parameter in `setBlock`:
+alebo
 
 ```python
-wool = 35
-mc.setBlock(x, y, z, wool, 1)
+dirt = block.DIRT.id mc.setBlock (x, y, z, špina)
 ```
 
-Here the fourth parameter `1` sets the wool colour to orange. Without the fourth parameter it is set to the default (`0`) which is white. Some more colours are:
+### Špeciálne bloky
 
-    2: Magenta
-    3: Light Blue
-    4: Yellow
+Existujú niektoré bloky, ktoré majú ďalšie vlastnosti, napríklad Vlna, ktorá má nastavenie navyše, môžete určiť farbu. Ak chcete nastaviť toto použitie, voliteľný štvrtý parameter v `setBlock`:
+
+```python
+vlna = 35 mc.setBlock (x, y, z, vlna, 1)
+```
+
+Tu štvrtý parameter `1` nastaví farbu vlny na oranžovú. Bez štvrtého parametra je nastavená na predvolenú hodnotu (`0`), ktorá je biela. Niektoré ďalšie farby sú:
+
+    2: Purpurová 3: Svetlo modrá 4: Žltá
     
 
-Try some more numbers and watch the block change!
+Skúste ešte viac čísel a sledujte zmenu bloku!
 
-Other blocks which have extra properties are wood (`17`): oak, spruce, birch, etc; tall grass (`31`): shrub, grass, fern; torch (`50`): pointing east, west, north, south; and more. See the [API reference](http://www.stuffaboutcode.com/p/minecraft-api-reference.html) for full details.
+Ďalšie bloky, ktoré majú ďalšie vlastnosti, sú drevo (`17`): dub, smrek, breza atď .; vysoká tráva (`31`): ker, tráva, papraď; baterka (`50`): smerujúca na východ, západ, sever, juh; a viac. Viac informácií nájdete v referenčnom dokumente [API](http://www.stuffaboutcode.com/p/minecraft-api-reference.html).
 
-### Set multiple blocks
+### Nastaviť viac blokov
 
-As well as setting a single block with `setBlock` you can fill in a volume of space in one go with `setBlocks`:
+Rovnako ako nastavenie jedného bloku s `setBlock` môžete vyplniť objem priestoru v jednom kroku s `setBlocks`:
 
 ```python
-stone = 1
-x, y, z = mc.player.getPos()
-mc.setBlocks(x+1, y+1, z+1, x+11, y+11, z+11, stone)
+kameň = 1 x, y, z = mc.player.getPos () mc.setbloky (x + 1, y + 1, z + 1, x + 11, y +
 ```
 
-This will fill in a 10 x 10 x 10 cube of solid stone.
+Tým sa vyplní 10 x 10 x 10 kocka pevného kameňa.
 
 ![](images/mcpi-setblocks.png)
 
-You can create bigger volumes with the `setBlocks` function but it may take longer to generate!
+Môžete vytvoriť väčšie zväzky s funkciou `setBlocks` ale generovanie môže trvať dlhšie!
