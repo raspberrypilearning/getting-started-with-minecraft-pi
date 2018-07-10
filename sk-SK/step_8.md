@@ -1,43 +1,20 @@
-## Fun with flowing lava.
+## Zábava s tečúcou lávou.
 
-One block that's a lot of fun to play with is flowing lava.
+Jedným blokom, s ktorým sa hrá veľa zábavy, je tečúca láva.
 
 ```python
-from mcpi.minecraft import Minecraft
-
-mc = Minecraft.create()
-
-x, y, z = mc.player.getPos()
-
-lava = 10
-
-mc.setBlock(x+3, y+3, z, lava)
+z mcpi.minecraft import Minecraft mc = Minecraft.create () x, y, z = mc.player.getPos () lava = 10 mc.setBlock (x + 3, y + 3, z, lava)
 ```
 
-Find the block you've just placed, and you should see lava flowing from the block to the ground.
+Nájdite blok, ktorý ste práve umiestnili a mali by ste vidieť lávu tečúcu z bloku na zem.
 
-The cool thing about lava is that when it cools down it becomes rock. Move to another location in your world and try this:
+Chladná vec o láve je, že keď sa ochladí, stane sa to rock. Presuňte sa na iné miesto vo vašom svete a skúste to:
 
 ```python
-from mcpi.minecraft import Minecraft
-from time import sleep
-
-mc = Minecraft.create()
-
-x, y, z = mc.player.getPos()
-
-lava = 10
-water = 8
-air = 0
-
-mc.setBlock(x+3, y+3, z, lava)
-sleep(20)
-mc.setBlock(x+3,y+5, z, water)
-sleep(4)
-mc.setBlock(x+3, y+5, z, air)
+z mcpi.minecraft import Minecraft z času importu spánku mc = Minecraft.create () x, y, z = mc.player.getPos () lava = 10 voda = 8 vzduchu = 0 mc.setBlock (x + 3, y + 3 (x + 3, y + 5, z, voda) spánok (20) mc.setBlock (x +
 
 ```
 
-You can adjust the `sleep` parameters to allow more or less lava to flow.
+Parametre `spánku` môžete nastaviť tak, aby umožnili viac alebo menej toku lávy.
 
-![lava](images/lava.png)
+![láva](images/lava.png)
