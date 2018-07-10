@@ -1,11 +1,11 @@
-## What next?
+## Čo ďalej?
 
-There's plenty you can do now you know your way around the Minecraft world and how to use the Python interface.
+Je tu veľa, čo môžete urobiť, keď poznáte cestu okolo sveta Minecraft a ako používať rozhranie Pythonu.
 
-### Networked game
+### Sieťová hra
 
-If multiple people connect Raspberry Pis to a local network, they can join the same Minecraft world and play together. Players can see each other in the Minecraft world.
+Ak sa viacerí ľudia pripájajú Raspberry Pis do lokálnej siete, môžu sa pripojiť k rovnakému svetu Minecraft a hrať si spolu. Hráči sa môžu navzájom vidieť vo svete Minecraft.
 
-### API reference
+### Odkaz na rozhranie API
 
-For a more extensive documentation of functions and a full list of block IDs see an API reference at [stuffaboutcode.com](http://www.stuffaboutcode.com/p/minecraft-api-reference.html).
+Pre rozsiahlejšiu dokumentáciu funkcií a úplný zoznam identifikátorov blokov si pozrite referenciu API na adrese [stuffaboutcode.com](http://www.stuffaboutcode.com/p/minecraft-api-reference.html).
