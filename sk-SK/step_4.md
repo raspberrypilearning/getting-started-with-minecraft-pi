@@ -1,35 +1,35 @@
-## Run Minecraft
+## Spustite Minecraft
 
-To run Minecraft Pi, open it from the desktop menu or type `minecraft-pi` in the terminal.
+Ak chcete spustiť službu Minecraft Pi, otvorte ju z ponuky pracovnej plochy alebo zadajte do terminálu položku `minecraft-pi`.
 
 ![](images/menu.png)
 
-When Minecraft Pi has loaded, click on **Start Game**, followed by **Create new**. You'll notice that the containing window is offset slightly. This means to drag the window around you have to grab the title bar behind the Minecraft window.
+Keď Minecraft Pi naloží, kliknite na **Spustiť hru**, potom **Vytvoriť nové**. Všimnete si, že okno s obsahom je mierne posunuté. To znamená pretiahnuť okno okolo vás musí chytiť titulku za oknom Minecraft.
 
 ![](images/mcpi-game.png)
 
-You are now in a game of Minecraft! Go walk around, hack things, and build things!
+Teraz ste v hre Minecraft! Ísť chodiť, hack veci, a stavať veci!
 
-Use the mouse to look around and use the following keys on the keyboard:
+Pomocou myši sa pozrite a použite nasledujúce klávesy na klávesnici:
 
-|     Key      |        Action        |
-|:------------:|:--------------------:|
-|      W       |       Forward        |
-|      A       |         Left         |
-|      S       |       Backward       |
-|      D       |        Right         |
-|      E       |      Inventory       |
-|    Space     |         Jump         |
-| Double Space |      Fly / Fall      |
-|     Esc      |  Pause / Game menu   |
-|     Tab      | Release mouse cursor |
+|       kľúč       |        akčné         |
+|:----------------:|:--------------------:|
+|        W         |        vpred         |
+|        A         |         ľavý         |
+|        S         |       zaostalý       |
+|        D         |       Správny        |
+|        E         |       inventár       |
+|     priestor     |         Jump         |
+| Dvojitý priestor |      Fly / Fall      |
+|       Esc        |     Pauza / Hra      |
+|      pútko       | Uvoľnite kurzor myši |
 
-You can select an item from the quick draw panel with the mouse's scroll wheel (or use the numbers on your keyboard), or press `E` and select something from the inventory.
+Môžete vybrať položku z rýchleho kreslenia pomocou rolovacieho kolieska myši (alebo použiť čísla na klávesnici), alebo stlačte `E` a vyberte niečo z inventára.
 
 ![](images/mcpi-inventory.png)
 
-You can also double tap the space bar to fly into the air. You'll stop flying when you release the space bar, and if you double tap it again you'll fall back to the ground.
+Dvojitým klepnutím na medzerník môžete lietať do vzduchu. Keď uvoľníte medzerník, prestanete lietať. Ak ho dvakrát klepnete, spadnete späť na zem.
 
 ![](images/mcpi-flying.png)
 
-With the sword in your hand, you can click on blocks in front of you to remove them (or to dig). With a block in your hand, you can use right click to place that block in front of you, or left click to remove a block.
+S mečom v ruke môžete kliknúť na bloky pred sebou, aby ste ich odstránili (alebo vykopali). Pomocou bloku v ruke môžete kliknutím pravým tlačidlom myši umiestniť tento blok pred vás alebo kliknutím ľavým tlačidlom odstrániť blok.
