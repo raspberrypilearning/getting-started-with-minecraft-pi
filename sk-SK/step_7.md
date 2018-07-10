@@ -1,32 +1,29 @@
-## Playing with TNT blocks
+## Hra s blokmi TNT
 
-Another interesting block is TNT! To place a normal TNT block use:
+Ďalším zaujímavým blokom je TNT! Ak chcete umiestniť normálny blok TNT, použite:
 
 ```python
-tnt = 46
-mc.setBlock(x, y, z, tnt)
+tnt = 46 mc.setblok (x, y, z, tnt)
 ```
 
 ![](images/mcpi-tnt.png)
 
-However, this TNT block is fairly boring. Try applying `data` as `1`:
+Tento blok TNT je však dosť nudný. Skúste použiť `dáta` ako `1`:
 
 ```python
-tnt = 46
-mc.setBlock(x, y, z, tnt, 1)
+tnt = 46 mc.setblok (x, y, z, tnt, 1)
 ```
 
-Now use your sword and left click the TNT block: it will be activated and will explode in a matter of seconds!
+Teraz použite svoj meč a kliknite ľavým tlačidlom na blok TNT: bude aktivovaný a bude explodovať za niekoľko sekúnd!
 
-Now try making a big cube of TNT blocks!
+Teraz skúste vytvoriť veľkú kocku blokov TNT!
 
 ```python
-tnt = 46
-mc.setBlocks(x+1, y+1, z+1, x+11, y+11, z+11, tnt, 1)
+tnt = 46 mc.setbloky (x + 1, y + 1, z + 1, x + 11, y + 11, z + 11, tnt,
 ```
 
 ![](images/mcpi-tnt-blocks.png)
 
-Now you'll see a big cube full of TNT blocks. Go and activate one of the blocks and then run away to watch the show! It'll be really slow to render the graphics as so many things are changing at once.
+Teraz uvidíte veľkú kocku plnú blokov TNT. Choďte a aktivujte jeden z blokov a potom utečte, aby ste sa pozreli na show! Bude to naozaj pomalé vykresliť grafiku, pretože toľko vecí sa mení naraz.
 
 ![](images/mcpi-tnt-explode.png)
