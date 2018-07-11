@@ -1,6 +1,6 @@
 ## Spustite Minecraft
 
-Ak chcete spustiť službu Minecraft Pi, otvorte ju z ponuky pracovnej plochy alebo zadajte do terminálu položku `minecraft-pi`.
+Ak chcete spustiť aplikáciu Minecraft, otvoríte ju z hlavného menu alebo zadajte do terminálu príkaz `minecraft-pi`.
 
 ![](images/menu.png)
 
