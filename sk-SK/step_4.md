@@ -28,8 +28,8 @@ Predmet si môžete vybrať z panela rýchlej voľby pomocou kolieska myši (ale
 
 ![](images/mcpi-inventory.png)
 
-Dvojitým stlačením medzerníka môžete lietať do vzduchu. Keď uvoľníte medzerník, prestanete lietať. Ak ho dvakrát klepnete, spadnete späť na zem.
+Dvojitým stlačením medzerníka môžete lietať do vzduchu. Lietať prestanete, keď uvoľníte medzerník a ak ho znova dvakrát stlačíte, spadnete späť na zem.
 
 ![](images/mcpi-flying.png)
 
-S mečom v ruke môžete kliknúť na bloky pred sebou, aby ste ich odstránili (alebo vykopali). Pomocou bloku v ruke môžete kliknutím pravým tlačidlom myši umiestniť tento blok pred vás alebo kliknutím ľavým tlačidlom odstrániť blok.
+Ak s mečom v ruke kliknete na bloky pred sebou, odstránite ich (alebo vykopete). Ak blok držíte v ruke, stlačením pravého tlačidla na myši ho položíte na zem alebo stlačením ľavého tlačidla ho odstránite.
