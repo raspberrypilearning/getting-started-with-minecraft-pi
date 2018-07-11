@@ -4,21 +4,21 @@ Ak chcete spustiť aplikáciu Minecraft, otvoríte ju z hlavného menu alebo zad
 
 ![](images/menu.png)
 
-Keď Minecraft Pi naloží, kliknite na **Spustiť hru**, potom **Vytvoriť nové**. Všimnete si, že okno s obsahom je mierne posunuté. To znamená pretiahnuť okno okolo vás musí chytiť titulku za oknom Minecraft.
+Keď sa Minecraft Pi spustí, kliknite na **Start Game** a následne na **Create new**. Všimnete si, že príslušné okno je mierne posunuté. To znamená, že ak chcete okno presunúť, musíte ho chytiť za titulok okna za oknom aplikácie Minecraft.
 
 ![](images/mcpi-game.png)
 
-Teraz ste v hre Minecraft! Ísť chodiť, hack veci, a stavať veci!
+Teraz ste v hre Minecraft! Trochu sa prejdite, hackujte a stavajte nové veci!
 
-Pomocou myši sa pozrite a použite nasledujúce klávesy na klávesnici:
+Pomocou myši sa môžete rozhliadnuť okolo seba a pomocou nasledujúcich kláves môžete:
 
-|       kľúč       |        akčné         |
+|      Kláves      |       Činnosť        |
 |:----------------:|:--------------------:|
-|        W         |        vpred         |
-|        A         |         ľavý         |
-|        S         |       zaostalý       |
-|        D         |       Správny        |
-|        E         |       inventár       |
+|        W         |       Dopredu        |
+|        A         |        Vľavo         |
+|        S         |        Dozadu        |
+|        D         |        Vpravo        |
+|        E         |       Inventár       |
 |     priestor     |         Jump         |
 | Dvojitý priestor |      Fly / Fall      |
 |       Esc        |     Pauza / Hra      |
