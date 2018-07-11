@@ -1,20 +1,21 @@
 ## Čo budete potrebovať
 
-### softvér
+### Softvér
 
 #### Inštalácia softvéru
 
-Služba Minecraft bola predvolene nainštalovaná v spoločnosti Raspbian od septembra 2014.
+Minecraft je predinštalovaný v Raspbian-e od septembra roku 2014.
 
 ![Ikona Minecraft Pi na pracovnej ploche](images/minecraft-pi-shortcut.png)
 
-Ak používate staršiu verziu Raspbian, otvorte okno terminálu a zadajte nasledujúce príkazy (musíte byť online):
+Ak používate staršiu verziu systému Raspbian, otvorte okno terminálu a zadajte nasledujúce príkazy (musíte byť pripojený):
 
 ```bash
-sudo apt-get aktualizácia sudo apt-get nainštalovať minecraft-pi
+sudo apt-get update
+sudo apt-get install minecraft-pi
 ```
 
-Akonáhle to skončí, Minecraft Pi a Python knižnica by mala byť inštalovaná.
+Po skončení by stem mali mať nainštalovaný Minecraft Pi spolu s knižnicou pre jazyk Python.
 
 #### Test Minecraft
 
