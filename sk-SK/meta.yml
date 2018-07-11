@@ -1,24 +1,24 @@
 ---
 title: Začíname s Minecraft Pi
-hero_image: images / banner.png
-description: Získajte svoj prvý vkus programovania sveta Minecraft
+hero_image: images/banner.png
+description: Zistite, ako chutí programovanie vo svete Minecraft-u
 original_url: https://raspberrypi.org/learning/getting-started-with-minecraft-pi
-theme: žltá
+theme: yellow
 duration: 2
 listed: true
 ingredient: false
 copyedit: true
-curriculum: 2, design-0, programovanie-2, phys-comp-0, výroba-0, komunita-0
-interests: hry
-technologies: krajta
-site_areas: projekty
+curriculum: 2, design-0, programming-2, phys-comp-0, manufacture-0, community-0
+interests: games
+technologies: python
+site_areas: projects
 hardware: ''
-software: krajta
+software: python
 version: 3
-last_tested: 01.1.2017
+last_tested: 2017-01-01
 steps:
   - 
-    title: úvod
+    title: Úvod
   - 
     title: Čo budete potrebovať
   - 
