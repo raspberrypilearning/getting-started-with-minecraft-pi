@@ -6,7 +6,7 @@
 
 Minecraft je predinštalovaný v Raspbian-e od septembra roku 2014.
 
-![Ikona Minecraft Pi na pracovnej ploche](images/minecraft-pi-shortcut.png)
+![Minecraft Pi desktop icon](images/minecraft-pi-shortcut.png)
 
 Ak používate staršiu verziu systému Raspbian, otvorte okno terminálu a zadajte nasledujúce príkazy (musíte byť pripojený):
 
@@ -51,4 +51,4 @@ Ak zadávate príkazy priamo do okna Pythonu, stlačte `Enter` po každom riadku
 
 ![](images/mcpi-idle.png)
 
-Ak vidíte okno "Dobrý deň svet" v okne Minecraft, je dobré pokračovať v ďalšom kroku.
+Ak vidíte "Hello world" v okne hry Minecraft, možete pokračovať v ďalšom kroku.
