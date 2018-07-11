@@ -1,8 +1,8 @@
 ## Čo urobíte
 
-V tomto zdroji budete skúmať virtuálny svet Minecraft Pi, špeciálne vydanie Minecraft pre Raspberry Pi.
+V tomto materiáli preskúmate virtuálny svet Minecraft Pi - špeciálne vydanie Minecraft-u pre Raspberry Pi.
 
-Naučíte sa ovládať prehrávač, manuálne stavať s blokmi a používať rozhranie Python na manipuláciu so svetom okolo vás.
+Naučíte sa ovládať hráča, manuálne stavať bloky a používať rozhranie jazyka Python na manipuláciu so svetom okolo vás.
 
 ## Čo sa naučíte
 
