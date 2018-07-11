@@ -10,25 +10,25 @@ Keď sa Minecraft Pi spustí, kliknite na **Start Game** a následne na **Create
 
 Teraz ste v hre Minecraft! Trochu sa prejdite, hackujte a stavajte nové veci!
 
-Pomocou myši sa môžete rozhliadnuť okolo seba a pomocou nasledujúcich kláves môžete:
+Pomocou myši sa môžete rozhliadnuť okolo seba a použiť môžete aj nasledujúce klávesy:
 
-|      Kláves      |       Činnosť        |
-|:----------------:|:--------------------:|
-|        W         |       Dopredu        |
-|        A         |        Vľavo         |
-|        S         |        Dozadu        |
-|        D         |        Vpravo        |
-|        E         |       Inventár       |
-|     priestor     |         Jump         |
-| Dvojitý priestor |      Fly / Fall      |
-|       Esc        |     Pauza / Hra      |
-|      pútko       | Uvoľnite kurzor myši |
+|      Kláves       |      Činnosť       |
+|:-----------------:|:------------------:|
+|         W         |      Dopredu       |
+|         A         |       Vľavo        |
+|         S         |       Dozadu       |
+|         D         |       Vpravo       |
+|         E         |      Inventár      |
+|     Medzerník     |        Skok        |
+| Dvakrát medzerník | Lietanie / Padnúť  |
+|        Esc        |  Pauza / Menu hry  |
+|        Tab        | Uvoľní kurzor myši |
 
-Môžete vybrať položku z rýchleho kreslenia pomocou rolovacieho kolieska myši (alebo použiť čísla na klávesnici), alebo stlačte `E` a vyberte niečo z inventára.
+Predmet si môžete vybrať z panela rýchlej voľby pomocou kolieska myši (alebo použitím číslic na klávesnici), alebo stlačte `E` a vyberte si niečo z inventára.
 
 ![](images/mcpi-inventory.png)
 
-Dvojitým klepnutím na medzerník môžete lietať do vzduchu. Keď uvoľníte medzerník, prestanete lietať. Ak ho dvakrát klepnete, spadnete späť na zem.
+Dvojitým stlačením medzerníka môžete lietať do vzduchu. Keď uvoľníte medzerník, prestanete lietať. Ak ho dvakrát klepnete, spadnete späť na zem.
 
 ![](images/mcpi-flying.png)
 
