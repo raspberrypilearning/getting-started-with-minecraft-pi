@@ -8,12 +8,12 @@ Naučíte sa ovládať hráča, manuálne stavať bloky a používať rozhranie 
 
 Nasledovaním tohto zdroja s Raspberry Pi sa naučíte:
 
-- Ako získať prístup k Minecraft Pi a vytvoriť nový svet
-- Ako používať programovacie prostredie Python IDLE na pripojenie k Minecraft Pi
-- Ako používať rozhranie Minecraft Python API na odosielanie textu do okna rozhovoru, nájdenie súradníc, teleportovanie a budovanie štruktúr
+- Ako spustiť Minecraft Pi a vytvoriť nový svet
+- Ako použiť programovacie prostredie jazyka Python IDLE na pripojenie k Minecraft Pi
+- Ako používať Minecraft Python API na odosielanie textu do okna konverzácie, zistiť súradníce hráča, teleportovať sa a stavať budovy
 - Ako používať premenné na ukladanie ID pre rôzne typy blokov
-- Experimentovanie s umiestňovaním rôznych typov blokov so špeciálnymi atribútmi
+- Experimentovať s umiestňovaním rôznych typov blokov so špeciálnymi atribútmi
 
-Tento zdroj pokrýva prvky z nasledovných prvkov: [Raspberry Pi Digitálna tvorba Curriculum](https://www.raspberrypi.org/curriculum/):
+Tento materiál pokrýva časti z nasledujúcich zdrojov kurikula [Raspberry Pi Digital Making](https://www.raspberrypi.org/curriculum/):
 
-- [Použite základné programovacie konštrukcie na vytvorenie jednoduchých programov](https://www.raspberrypi.org/curriculum/programming/creator)
+- [Používanie základných programovacích konštrukcií pre tvorbu jednoduchých programov](https://www.raspberrypi.org/curriculum/programming/creator)
