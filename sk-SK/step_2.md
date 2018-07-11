@@ -17,21 +17,21 @@ sudo apt-get install minecraft-pi
 
 Po skončení by stem mali mať nainštalovaný Minecraft Pi spolu s knižnicou pre jazyk Python.
 
-#### Test Minecraft
+#### Testujeme Minecraft
 
-Na spustenie aplikácie Minecraft dvakrát kliknite na ikonu pracovnej plochy alebo do terminálu zadajte `minecraft-pi`.
+Ak chcete spustiť aplikáciu Minecraft, dvakrát kliknite na ikonu na pracovnej ploche alebo zadajte príkaz `minecraft-pi` do terminálu.
 
 ![](images/mcpi-start.png)
 
-Keď Minecraft Pi naloží, kliknite na **Spustiť hru**, potom **Vytvoriť nové**. Všimnete si, že okno s obsahom je mierne posunuté. To znamená pretiahnuť okno okolo vás musí chytiť titulku za oknom Minecraft.
+Keď sa Minecraft Pi spustí, kliknite na **Start Game** a následne na **Create new**. Všimnete si, že príslušné okno je mierne posunuté. To znamená, že ak chcete okno presunúť, musíte ho chytiť za titulok okna za oknom aplikácie Minecraft.
 
 ![](images/mcpi-game.png)
 
 Teraz ste v hre Minecraft!
 
-#### Test Python
+#### Testujeme Python
 
-Spustenie Minecraft a vytvorenie sveta prinesie vašu pozornosť od hry stlačením klávesu `Tab` , ktorý vám uvoľní myš. Otvorte IDLE (nie IDLE3) na pracovnej ploche a presuňte okná tak, aby boli vedľa seba.
+Keď je Minecraft spustený a svet je vytvorený, odísť z hry môžete stlačením klávesu `Tab`, ktorý vám uvoľní myš. Na pracovnej ploche otvorte prostredie IDLE (nie IDLE3) a usporiadajte okná tak, aby boli vedľa seba.
 
 Môžete buď zadávať príkazy priamo do okna Pythonu, alebo vytvoriť súbor, aby ste mohli uložiť kód a spustiť ho znova inokedy.
 
