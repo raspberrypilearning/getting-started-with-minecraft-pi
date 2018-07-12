@@ -27,6 +27,6 @@ mc.setBlocks(x+1, y+1, z+1, x+11, y+11, z+11, tnt, 1)
 
 ![](images/mcpi-tnt-blocks.png)
 
-Teraz uvidíte veľkú kocku plnú blokov TNT. Choďte a aktivujte jeden z blokov a potom utečte, aby ste sa pozreli na show! Bude to naozaj pomalé vykresliť grafiku, pretože toľko vecí sa mení naraz.
+Teraz uvidíte veľkú kocku plnú blokov TNT. Aktivujte jeden z blokov a následne utečte, aby ste si vychutnali celú show! Renderovanie však bude dosť pomalé, pretože sa naraz mení príliš veľa vecí.
 
 ![](images/mcpi-tnt-explode.png)
