@@ -1,25 +1,28 @@
-## Hra s blokmi TNT
+## Zábava s blokmi TNT
 
 Ďalším zaujímavým blokom je TNT! Ak chcete umiestniť normálny blok TNT, použite:
 
 ```python
-tnt = 46 mc.setblok (x, y, z, tnt)
+tnt = 46
+mc.setBlock(x, y, z, tnt)
 ```
 
 ![](images/mcpi-tnt.png)
 
-Tento blok TNT je však dosť nudný. Skúste použiť `dáta` ako `1`:
+Tento blok TNT je však dosť nudný. Skúste použiť `data` s hodnotou `1`:
 
 ```python
-tnt = 46 mc.setblok (x, y, z, tnt, 1)
+tnt = 46
+mc.setBlock(x, y, z, tnt, 1)
 ```
 
-Teraz použite svoj meč a kliknite ľavým tlačidlom na blok TNT: bude aktivovaný a bude explodovať za niekoľko sekúnd!
+Teraz použite svoj meč a kliknite ľavým tlačidlom na blok TNT: ten sa aktivuje a za niekoľko sekúnd exploduje!
 
-Teraz skúste vytvoriť veľkú kocku blokov TNT!
+Teraz sa pokúste vytvoriť veľkú kocku blokov TNT!
 
 ```python
-tnt = 46 mc.setbloky (x + 1, y + 1, z + 1, x + 11, y + 11, z + 11, tnt,
+tnt = 46
+mc.setBlocks(x+1, y+1, z+1, x+11, y+11, z+11, tnt, 1)
 ```
 
 ![](images/mcpi-tnt-blocks.png)
