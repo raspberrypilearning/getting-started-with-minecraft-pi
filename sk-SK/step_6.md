@@ -36,17 +36,17 @@ this_block = mc.getBlock(x, y, z)  # ID bloku
 print(this_block)
 ```
 
-Toto informuje o umiestnení bloku, ktorý stojíte *na* (to bude `0` - vzduchový blok). Chceme vedieť, aký typ bloku stojíme *na*. Preto odčítame 1 z hodnoty `y` a pomocou `getBlock ()` zistite, aký typ bloku stojíme:
+Tým získate polohu bloku, *v* ktorom stojíte (čo bude `0` - blok vzduchu). My však chceme vedieť, akého typu je blok, *na* ktorom stojíme. Za týmto účelom odčítame 1z hodnoty súradnice `y` a pomocou volania funkcie `getBlock()` zistíme typ bloku, na ktorom stojíme:
 
 ```python
-x, y, z = mc.player.getPos()  # player position (x, y, z)
-block_beneath = mc.getBlock(x, y-1, z)  # block ID
+x, y, z = mc.player.getPos()  # pozicia hraca (x, y, z)
+block_beneath = mc.getBlock(x, y-1, z)  # ID bloku
 print(block_beneath)
 ```
 
-Toto nám hovorí o ID bloku, na ktorom je prehrávač.
+Tým zistíme ID bloku, na ktorom hráč stojí.
 
-Otestujte to tak, že spustite slučku a vytlačte ID bloku toho, na čom práve stojíte:
+Otestujte to vytvorením cyklu, ktorý bude vypisovať ID akéhokoľvek bloku, na ktorom hráč práve stojí:
 
 ```python
 while True:
@@ -57,22 +57,22 @@ while True:
 
 ![](images/blockbeneath.gif)
 
-Môžeme použiť vyhlásenie `if` aby sme si vybrali, či rastlinu budeme alebo nie:
+Aby sme rozhodli, či kvietok zasadíme alebo nie, použijeme príkaz `if`:
 
 ```python
 grass = 2
 flower = 38
 
 while True:
-    x, y, z = mc.player.getPos()  # player position (x, y, z)
-    block_beneath = mc.getBlock(x, y-1, z)  # block ID
+    x, y, z = mc.player.getPos()  # pozicia hraca (x, y, z)
+    block_beneath = mc.getBlock(x, y-1, z)  # ID bloku
 
     if block_beneath == grass:
         mc.setBlock(x, y, z, flower)
     sleep(0.1)
 ```
 
-Možno by sme mohli obrátiť dlaždice, na ktorej stojíme, na trávu, ak už nie je tráva:
+Možno by sme mohli zmeniť dlaždice, na ktorých stojíme, na trávu, ak už náhodou trávou nie sú:
 
 ```python
 if block_beneath == grass:
@@ -81,6 +81,6 @@ else:
     mc.setBlock(x, y-1, z, grass)
 ```
 
-Teraz môžeme kráčať dopredu a ak ideme na tráve, opustíme kvet. Ak ďalší blok nie je tráva, premenuje sa na trávu. Keď sa obrátime a ideme späť, necháme za sebou kvety.
+Teraz môžeme kráčať dopredu a ak kráčame po tráve, položíme za seba kvietok. Ak však ďalší blok nie je tráva, zmení sa na trávu. Keď sa otočíme a budeme kráčať naspäť, budeme za sebou nechávať kvietky.
 
 ![](images/mcpi-flowers-grass.png)
