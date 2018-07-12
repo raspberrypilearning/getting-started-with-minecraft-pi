@@ -62,30 +62,30 @@ x, y, z = mc.player.getPos()
 mc.setBlock(x+1, y, z, 1)
 ```
 
-Vedľa miesta, kde stojíte, by sa mal objaviť blok kameňa. Ak nie je hneď pred vami, môže byť vedľa vás alebo za vami. Vráťte sa do okna Minecraft a pomocou myši otočte sa na mieste, kým neuvidíte šedý blok priamo pred vami.
+Vedľa miesta, kde stojíte, by sa mal objaviť blok kameňa. Ak nie je hneď pred vami, môže byť vedľa vás alebo za vami. Vráťte sa do okna aplikácie Minecraft a pomocou myši sa otáčajte dookola, až pokiaľ neuvidíte šedý blok priamo pred sebou.
 
 ![](images/mcpi-setblock.png)
 
-Argumenty odovzdané `set bloku` sú `x`, `r`, `z` a `číslo`. `(x, y, z)` vzťahuje na pozíciu na svete (určili sme jeden blok od miesta, kde hráč stojí `x + 1`) a `id` týka typu bloku, ktorý by sme rád umiestniť. `1` je kameň.
+Argumenty odovzdané funkcii `set block` sú `x`, `y`, `z` a `id`. `(x, y, z)` určujú polohu vo svete (určili sme jeden blok vedľa od miesta, kde hráč stojí pomocou `x + 1`) a `id` špecifikuje typ bloku, ktorý by sme chceli umiestniť. `1` je kameň.
 
-Ďalšie bloky si môžete vyskúšať:
+Môžete si vyskúšať aj ďalšie bloky:
 
-    Air:   0
-    Grass: 2
-    Dirt:  3
+    Vzduch:   0
+    Tráva: 2
+    Špina:  3
     
 
-Teraz s blokom v očiach skúste zmeniť ho na niečo iné:
+S blokom pred vašimi očami, skúste ho zmeniť na niečo iné:
 
 ```python
 mc.setBlock(x+1, y, z, 2)
 ```
 
-Mali by ste vidieť zmenu sivého kamenného bloku pred tvojimi očami!
+Pred vašimi očami by ste mali vidieť zmenu sivého kamenného bloku!
 
 ![](images/mcpi-setblock2.png)
 
-#### Blokové konštanty
+#### Konštanty blokov
 
 Môžete použiť vstavané blokové konštanty na nastavenie blokov, ak poznáte ich názvy. Budete potrebovať ďalšie `import` riadok prvej hoci.
 
