@@ -42,27 +42,27 @@ Všimnite si, že `getPos()` vracia miesto hráča v danom čase a ak ho presuni
 
 ### Teleport
 
-Okrem zistenia vašej aktuálnej polohy môžete určiť konkrétne miesto na teleportovanie.
+Podobne, ako zistenie vašaj aktuálnej polohy, môžete určiť konkrétne miesto, na ktoré sa chcete teleportovať.
 
 ```python
 x, y, z = mc.player.getPos()
 mc.player.setPos(x, y+100, z)
 ```
 
-Tento prehrávač prenesiete do 100 miest vo vzduchu. To znamená, že teleportujete do stredu oblohy a spadnete rovno späť na miesto, kde ste začali.
+Týmto sa váš hráč presunie o 100 pozícií do vzduchu. To znamená, že sa teleportujete do stredu oblohy a okamžite začnete padať späť na miesto, kde ste začali.
 
-Skúste teleportovať niekde inde!
+Skúste sa teleportovať niekde inde!
 
-### Nastavte blok
+### Vytvorenie bloku
 
-Môžete umiestniť jeden blok na danú súpravu súradníc s `mc.setBlock ()`:
+Jeden blok môžete umiestniť na zvolené súradníce zavolaním `mc.setBlock()`:
 
 ```python
 x, y, z = mc.player.getPos()
 mc.setBlock(x+1, y, z, 1)
 ```
 
-Teraz by sa mal objaviť kamenný blok vedľa miesta, kde stojíte. Ak to nie je hneď pred tebou, môže to byť vedľa teba alebo za tebou. Vráťte sa do okna Minecraft a pomocou myši otočte sa na mieste, kým neuvidíte šedý blok priamo pred vami.
+Vedľa miesta, kde stojíte, by sa mal objaviť blok kameňa. Ak nie je hneď pred vami, môže byť vedľa vás alebo za vami. Vráťte sa do okna Minecraft a pomocou myši otočte sa na mieste, kým neuvidíte šedý blok priamo pred vami.
 
 ![](images/mcpi-setblock.png)
 
