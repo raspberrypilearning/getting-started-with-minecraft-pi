@@ -1,12 +1,12 @@
-## Použite rozhranie programovania Python
+## Použite rozhranie programovacieho jazyka Python
 
-Spustenie Minecraft a vytvorenie sveta prinesie vašu pozornosť od hry stlačením klávesu `Tab` , ktorý vám uvoľní myš. Otvorte program Python 3 z ponuky aplikácie a presuňte okná tak, aby boli vedľa seba.
+Keď je Minecraft spustený a svet je vytvorený, odísť z hry môžete stlačením klávesu `Tab`, ktorý vám uvoľní myš. Z ponuky aplikácií otvorte Python 3 a usporiadajte okná tak, aby boli vedľa seba.
 
-Môžete buď zadávať príkazy priamo do okna Pythonu alebo vytvoriť súbor, aby ste mohli uložiť kód a spustiť ho znova inokedy.
+Príkazy môžete zadávať priamo do okna Python-u alebo si môžete vytvoriť súbor, aby ste mohli svoj kód uložiť a znova spustiť neskôr.
 
-Ak chcete vytvoriť súbor, prejdite na `Súbor > Nové okno` a `Súbor > Uložiť`. Pravdepodobne budete chcieť uložiť to vo vašom domovskom priečinku alebo v novom priečinku projektu.
+Ak chcete vytvoriť súbor, prejdite na `File > New window` a `File > Save`. Pravdepodobne ho budete chcieť uložiť vo vašom domovskom priečinku alebo v novom priečinku pre projekty.
 
-Začnite tým, že importujete knižnicu Minecraft, vytvoríte pripojenie k hre a testujete ju odoslaním správy "Hello world" na obrazovku:
+Začnite tým, že importujete knižnicu Minecraft, vytvoríte spojenie s hrou a otestujete ho odoslaním správy "Hello world" na obrazovku:
 
 ```python
 from mcpi.minecraft import Minecraft
@@ -16,29 +16,29 @@ mc = Minecraft.create()
 mc.postToChat("Hello world")
 ```
 
-Ak zadávate príkazy priamo do okna Pythonu, stlačte `Po každom riadku zadajte`. Ak je to súbor, uložte s `Ctrl + S` a spustite s `F5`. Po spustení kódu by ste mali vidieť svoju správu na obrazovke v hre.
+Ak zadávate príkazy priamo do okna Pythonu, stlačte `Enter` po každom riadku. Ak píšete do súboru, uložíte ho stlačením `Ctrl + S` a spustíte s `F5`. Keď spustíte váš kód, mali by ste vidieť vašu správu v hre na obrazovke.
 
 ![](images/helloworld.gif)
 
 ### Zistite svoju polohu
 
-Ak chcete nájsť svoju polohu, napíšte:
+Ak chcete zistiť svoju polohu, napíšte:
 
 ```python
 pos = mc.player.getPos()
 ```
 
-`pos` teraz obsahuje vaše miesto; prístup ku každej časti súboru súradníc s `poz. x`, `pos.y` a `poz.`.
+`pos` teraz obsahuje vašu pozíciu; získať pristup ku každej časti z množiny súradníc môžete cez `pos.x`, `pos.y` a `pos.z`.
 
-Alternatívne je pekný spôsob, ako dostať súradnice do samostatných premenných, pomocou technológie rozbaľovania Pythonu:
+Ďalší pekný spôsob, ako sa k súradniciam dostať cez samostatné premenné, je použiť techniku rozbaľovania jazyka Python:
 
 ```python
 x, y, z = mc.player.getPos()
 ```
 
-Teraz `x`, `y`a `z` obsahujú každú časť vašich súradníc polohy. `x` a `z` sú smerovanie chôdze (dopredu / dozadu a doľava / doprava) a `y` je hore / dole.
+Premenné `x`, `y`a `z` teraz obsahujú každú súradnicu vašej polohy. `x` a `z` sú súradnice určujúce smer chôdze (dopredu/dozadu a doľava/doprava) a `y` je pre smer hore/dole.
 
-Všimnite si, že `getPos ()` vracia miesto prehrávača v danom čase, a ak presuniete pozíciu, musíte znovu zavolať funkciu alebo použiť uložené miesto.
+Všimnite si, že `getPos()` vracia miesto hráča v danom čase a ak ho presuniete, musíte funkciu zavolať znovu alebo použiť uloženú lokáciu.
 
 ### Teleport
 
