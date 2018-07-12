@@ -87,19 +87,19 @@ Pred vašimi očami by ste mali vidieť zmenu sivého kamenného bloku!
 
 #### Konštanty blokov
 
-Môžete použiť vstavané blokové konštanty na nastavenie blokov, ak poznáte ich názvy. Budete potrebovať ďalšie `import` riadok prvej hoci.
+Môžete použiť vstavané konštanty blokov na vytvorenie vašich blokov, ak poznáte ich názvy. Na to budete potrebovať ďalší riadok s príkazom `import`.
 
 ```python
 from mcpi import block
 ```
 
-Teraz môžete napísať nasledovné a umiestniť blok:
+Teraz môžete vytvárať bloky takto:
 
 ```python
 mc.setBlock(x+3, y, z, block.STONE.id)
 ```
 
-Bloky ids sú docela ľahké uhádnuť, stačí použiť ALL CAPS, ale tu je niekoľko príkladov, ako si zvyknúť na spôsob, akým sú pomenované.
+Identifikátory blokov sa dajú uhádnuť celkom ľahko, stačí používať VEĽKÉ PÍSMENÁ. Tu je niekoľko príkladov, ktoré vám pomôžu zvyknúť si na spôsob, akým sú pomenované.
 
     WOOD_PLANKS
     WATER_STATIONARY
@@ -111,7 +111,7 @@ Bloky ids sú docela ľahké uhádnuť, stačí použiť ALL CAPS, ale tu je nie
 
 ### Blok ako premenná
 
-Ak poznáte id bloku, môže byť užitočné nastaviť ho ako premennú. Môžete použiť meno alebo celé číslo id.
+Ak poznáte id bloku, môže byť užitočné nastaviť ho ako premennú. Môžete použiť jeho názov alebo jeho číselný identifikátor.
 
 ```python
 dirt = 3
@@ -127,7 +127,7 @@ mc.setBlock(x, y, z, dirt)
 
 ### Špeciálne bloky
 
-Existujú niektoré bloky, ktoré majú ďalšie vlastnosti, napríklad Vlna, ktorá má nastavenie navyše, môžete určiť farbu. Ak chcete nastaviť toto použitie, voliteľný štvrtý parameter v `setBlock`:
+Existujú niektoré bloky, ktoré majú ďalšie vlastnosti, ako napríklad Vlna, ktorej môžete pomocou špeciálneho nastavenia určiť farbu. Ak chcete nastaviť toto použitie, voliteľný štvrtý parameter v `setBlock`:
 
 ```python
 wool = 35
