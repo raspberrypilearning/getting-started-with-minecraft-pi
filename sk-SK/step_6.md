@@ -1,8 +1,8 @@
 ## Kladenie blokov počas chôdze
 
-Teraz viete, ako padnúť bloky, poďme používať našu pohyblivú polohu na to, aby sme zablokovali bloky, keď chodíte.
+Keď už viete, ako klásť bloky, poďme využiť zmenu našej polohy tak, aby sme mohli bloky klásť počas chôdze.
 
-Nasledujúci kód zní za kvetom za kýmkoľvek, kam idete:
+Nasledujúci kód bude za vás klásť kvietky kamkoľvek pôjdete:
 
 ```python
 from mcpi.minecraft import Minecraft
@@ -18,21 +18,21 @@ while True:
     sleep(0.1)
 ```
 
-Teraz choďte na chvíľu dopredu a otočte sa, aby ste videli kvety, ktoré ste nechali za sebou.
+Teraz sa chvíľku poprechádzajte a otočte sa za seba, aby ste videli kvietky, ktoré ste za sebou nechali.
 
 ![](images/mcpi-flowers.png)
 
-Vzhľadom k tomu, že sme použili `zatiaľ čo True` slučka to bude pokračovať navždy. Ak ho chcete zastaviť, stlačte `Ctrl + C` v okne Python.
+Vzhľadom na to, že sme použili cyklus `while True`, bude sa kód vykonávať donekonečna. Ak ho chcete zastaviť, stlačte v okne jazyka Python `Ctrl + C`.
 
-Skúste lietanie vzduchom a pozrite sa na kvety, ktoré opúšťate na oblohe:
+Skúste sa preletieť vzduchom a sledujte kvietky, ktoré za sebou na oblohe zanechávate:
 
 ![](images/mcpi-flowers-sky.png)
 
-Čo keď sme chceli kvapkať len kvety, keď hráč prechádzal trávou? Môžeme použiť `getBlock` a zistiť, aký typ bloku je:
+Čo ak by sme chceli kvietky klásť len vtedy, ak sa hráč bude pohybovať po tráve? Na zistenie typu bloku môžeme použiť funkciu `getBlock`:
 
 ```python
-x, y, z = mc.player.getPos()  # player position (x, y, z)
-this_block = mc.getBlock(x, y, z)  # block ID
+x, y, z = mc.player.getPos()  # pozicia hraca (x, y, z)
+this_block = mc.getBlock(x, y, z)  # ID bloku
 print(this_block)
 ```
 
