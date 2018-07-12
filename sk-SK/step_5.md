@@ -127,27 +127,27 @@ mc.setBlock(x, y, z, dirt)
 
 ### Špeciálne bloky
 
-Existujú niektoré bloky, ktoré majú ďalšie vlastnosti, ako napríklad Vlna, ktorej môžete pomocou špeciálneho nastavenia určiť farbu. Ak chcete nastaviť toto použitie, voliteľný štvrtý parameter v `setBlock`:
+Existujú niektoré bloky, ktoré majú ďalšie vlastnosti, ako napríklad Vlna, ktorej môžete pomocou špeciálneho nastavenia určiť farbu. Tieto vlastnosti môžete nastaviť pomocou voliteľného štvrtého parametra vo funkcii `setBlock`:
 
 ```python
 wool = 35
 mc.setBlock(x, y, z, wool, 1)
 ```
 
-Tu štvrtý parameter `1` nastaví farbu vlny na oranžovú. Bez štvrtého parametra je nastavená na predvolenú hodnotu (`0`), ktorá je biela. Niektoré ďalšie farby sú:
+V tomto prípade sa pomocou štvrtého parametera `1` nastaví farba vlny na oranžovú. Bez štvrtého parametra sa použije predvolená hodnota (`0`), ktorou je biela farba. Niektoré ďalšie farby sú:
 
-    2: Magenta
-    3: Light Blue
-    4: Yellow
+    2: Purpurová
+    3: Svetlo modrá
+    4: Žltá
     
 
-Skúste ešte viac čísel a sledujte zmenu bloku!
+Vyskúšajte ďalšie čísla a sledujte, ako sa budú bloky meniť!
 
-Ďalšie bloky, ktoré majú ďalšie vlastnosti, sú drevo (`17`): dub, smrek, breza atď .; vysoká tráva (`31`): ker, tráva, papraď; baterka (`50`): smerujúca na východ, západ, sever, juh; a viac. Viac informácií nájdete v referenčnom dokumente [API](http://www.stuffaboutcode.com/p/minecraft-api-reference.html).
+Ďalšie bloky, ktoré majú ďalšie vlastnosti, sú drevo (`17`): dub, smrek, breza atď.; vysoká tráva (`31`): ker, tráva, papraď; baterka (`50`): smerujúca na východ, západ, sever, juh; a ďalšie. Viac informácií nájdete v referenčnej [dokumentácii API](http://www.stuffaboutcode.com/p/minecraft-api-reference.html).
 
-### Nastaviť viac blokov
+### Vytvorenie viacerých blokov
 
-Rovnako ako nastavenie jedného bloku s `setBlock` môžete vyplniť objem priestoru v jednom kroku s `setBlocks`:
+Rovnako ako pri vytvorení jedného bloku pomocou `setBlock` môžete vyplniť objem priestoru v jednom kroku pomocou `setBlocks`:
 
 ```python
 stone = 1
@@ -155,8 +155,8 @@ x, y, z = mc.player.getPos()
 mc.setBlocks(x+1, y+1, z+1, x+11, y+11, z+11, stone)
 ```
 
-Tým sa vyplní 10 x 10 x 10 kocka pevného kameňa.
+Tým sa vyplní kocka o rozmeroch 10 x 10 x 10 pevného kameňa.
 
 ![](images/mcpi-setblocks.png)
 
-Môžete vytvoriť väčšie zväzky s funkciou `setBlocks` ale generovanie môže trvať dlhšie!
+Pomocou funkcie `setBlocks` môžete vytvárať aj väčšie zväzky, ale ich generovanie môže trvať dlhšie!
