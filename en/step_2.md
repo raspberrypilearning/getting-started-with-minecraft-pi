@@ -33,7 +33,7 @@ You are now in a game of Minecraft!
 
 #### Test Python
 
-With Minecraft running, and the world created, bring your focus away from the game by pressing the `Tab` key, which will free your mouse. Open IDLE (not IDLE3) on the Desktop and move the windows so they're side-by-side.
+With Minecraft running, and the world created, bring your focus away from the game by pressing the `Tab` key, which will free your mouse. Open Python 3 (IDLE) on the Desktop and move the windows so they're side-by-side.
 
 You can either type commands directly in to the Python window or create a file so you can save your code and run it again another time.
 
