@@ -1,4 +1,4 @@
-## Étape 4: Jouer avec des blocs de TNT!
+## Jouer avec des blocs de TNT!
 
 ### Liste de contrôle d'activité
 
