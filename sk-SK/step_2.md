@@ -31,7 +31,7 @@ Teraz ste v hre Minecraft!
 
 #### Testujeme Python
 
-Keď je Minecraft spustený a svet je vytvorený, odísť z hry môžete stlačením klávesu `Tab`, ktorý vám uvoľní myš. Na pracovnej ploche otvorte prostredie IDLE (nie IDLE3) a usporiadajte okná tak, aby boli vedľa seba.
+Keď je Minecraft spustený a svet je vytvorený, odísť z hry môžete stlačením klávesu `Tab`, ktorý vám uvoľní myš. Open Python 3 (IDLE) on the Desktop and move the windows so they're side-by-side.
 
 Príkazy môžete zadávať priamo do okna Python-u alebo si môžete vytvoriť súbor, aby ste mohli svoj kód uložiť a znova spustiť neskôr.
 
