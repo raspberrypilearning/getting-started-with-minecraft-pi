@@ -1,19 +1,19 @@
-## What you will make
+## आप क्या बनाएँगे
 
-In this resource you will explore the virtual world of Minecraft Pi, the special edition of Minecraft made for Raspberry Pi.
+इस संसाधन में आप Minecraft Pi, Raspberry Pi के लिए बनाए गए Minecraft के विशेष संस्करण की आभासी दुनिया का पता लगाएँगे।
 
-You will learn how to control the player, manually build with blocks and use the Python interface to manipulate the world around you.
+आप सीखेंगे कि खिलाड़ी को किस तरह नियंत्रित करें, ब्लॉकों से मैन्युअल रूप से बनाएँ और अपने आस-पास की दुनिया में बदलाव करने के लिए Python इंटरफ़ेस का उपयोग करें।
 
-## What you will learn
+## आप क्या सीखेंगे
 
-By following this resource with your Raspberry Pi you will learn:
+अपने Raspberry Pi के साथ इस संसाधन का अनुसरण करके आप सीखेंगे:
 
-- How to access Minecraft Pi and create a new world
-- How to use the Python programming environment IDLE to connect to Minecraft Pi
-- How to use the Minecraft Python API to post text to the chat window, find the player's coordinates, teleport and build structures
-- How to use variables to store IDs for different types of blocks
-- Experimenting with placing different types of blocks with special attributes
+- Minecraft Pi तक कैसे पहुँचे और एक नई दुनिया बनाएँ
+- Minecraft Pi से कनेक्ट करने के लिए Python प्रोग्रामिंग वातावरण IDLE का उपयोग कैसे करें
+- चैट विंडो में टेक्स्ट पोस्ट करने, खिलाड़ी के निर्देशांकों का पता लगाने, संरचनाओं को टेलीपोर्ट करने और उनका निर्माण करने के लिए Minecraft Python API का उपयोग कैसे करें
+- विभिन्न प्रकार के ब्लॉकों के लिए आईडी स्टोर करने के लिए वेरिएबल का उपयोग कैसे करें
+- विशेष गुणों वाले विभिन्न प्रकार के ब्लॉक रखने के साथ प्रयोग करना
 
-This resource covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](https://www.raspberrypi.org/curriculum/):
+इस संसाधन में [Raspberry Pi डिजिटल निर्माण पाठ्यक्रम](https://www.raspberrypi.org/curriculum/) के निम्नलिखित तत्वों के पहलू शामिल हैं:
 
-- [Use basic programming constructs to create simple programs](https://www.raspberrypi.org/curriculum/programming/creator)
+- [सरल प्रोग्राम बनाने के लिए आधारभूत संरचनाओं का उपयोग करें](https://www.raspberrypi.org/curriculum/programming/creator)
