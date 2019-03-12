@@ -1,6 +1,6 @@
-## Fun with flowing lava.
+## बहते लावा के साथ मज़ा।
 
-One block that's a lot of fun to play with is flowing lava.
+बहता लावा एक ऐसा ब्लॉक है जिसे खेलने में बहुत मज़ा आता है।
 
 ```python
 from mcpi.minecraft import Minecraft
@@ -14,9 +14,9 @@ lava = 10
 mc.setBlock(x+3, y+3, z, lava)
 ```
 
-Find the block you've just placed, and you should see lava flowing from the block to the ground.
+जिस ब्लॉक को आपने अभी-अभी रखा है उसे ढूँढें, और आपको उस ब्लॉक से जमीन पर बहता हुआ लावा दिखाई देना चाहिए।
 
-The cool thing about lava is that when it cools down it becomes rock. Move to another location in your world and try this:
+लावा के बारे में एक बढ़िया बात यह है कि ठंडा हो जाने पर यह चट्टान बन जाता है। अपनी दुनिया में किसी दूसरी लोकेशन पर जाएँ और इसे आजमाएँ:
 
 ```python
 from mcpi.minecraft import Minecraft
@@ -38,6 +38,6 @@ mc.setBlock(x+3, y+5, z, air)
 
 ```
 
-You can adjust the `sleep` parameters to allow more or less lava to flow.
+आप लावा को अधिक या कम प्रवाहित करने के लिए `sleep` (स्लीप) के पैरामीटर समायोजित कर सकते हैं।
 
-![lava](images/lava.png)
+![लावा](images/lava.png)
