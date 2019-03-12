@@ -1,11 +1,11 @@
-## What next?
+## आगे क्या?
 
-There's plenty you can do now you know your way around the Minecraft world and how to use the Python interface.
+अब आप बहुत कुछ कर सकते हैं क्योंकि आप Minecraft दुनिया के आसपास का अपना रास्ता और Python इंटरफ़ेस का उपयोग कैसे करना है जानते हैं।
 
-### Networked game
+### नेटवर्क गेम
 
-If multiple people connect Raspberry Pis to a local network, they can join the same Minecraft world and play together. Players can see each other in the Minecraft world.
+यदि एकाधिक लोग Raspberry Pi को स्थानीय नेटवर्क से जोड़ते हैं, तो वे उसी Minecraft दुनिया में शामिल हो सकते हैं और एक साथ खेल सकते हैं। खिलाड़ी Minecraft दुनिया में एक दूसरे को देख सकते हैं।
 
-### API reference
+### API संदर्भ
 
-For a more extensive documentation of functions and a full list of block IDs see an API reference at [stuffaboutcode.com](http://www.stuffaboutcode.com/p/minecraft-api-reference.html).
+कार्यों के अधिक व्यापक दस्तावेज़ीकरण और ब्लॉक आईडी की पूरी सूची के लिए [stuffaboutcode.com](http://www.stuffaboutcode.com/p/minecraft-api-reference.html) पर एक एपीआई संदर्भ देखें।
