@@ -1,35 +1,35 @@
-## Run Minecraft
+## Minecraft चलाएँ
 
-To run Minecraft Pi, open it from the desktop menu or type `minecraft-pi` in the terminal.
+Minecraft Pi चलाने के लिए, इसे डेस्कटॉप मेनू से खोलें या टर्मिनल में `minecraft-pi` टाइप करें।
 
 ![](images/menu.png)
 
-When Minecraft Pi has loaded, click on **Start Game**, followed by **Create new**. You'll notice that the containing window is offset slightly. This means to drag the window around you have to grab the title bar behind the Minecraft window.
+जब Minecraft Pi लोड हो जाए, तो **Start Game** (गेम स्टार्ट करें) पर क्लिक करें, उसके बाद **Create new** (नया बनाएँ) पर। आप देखेंगे कि मुख्य विंडो थोड़ी-सी ऑफसेट है। इसका मतलब है कि विंडो को आस-पास ड्रैग करने के लिए आपको Minecraft विंडो के पीछे की title (शीर्षक) पट्टी को पकड़ना होगा।
 
 ![](images/mcpi-game.png)
 
-You are now in a game of Minecraft! Go walk around, hack things, and build things!
+अब आप Minecraft के एक गेम में हैं! चारों ओर घूमें फिरें, चीज़ों को हैक करें, और चीज़ें बनाएँ!
 
-Use the mouse to look around and use the following keys on the keyboard:
+चारों ओर देखने के लिए माउस का उपयोग करें और कीबोर्ड पर निम्नलिखित कुंजियों का उपयोग करें:
 
-|     Key      |        Action        |
-|:------------:|:--------------------:|
-|      W       |       Forward        |
-|      A       |         Left         |
-|      S       |       Backward       |
-|      D       |        Right         |
-|      E       |      Inventory       |
-|    Space     |         Jump         |
-| Double Space |      Fly / Fall      |
-|     Esc      |  Pause / Game menu   |
-|     Tab      | Release mouse cursor |
+|    कुंजी     |       कार्य       |
+|:------------:|:-----------------:|
+|      W       |        आगे        |
+|      A       |       बाएँ        |
+|      S       |       पीछे        |
+|      D       |       दाएँ        |
+|      E       |       सूची        |
+|    Space     |       कूदें       |
+| Double Space |   उड़ें / गिरें   |
+|     Esc      | विराम / गेम मेनू  |
+|     Tab      | माउस कर्सर छोड़ें |
 
-You can select an item from the quick draw panel with the mouse's scroll wheel (or use the numbers on your keyboard), or press `E` and select something from the inventory.
+आप माउस के स्क्रोल व्हील के साथ (या अपने कीबोर्ड पर संख्याओं का उपयोग करके) त्वरित ड्रा पैनल से किसी आइटम का चयन कर सकते हैं, या `E` दबाएँ और सूची में से किसी चीज़ का चयन करें।
 
 ![](images/mcpi-inventory.png)
 
-You can also double tap the space bar to fly into the air. You'll stop flying when you release the space bar, and if you double tap it again you'll fall back to the ground.
+आप हवा में उड़ने के लिए स्पेस बार को दो बार टैप भी कर सकते हैं। जब आप स्पेस बार को छोड़ देंगे तो आप उड़ना बंद कर देंगे, और यदि आप इसे फिर से डबल टैप करते हैं तो आप जमीन पर वापस आ जाएँगे।
 
 ![](images/mcpi-flying.png)
 
-With the sword in your hand, you can click on blocks in front of you to remove them (or to dig). With a block in your hand, you can use right click to place that block in front of you, or left click to remove a block.
+अपने हाथ में तलवार के साथ, आप अपने सामने के ब्लॉकों को हटाने के लिए (या खोदने के लिए) उन पर क्लिक कर सकते हैं। अपने हाथ में किसी ब्लॉक के साथ, आप उस ब्लॉक को अपने सामने रखने के लिए राइट क्लिक का उपयोग कर सकते हैं, या किसी ब्लॉक को हटाने के लिए बायाँ क्लिक कर सकते हैं।
