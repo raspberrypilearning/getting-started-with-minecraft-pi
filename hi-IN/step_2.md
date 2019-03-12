@@ -1,43 +1,43 @@
-## What you will need
+## आपको किन चीज़ों की आवश्यकता होगी
 
-### Software
+### सॉफ्टवेयर
 
-#### Software installation
+#### सॉफ्टवेयर इंस्टालेशन
 
-Minecraft has been installed by default in Raspbian since September 2014.
+Minecraft सितंबर 2014 से Raspbian में डिफ़ॉल्ट रूप से इंस्टाल किया गया है।
 
-![Minecraft Pi desktop icon](images/minecraft-pi-shortcut.png)
+![Minecraft Pi डेस्कटॉप आइकन](images/minecraft-pi-shortcut.png)
 
-If you're using an older version of Raspbian, open a terminal window and type the following commands (you must be online):
+यदि आप Raspbian के पुराने संस्करण का उपयोग कर रहे हैं, तो टर्मिनल विंडो खोलें और निम्नलिखित कमांड टाइप करें (आपको ऑनलाइन होना चाहिए):
 
 ```bash
 sudo apt-get update
 sudo apt-get install minecraft-pi
 ```
 
-Once that finishes, Minecraft Pi and the Python library should be installed.
+इसके पूरा हो जाने के बाद, Minecraft Pi और Python लाइब्रेरी इंस्टाल की जानी चाहिए।
 
-#### Test Minecraft
+#### Minecraft का परीक्षण करें
 
-To run Minecraft double click the desktop icon or enter `minecraft-pi` in the terminal.
+Minecraft चलाने के लिए डेस्कटॉप आइकन पर डबल क्लिक करें या टर्मिनल में `minecraft-pi` दर्ज करें।
 
 ![](images/mcpi-start.png)
 
-When Minecraft Pi has loaded, click on **Start Game**, followed by **Create new**. You'll notice that the containing window is offset slightly. This means to drag the window around you have to grab the title bar behind the Minecraft window.
+जब Minecraft Pi लोड हो जाए, तो **Start Game** (गेम स्टार्ट करें) पर क्लिक करें, उसके बाद **Create new** (नया बनाएँ) पर। आप देखेंगे कि मुख्य विंडो थोड़ी-सी ऑफसेट है। इसका मतलब है कि विंडो को आस-पास ड्रैग करने के लिए आपको Minecraft विंडो के पीछे की title (शीर्षक) पट्टी को पकड़ना होगा।
 
 ![](images/mcpi-game.png)
 
-You are now in a game of Minecraft!
+अब आप Minecraft के एक गेम में हैं!
 
-#### Test Python
+#### Python का परीक्षण करें
 
-With Minecraft running, and the world created, bring your focus away from the game by pressing the `Tab` key, which will free your mouse. Open Python 3 (IDLE) on the Desktop and move the windows so they're side-by-side.
+जब Minecraft चल रहा हो, और दुनिया तैयार हो, तो `Tab` (टैब) कुंजी को दबाकर अपना ध्यान गेम से हटा लें, जिससे आपका माउस मुक्त हो जाएगा। डेस्कटॉप पर Python 3 (IDLE) खोलें और विंडोज़ को खिसकाएँ ताकि दोनों एक दूसरे के आस-पास हों।
 
-You can either type commands directly in to the Python window or create a file so you can save your code and run it again another time.
+आप कमांड या तो सीधे Python विंडो में टाइप कर सकते हैं या एक फाइल बना सकते हैं ताकि आप अपना कोड सहेज सकें और इसे बाद में फिर से चला सकें।
 
-If you want create a file go to `File > New window` and `File > Save`. You'll probably want to save this in your home folder or a new project folder.
+यदि आप एक फाइल बनाना चाहते हैं तो `File > New window` और `File > Save` पर जाएँ।<0><0> आप शायद इसे अपने होम फ़ोल्डर या किसी नए प्रोजेक्ट फ़ोल्डर में सहेजना चाहेंगे।
 
-Start by importing the Minecraft library, creating a connection to the game and testing it by posting the message "Hello world" to the screen:
+Minecraft लाइब्रेरी को आयात करके, गेम से कनेक्शन बनाकर और स्क्रीन पर "Hello world" ("हैलो वर्ल्ड") संदेश पोस्ट करके इसका परीक्षण करना आरंभ करें:
 
 ```python
 from mcpi import minecraft
@@ -47,8 +47,8 @@ mc = minecraft.Minecraft.create()
 mc.postToChat("Hello world")
 ```
 
-If you're entering commands directly in to the Python window, just hit `Enter` after each line. If it's a file, save with `Ctrl + S` and run with `F5`. When your code runs, you should see your message on screen in the game.
+यदि आप सीधे Python विंडो में कमांड दर्ज कर रहे हैं, तो बस प्रत्येक पंक्ति के बाद `Enter` (एंटर) दबाएँ। यदि यह फ़ाइल है, तो `Ctrl + S` के साथ सहेजें और `F5` के साथ चलाएँ। जब आपका कोड चलता है, तो आपको गेम में स्क्रीन पर अपना संदेश दिखना चाहिए।
 
 ![](images/mcpi-idle.png)
 
-If you see "Hello world" in the Minecraft window, you're good to proceed to the next step.
+यदि आप Minecraft विंडो में "Hello world" ("हैलो वर्ल्ड") देखते हैं, तो आप अगले चरण में जाने के लिए तैयार हैं।
