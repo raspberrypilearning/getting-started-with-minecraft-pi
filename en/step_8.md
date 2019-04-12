@@ -32,7 +32,7 @@ air = 0
 
 mc.setBlock(x+3, y+3, z, lava)
 sleep(20)
-mc.setBlock(x+3,y+5, z, water)
+mc.setBlock(x+3, y+5, z, water)
 sleep(4)
 mc.setBlock(x+3, y+5, z, air)
 
