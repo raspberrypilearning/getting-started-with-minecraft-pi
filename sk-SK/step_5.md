@@ -16,7 +16,7 @@ mc = Minecraft.create()
 mc.postToChat("Hello world")
 ```
 
-Ak zadávate príkazy priamo do okna Pythonu, stlačte `Enter` po každom riadku. Ak píšete do súboru, uložíte ho stlačením `Ctrl + S` a spustíte s `F5`. Keď spustíte váš kód, mali by ste vidieť vašu správu v hre na obrazovke.
+Ak zadávate príkazy priamo do okna Pythonu, stlačte `Enter` po každom riadku. Ak píšete do súboru, uložíte ho stlačením `Ctrl + S` a spustíte s `F5`. Keď sa váš kód spustí, mali by ste vidieť vašu správu v hre na obrazovke.
 
 ![](images/helloworld.gif)
 
