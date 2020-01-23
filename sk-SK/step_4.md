@@ -19,7 +19,7 @@ Pomocou myši sa môžete rozhliadnuť okolo seba a použiť môžete aj nasledu
 |         S         |       Dozadu       |
 |         D         |       Vpravo       |
 |         E         |      Inventár      |
-|     Medzerník     |        Skok        |
+|      Vesmír       |        Skok        |
 | Dvakrát medzerník | Lietanie / Padnúť  |
 |        Esc        |  Pauza / Menu hry  |
 |        Tab        | Uvoľní kurzor myši |
