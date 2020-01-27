@@ -24,7 +24,7 @@ Gebruik de muis om rond te kijken en gebruik de volgende toetsen op het toetsenb
 |      Esc       |    Pauze / Spelmenu    |
 |      Tab       | Laat de muiscursor los |
 
-Je kunt een item selecteren uit het paneel voor snel tekenen met het muiswiel van de muis (of de cijfers op je toetsenbord gebruiken) of op `E` drukken en iets uit de inventaris selecteren.
+Je kunt een item selecteren uit het paneel voor snel tekenen met het wiel van de muis (of de cijfers op je toetsenbord gebruiken) of op `E` drukken en iets uit de inventaris selecteren.
 
 ![](images/mcpi-inventory.png)
 
