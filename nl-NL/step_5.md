@@ -66,7 +66,7 @@ Nu zou een stenen blok naast je moeten verschijnen. Als het niet direct voor je 
 
 ![](images/mcpi-setblock.png)
 
-De argumenten die zijn doorgegeven aan `set blok` zijn `x`, `y`, `z` en `id`. De `(x, y, z)` verwijst naar de positie in de wereld (we hebben een blok verwijderd van waar de speler staat met `x + 1`) en de `id` verwijst naar het type blok dat we willen plaatsen. `1` is steen.
+De argumenten die zijn doorgegeven aan `set block` zijn `x`, `y`, `z` en `id`. De `(x, y, z)` verwijst naar de positie in de wereld (we hebben één blok verwijderd van waar de speler staat gespecificeerd met `x + 1`) en de `id` verwijst naar het type blok dat we willen plaatsen. `1` is steen.
 
 Andere blokken die je kunt proberen:
 
@@ -85,7 +85,7 @@ Je zou het grijze stenen blok voor je ogen moeten zien veranderen!
 
 ![](images/mcpi-setblock2.png)
 
-#### Blok constanten
+#### Blokconstanten
 
 Je kunt ingebouwde blokconstanten gebruiken om je blokken in te stellen, als je hun namen kent. Je hebt echter eerst nog een `import` regel nodig.
 
@@ -99,7 +99,7 @@ Nu kun je het volgende schrijven om een blok te plaatsen:
 mc.setBlock(x+3, y, z, block.STONE.id)
 ```
 
-Blok-id's zijn vrij eenvoudig te raden, gebruik ALLE CAPS, maar hier zijn een paar voorbeelden om je te laten wennen aan de naam die ze hebben.
+Blok-id's zijn vrij eenvoudig te raden, gebruik gewoon ALLE HOOFDLETTERS, maar hier zijn een paar voorbeelden om je te laten wennen aan de naam die ze hebben.
 
     WOOD_PLANKS
     WATER_STATIONARY
@@ -159,4 +159,4 @@ Hiermee vul je een 10 x 10 x 10 kubus van massieve steen.
 
 ![](images/mcpi-setblocks.png)
 
-Je kunt grotere volumes maken met de `setBlocks` functie, maar het kan langer duren om te genereren!
+Je kunt grotere volumes maken met de `setBlocks` functie, maar het kan langer duren om het te genereren!
