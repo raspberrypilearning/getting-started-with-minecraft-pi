@@ -1,19 +1,19 @@
 ## Gebruik de programmeerinterface van Python
 
-Terwijl Minecraft actief is en de wereld gecreëerd is, breng je je aandacht weg van het spel door op de `Tab` toets te drukken, waardoor je muis vrijkomt. Open Python 3 vanuit het applicatiemenu en verplaats de vensters zodat ze naast elkaar staan.
+Terwijl Minecraft actief is en de wereld gecreëerd is, haal je je focus weg van het spel door op de `Tab` toets te drukken, waardoor je muis vrijkomt. Open Python 3 vanuit het applicatiemenu en verplaats de vensters zodat ze naast elkaar staan.
 
 Je kunt opdrachten rechtstreeks in het Python-venster typen of een bestand maken zodat je jouw code kunt opslaan en deze een andere keer opnieuw kunt uitvoeren.
 
-Als je een bestand wilt maken, ga je naar `File > New window` en `File > Save`. Je wilt dit waarschijnlijk in je thuismap of een nieuwe projectmap opslaan.
+Als je een nieuw bestand wilt maken, ga je naar `File > New window` en `File > Save`. Je wilt dit waarschijnlijk in je thuismap of een nieuwe projectmap opslaan.
 
 Begin met het importeren van de Minecraft-bibliotheek, maak een verbinding met de game en test het door het bericht "Hallo wereld" op het scherm te plaatsen:
 
 ```python
 from mcpi.minecraft import Minecraft 
 
-mc = Minecraft.create () 
+mc = Minecraft.create() 
 
-mc.postToChat ("Hallo wereld")
+mc.postToChat("Hallo wereld")
 ```
 
 Als je opdrachten rechtstreeks in het Python-venster invoert, druk je op `Enter` na elke regel. Als het een bestand is, sla het op met `Ctrl + S` en voer het uit met `F5`. Wanneer je code wordt uitgevoerd, zou je jouw bericht op het scherm in het spel moeten zien.
@@ -25,10 +25,10 @@ Als je opdrachten rechtstreeks in het Python-venster invoert, druk je op `Enter`
 Typ het volgende om je locatie te vinden:
 
 ```python
-pos = mc.player.getPos ()
+pos = mc.player.getPos()
 ```
 
-`pos` bevat nu je locatie; ga naar elk deel van de coördinaten met `pos.x`, `pos.y` en `pos.z`.
+`pos` bevat nu je locatie; ga naar elk onderdeel van de coördinaten met `pos.x`, `pos.y` en `pos.z`.
 
 Een andere manier om de coördinaten in afzonderlijke variabelen te krijgen, is door de uitpaktechniek van Python te gebruiken:
 
@@ -36,11 +36,11 @@ Een andere manier om de coördinaten in afzonderlijke variabelen te krijgen, is 
 x, y, z = mc.player.getPos()
 ```
 
-Nu bevatten `x`, `y`en `z` elk deel van je positie coördinaten. `x` en `z` zijn de looprichtingen (vooruit/achteruit en links/rechts) en `y` is omhoog/omlaag.
+Nu bevatten `x`, `y`en `z` elk onderdeel van je positiecoördinaten. `x` en `z` zijn de looprichtingen (vooruit/achteruit en links/rechts) en `y` is omhoog/omlaag.
 
 Merk op dat `getPos()` de locatie van de speler van dat moment geeft, als je van positie verandert, moet je de functie opnieuw oproepen of de opgeslagen locatie gebruiken.
 
-### Teleport
+### Teleporteer
 
 Naast het vinden van je huidige locatie, kun je een specifieke locatie opgeven om naar te teleporteren.
 
@@ -55,7 +55,7 @@ Probeer ergens anders naartoe te teleporteren!
 
 ### Blok instellen
 
-Je kunt een enkel blok op elke set coördinaten plaatsen met `mc.setBlock()`:
+Je kunt een enkel blok op een gegeven stel coördinaten plaatsen met `mc.setBlock()`:
 
 ```python
 x, y, z = mc.player.getPos()
