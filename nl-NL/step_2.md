@@ -15,7 +15,7 @@ sudo apt-get update
 sudo apt-get install minecraft-pi
 ```
 
-Zodra dat is voltooid, moeten Minecraft Pi en de Python-bibliotheek worden geïnstalleerd.
+Zodra dat is voltooid, moeten Minecraft Pi en de Python-bibliotheek geïnstalleerd zijn.
 
 #### Test Minecraft
 
@@ -31,20 +31,20 @@ Je speelt nu een spelletje Minecraft!
 
 #### Test Python
 
-Terwijl Minecraft actief is en de wereld gecreëerd is, breng je je aandacht weg van het spel door op de `Tab` toets te drukken, waardoor je muis vrijkomt. Open Python 3 (IDLE) op het bureaublad en verplaats de vensters zodat ze naast elkaar staan.
+Terwijl Minecraft actief is en de wereld gecreëerd is, haal je je focus weg van het spel door op de `Tab` toets te drukken, waardoor je muis vrijkomt. Open Python 3 (IDLE) op het bureaublad en verplaats de vensters zodat ze naast elkaar staan.
 
 Je kunt opdrachten rechtstreeks in het Python-venster typen of een bestand maken zodat je jouw code kunt opslaan en deze een andere keer opnieuw kunt uitvoeren.
 
-Als je een bestand wilt maken, ga je naar `File > New window` en `File > Save`. Je wilt dit waarschijnlijk in je thuismap of een nieuwe projectmap opslaan.
+Als je een nieuw bestand wilt maken, ga je naar `File > New window` en `File > Save`. Je wilt dit waarschijnlijk in je thuismap of een nieuwe projectmap opslaan.
 
 Begin met het importeren van de Minecraft-bibliotheek, maak een verbinding met de game en test het door het bericht "Hallo wereld" op het scherm te plaatsen:
 
 ```python
 from mcpi import minecraft
 
-mc = minecraft.Minecraft.create ()
+mc = minecraft.Minecraft.create()
 
-mc.postToChat ("Hallo wereld")
+mc.postToChat("Hallo wereld")
 ```
 
 Als je opdrachten rechtstreeks in het Python-venster invoert, druk je na elke regel op `Enter`. Als het een bestand is, sla het op met `Ctrl + S` en voer het uit met `F5`. Wanneer jouw code wordt uitgevoerd, zou je jouw bericht op het scherm in het spel moeten zien.
