@@ -10,7 +10,7 @@ Door dit project met je Raspberry Pi te maken, leer je:
 
 - Hoe toegang te krijgen tot Minecraft Pi en een nieuwe wereld te creëren
 - Hoe de Python-programmeeromgeving IDLE te gebruiken om verbinding te maken met Minecraft Pi
-- Hoe de Minecraft Python API te gebruiken om tekst naar het chatvenster te posten, de coördinaten van de speler te vinden, te teleporteren en structuren te bouwen
+- Hoe de Minecraft Python API te gebruiken om tekst naar het chatvenster te posten, de coördinaten van de speler te vinden, structuren te teleporteren en te bouwen
 - Hoe variabelen te gebruiken om ID's op te slaan voor verschillende soorten blokken
 - Experimenteren met het plaatsen van verschillende soorten blokken met speciale attributen
 
