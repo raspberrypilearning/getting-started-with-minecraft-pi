@@ -28,25 +28,25 @@ Probeer door de lucht te vliegen en zie de bloemen die je in de lucht achterlaat
 
 ![](images/mcpi-flowers-sky.png)
 
-Wat als we alleen bloemen wilden laten vallen als de speler op gras loopt? We kunnen `getBlock` gebruiken om erachter te komen welk type een blok is:
+Wat als we alleen bloemen willen laten vallen als de speler op gras loopt? We kunnen `getBlock` gebruiken om erachter te komen welk type een blok is:
 
 ```python
-x, y, z = mc.player.getPos()  # player position (x, y, z)
-this_block = mc.getBlock(x, y, z)  # block ID
+x, y, z = mc.player.getPos() # spelerpositie (x, y, z)
+this_block = mc.getBlock(x, y, z) # blok ID
 print(this_block)
 ```
 
-Dit vertelt je de locatie van het blok waar je *in* staat (dit zal `0` - een luchtblok zijn). We willen weten *op* welk type blok we staan. Hiervoor trekken we 1 af van de waarde `y` en gebruiken we `getBlock ()` om te bepalen op welk type blok we staan:
+Dit vertelt je de locatie van het blok waar je *in* staat (dit zal `0` - een luchtblok zijn). We willen weten *op* welk type blok we staan. Hiervoor trekken we 1 af van de waarde `y` en gebruiken we `getBlock()` om te bepalen op welk type blok we staan:
 
 ```python
-x, y, z = mc.player.getPos()  # player position (x, y, z)
-block_beneath = mc.getBlock(x, y-1, z)  # block ID
+x, y, z = mc.player.getPos() # spelerpositie (x, y, z)
+block_beneath = mc.getBlock(x, y-1, z) # blok ID
 print(block_beneath)
 ```
 
 Dit vertelt ons het id van het blok waarop de speler staat.
 
-Test dit door een lus uit te voeren om het blok-id te tonen van waar je nu ook op staat:
+Test dit door een lus uit te voeren om het blok-id te tonen van waar je nu op staat:
 
 ```python
 while True:
@@ -64,8 +64,8 @@ grass = 2
 flower = 38
 
 while True:
-    x, y, z = mc.player.getPos()  # player position (x, y, z)
-    block_beneath = mc.getBlock(x, y-1, z)  # block ID
+    x, y, z = mc.player.getPos()  # spelerpositie (x, y, z)
+    block_beneath = mc.getBlock(x, y-1, z)  # blok ID
 
     if block_beneath == grass:
         mc.setBlock(x, y, z, flower)
