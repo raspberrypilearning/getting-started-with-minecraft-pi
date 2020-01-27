@@ -4,7 +4,7 @@ Er is genoeg dat je kunt doen nu je de weg kent in de Minecraft-wereld en hoe je
 
 ### Netwerkspel
 
-Als meerdere mensen Raspberry Pis verbinden met een lokaal netwerk, kunnen ze lid worden van dezelfde Minecraft-wereld en samen spelen. Spelers kunnen elkaar zien in de Minecraft-wereld.
+Als meerdere mensen Raspberry Pi's verbinden met een lokaal netwerk, kunnen ze lid worden van dezelfde Minecraft-wereld en samen spelen. Spelers kunnen elkaar zien in de Minecraft-wereld.
 
 ### API referentie
 
