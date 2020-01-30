@@ -1,6 +1,6 @@
-## Zábava s tečúcou lávou.
+## Fun with flowing lava.
 
-Jedným blokom, s ktorým si užijete veľa zábavy, je tečúca láva.
+One block that's a lot of fun to play with is flowing lava.
 
 ```python
 from mcpi.minecraft import Minecraft
@@ -14,9 +14,9 @@ lava = 10
 mc.setBlock(x+3, y+3, z, lava)
 ```
 
-Nájdite blok, ktorý ste práve umiestnili a mali by ste vidieť lávu tečúcu z tohto bloku na zem.
+Find the block you've just placed, and you should see lava flowing from the block to the ground.
 
-Na láve je super, že keď sa ochladí, stane sa kameňom. Presuňte sa na iné miesto vo vašom svete a vyskúšajte toto:
+The cool thing about lava is that when it cools down it becomes rock. Move to another location in your world and try this:
 
 ```python
 from mcpi.minecraft import Minecraft
@@ -38,6 +38,6 @@ mc.setBlock(x+3, y+5, z, air)
 
 ```
 
-Pomocou parametra `sleep` môžete nastaviť, či bude lávy vytekať viac alebo menej.
+You can adjust the `sleep` parameters to allow more or less lava to flow.
 
-![láva](images/lava.png)
+![lava](images/lava.png)
