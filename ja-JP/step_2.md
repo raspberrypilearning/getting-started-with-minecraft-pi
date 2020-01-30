@@ -1,6 +1,6 @@
-## 必要なもの
+## What you will need
 
-### ソフトウェア
+### Software
 
 #### Software installation
 
