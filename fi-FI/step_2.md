@@ -1,6 +1,6 @@
-## Mitä tarvitset
+## What you will need
 
-### Ohjelmisto
+### Software
 
 #### Software installation
 
