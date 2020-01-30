@@ -1,6 +1,6 @@
-## Шта ће ти требати
+## What you will need
 
-### Софтвер
+### Software
 
 #### Software installation
 
