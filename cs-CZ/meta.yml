@@ -11,16 +11,16 @@ copyedit: true
 curriculum: 2, design-0, programming-2, phys-comp-0, manufacture-0, community-0
 interests: games
 technologies: python
-site_areas: projekty
+site_areas: projects
 hardware: ''
 software: python
 version: 3
 last_tested: 2017-01-01
 steps:
   - 
-    title: Úvod
+    title: Introduction
   - 
-    title: Co budeš potřebovat
+    title: What you will need
   - 
     title: Getting Started with Minecraft Pi
   - 
@@ -34,4 +34,4 @@ steps:
   - 
     title: Fun with flowing lava.
   - 
-    title: Co dál?
+    title: What next?
