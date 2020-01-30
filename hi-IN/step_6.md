@@ -1,8 +1,8 @@
-## आपके चलने के साथ-साथ ब्लॉक गिराना
+## Dropping blocks as you walk
 
-अब आप जानते हैं कि ब्लॉक कैसे गिराए जाते हैं, आइए हम अपनी चलने की लोकेशन का उपयोग आपके चलते समय ब्लॉक गिराने के लिए करें।
+Now you know how to drop blocks, let's use our moving location to drop blocks when you walk.
 
-निम्नलिखित कोड आप जहाँ कहीं भी आप चलेंगे आपके पीछे एक फूल गिरा देगा:
+The following code will drop a flower behind you wherever you walk:
 
 ```python
 from mcpi.minecraft import Minecraft
@@ -18,17 +18,17 @@ while True:
     sleep(0.1)
 ```
 
-अब थोड़ी देर के लिए आगे चलें और पीछे मुड़कर अपने पीछे छोड़े गए फूलों को देखें।
+Now walk forward for a while and turn around to see the flowers you have left behind you.
 
 ![](images/mcpi-flowers.png)
 
-चूंकि हमने `while True` (जबकि यह सच है) लूप का उपयोग किया था यह हमेशा चलता रहेगा। इसे बंद करने के लिए, Python विंडो में `Ctrl + C` दबाएँ।
+Since we used a `while True` loop this will go on forever. To stop it, hit `Ctrl + C` in the Python window.
 
-हवा में उड़ने की कोशिश करें और आकाश में छोड़े गए फूलों को देखें:
+Try flying through the air and see the flowers you leave in the sky:
 
 ![](images/mcpi-flowers-sky.png)
 
-यदि हम केवल तभी फूल गिराना चाहते हैं जब खिलाड़ी घास पर चल रहा हो तो क्या होगा? यह पता लगाने के लिए कि कोई ब्लॉक किस प्रकार है हम `getBlock` का उपयोग कर सकते हैं:
+What if we only wanted to drop flowers when the player walks on grass? We can use `getBlock` to find out what type a block is:
 
 ```python
 x, y, z = mc.player.getPos()  # player position (x, y, z)
@@ -36,7 +36,7 @@ this_block = mc.getBlock(x, y, z)  # block ID
 print(this_block)
 ```
 
-यह आपको उस ब्लॉक की लोकेशन बताता है *जिसमें*आप खड़े हैं (यह `0` होगा - एक वायु ब्लॉक)। हम जानना चाहते हैं कि हम किस प्रकार का ब्लॉक *पर* खड़े हैं। इसके लिए हम `y` मूल्य से 1 घटाते हैं और `getBlock()` का उपयोग करते हैं ताकि यह निर्धारित किया जा सके कि हम किस प्रकार के ब्लॉक पर खड़े हैं:
+This tells you the location of the block you're standing *in* (this will be `0` - an air block). We want to know what type of block we're standing *on*. For this we subtract 1 from the `y` value and use `getBlock()` to determine what type of block we're standing on:
 
 ```python
 x, y, z = mc.player.getPos()  # player position (x, y, z)
@@ -44,9 +44,9 @@ block_beneath = mc.getBlock(x, y-1, z)  # block ID
 print(block_beneath)
 ```
 
-यह हमें उस ब्लॉक की आईडी बताता है जिस पर खिलाड़ी खड़ा है।
+This tells us the ID of the block the player is standing on.
 
-आप वर्तमान में जहाँ पर भी खड़े हैं, उसकी ब्लॉक आईडी को मुद्रित करने के लिए लूप चलाकर इसका परीक्षण करें:
+Test this out by running a loop to print the block ID of whatever you're currently standing on:
 
 ```python
 while True:
@@ -57,7 +57,7 @@ while True:
 
 ![](images/blockbeneath.gif)
 
-यह चुनने के लिए कि हम कोई फूल लगाएँगे या नहीं हम एक `if` (यदि) कथन का उपयोग कर सकते हैं:
+We can use an `if` statement to choose whether or not we plant a flower:
 
 ```python
 grass = 2
@@ -72,7 +72,7 @@ while True:
     sleep(0.1)
 ```
 
-शायद इसके बाद हम जिस टाइल पर खड़े हैं उसे हम घास में बदल सकते हैं यदि यह पहले से घास नहीं है:
+Perhaps next we could turn the tile we're standing on into grass if it isn't grass already:
 
 ```python
 if block_beneath == grass:
@@ -81,6 +81,6 @@ else:
     mc.setBlock(x, y-1, z, grass)
 ```
 
-अब हम आगे बढ़ सकते हैं और यदि हम घास पर चलते हैं, तो हम पीछे एक फूल छोड़ देंगे। यदि अगला ब्लॉक घास नहीं है, तो यह घास में बदल जाता है। जब हम घूम जाते हैं और वापस चलते हैं, तो अब हम अपने पीछे एक फूल छोड़ देते हैं।
+Now we can walk forward and if we walk on grass, we'll leave a flower behind. If the next block is not grass, it turns into grass. When we turn around and walk back, we now leave a flower behind us.
 
 ![](images/mcpi-flowers-grass.png)
