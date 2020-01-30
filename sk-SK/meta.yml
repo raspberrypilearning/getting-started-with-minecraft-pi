@@ -1,7 +1,7 @@
 ---
-title: Začíname s Minecraft Pi
+title: Getting Started with Minecraft Pi
 hero_image: images/banner.png
-description: Zistite, ako chutí programovanie vo svete Minecraft-u
+description: Get your first taste of programming the world of Minecraft
 original_url: https://raspberrypi.org/learning/getting-started-with-minecraft-pi
 theme: yellow
 duration: 2
@@ -18,20 +18,20 @@ version: 3
 last_tested: 2017-01-01
 steps:
   - 
-    title: Úvod
+    title: Introduction
   - 
-    title: Čo budeš potrebovať
+    title: What you will need
   - 
-    title: Začíname s Minecraft Pi
+    title: Getting Started with Minecraft Pi
   - 
-    title: Spustite Minecraft
+    title: Run Minecraft
   - 
-    title: Použite rozhranie programovacieho jazyka Python
+    title: Use the Python programming interface
   - 
-    title: Kladenie blokov počas chôdze
+    title: Dropping blocks as you walk
   - 
-    title: Zábava s blokmi TNT
+    title: Playing with TNT blocks
   - 
-    title: Zábava s tečúcou lávou.
+    title: Fun with flowing lava.
   - 
-    title: Čo ďalej?
+    title: What next?
