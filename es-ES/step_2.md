@@ -1,4 +1,4 @@
-## Lo que necesitarás
+## What you will need
 
 ### Software
 
