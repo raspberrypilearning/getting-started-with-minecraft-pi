@@ -59,7 +59,6 @@ You can place a single block at a given set of coordinates with `mc.setBlock()`:
 
 ```python
 x, y, z = mc.player.getPos()
-
 mc.setBlock(x+1, y, z, 1)
 ```
 
