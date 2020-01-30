@@ -1,7 +1,7 @@
 ---
-title: Démarrer avec Minecraft Pi
+title: Getting Started with Minecraft Pi
 hero_image: images/banner.png
-description: Programmer Minecraft Pi avec Python.
+description: Get your first taste of programming the world of Minecraft
 original_url: https://raspberrypi.org/learning/getting-started-with-minecraft-pi
 theme: yellow
 duration: 2
@@ -11,27 +11,27 @@ copyedit: true
 curriculum: 2, design-0, programming-2, phys-comp-0, manufacture-0, community-0
 interests: games
 technologies: python
-site_areas: projets
+site_areas: projects
 hardware: ''
 software: python
 version: 3
-last_tested: 01/01/2017
+last_tested: 2017-01-01
 steps:
   - 
     title: Introduction
   - 
-    title: Lancer et utiliser Minecraft
+    title: What you will need
   - 
-    title: Utiliser l'interface de programmation Python
+    title: Getting Started with Minecraft Pi
   - 
-    title: Placer des blocs en marchant
+    title: Run Minecraft
   - 
-    title: Jouer avec des blocs de TNT!
+    title: Use the Python programming interface
   - 
-    title: Du plaisir avec la lave en fusion!
+    title: Dropping blocks as you walk
   - 
-    title: Et ensuite?
+    title: Playing with TNT blocks
   - 
     title: Fun with flowing lava.
   - 
-    title: 'Défi : Améliorez votre jeu!'
+    title: What next?
