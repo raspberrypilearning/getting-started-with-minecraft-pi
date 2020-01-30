@@ -1,6 +1,6 @@
-## Những thứ bạn sẽ cần
+## What you will need
 
-### Phần mềm
+### Software
 
 #### Software installation
 
