@@ -1,6 +1,6 @@
-## 你會需要:
+## What you will need
 
-### 軟體
+### Software
 
 #### Software installation
 
