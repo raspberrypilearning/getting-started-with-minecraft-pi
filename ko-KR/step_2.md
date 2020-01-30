@@ -1,6 +1,6 @@
-## 준비물
+## What you will need
 
-### 소프트웨어
+### Software
 
 #### Software installation
 
