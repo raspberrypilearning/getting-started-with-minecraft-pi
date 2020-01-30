@@ -19,7 +19,7 @@ Use the mouse to look around and use the following keys on the keyboard:
 |      S       |       Backward       |
 |      D       |        Right         |
 |      E       |      Inventory       |
-|    Vesmír    |         Jump         |
+|    Space     |         Jump         |
 | Double Space |      Fly / Fall      |
 |     Esc      |  Pause / Game menu   |
 |     Tab      | Release mouse cursor |
