@@ -1,6 +1,6 @@
-## Ce vei avea nevoie
+## What you will need
 
-### Programe
+### Software
 
 #### Software installation
 
