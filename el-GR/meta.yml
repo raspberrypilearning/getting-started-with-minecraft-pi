@@ -18,9 +18,9 @@ version: 3
 last_tested: 2017-01-01
 steps:
   - 
-    title: Εισαγωγή
+    title: Introduction
   - 
-    title: Τι θα χρειαστείς
+    title: What you will need
   - 
     title: Getting Started with Minecraft Pi
   - 
@@ -34,4 +34,4 @@ steps:
   - 
     title: Fun with flowing lava.
   - 
-    title: Και τώρα;
+    title: What next?
