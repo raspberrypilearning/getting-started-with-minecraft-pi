@@ -1,6 +1,6 @@
-## Dette trenger du
+## What you will need
 
-### Programvare
+### Software
 
 #### Software installation
 
