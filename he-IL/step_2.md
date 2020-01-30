@@ -1,6 +1,6 @@
-## מה נדרש
+## What you will need
 
-### תוכנה
+### Software
 
 #### Software installation
 
