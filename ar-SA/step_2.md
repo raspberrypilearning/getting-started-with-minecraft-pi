@@ -1,6 +1,6 @@
-## ما ستحتاج اليه
+## What you will need
 
-### البرمجيات
+### Software
 
 #### Software installation
 
