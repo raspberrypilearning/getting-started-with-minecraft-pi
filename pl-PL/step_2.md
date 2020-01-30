@@ -1,6 +1,6 @@
-## Czego będziesz potrzebować
+## What you will need
 
-### Oprogramowanie
+### Software
 
 #### Software installation
 
