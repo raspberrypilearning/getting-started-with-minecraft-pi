@@ -1,7 +1,7 @@
 ---
-title: Minecraft Pi के साथ शुरू करना
+title: Getting Started with Minecraft Pi
 hero_image: images/banner.png
-description: Minecraft की दुनिया की प्रोग्रामिंग का अपना पहला स्वाद प्राप्त करें
+description: Get your first taste of programming the world of Minecraft
 original_url: https://raspberrypi.org/learning/getting-started-with-minecraft-pi
 theme: yellow
 duration: 2
@@ -10,28 +10,28 @@ ingredient: false
 copyedit: true
 curriculum: 2, design-0, programming-2, phys-comp-0, manufacture-0, community-0
 interests: games
-technologies: python (पायथन)
-site_areas: प्रोजेक्ट
+technologies: python
+site_areas: projects
 hardware: ''
-software: python (पायथन)
+software: python
 version: 3
 last_tested: 2017-01-01
 steps:
   - 
-    title: भूमिका
+    title: Introduction
   - 
-    title: आपको किसकी ज़रूरत होगी
+    title: What you will need
   - 
-    title: Minecraft Pi के साथ शुरू करना
+    title: Getting Started with Minecraft Pi
   - 
-    title: Minecraft चलाएँ
+    title: Run Minecraft
   - 
-    title: Python प्रोग्रामिंग इंटरफेस का उपयोग करें
+    title: Use the Python programming interface
   - 
-    title: आपके चलने के साथ-साथ ब्लॉक गिराना
+    title: Dropping blocks as you walk
   - 
-    title: TNT ब्लॉक के साथ खेलना
+    title: Playing with TNT blocks
   - 
-    title: बहते लावा के साथ मज़ा।
+    title: Fun with flowing lava.
   - 
-    title: 'चुनौती: अपने ड्रम की पोशाक बदलें'
+    title: What next?
