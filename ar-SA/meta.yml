@@ -9,18 +9,18 @@ listed: true
 ingredient: false
 copyedit: true
 curriculum: 2, design-0, programming-2, phys-comp-0, manufacture-0, community-0
-interests: ألعاب
+interests: games
 technologies: python
-site_areas: codeclub, python
+site_areas: projects
 hardware: ''
 software: python
 version: 3
 last_tested: 2017-01-01
 steps:
   - 
-    title: المقدمة
+    title: Introduction
   - 
-    title: ما ستحتاج إليه
+    title: What you will need
   - 
     title: Getting Started with Minecraft Pi
   - 
@@ -34,4 +34,4 @@ steps:
   - 
     title: Fun with flowing lava.
   - 
-    title: ما التالي؟
+    title: What next?
