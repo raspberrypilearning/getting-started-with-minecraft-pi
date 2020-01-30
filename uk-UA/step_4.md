@@ -17,9 +17,9 @@ Use the mouse to look around and use the following keys on the keyboard:
 |      W       |       Forward        |
 |      A       |         Left         |
 |      S       |       Backward       |
-|      D       |       Ліворуч        |
+|      D       |        Right         |
 |      E       |      Inventory       |
-|    Космос    |         Jump         |
+|    Space     |         Jump         |
 | Double Space |      Fly / Fall      |
 |     Esc      |  Pause / Game menu   |
 |     Tab      | Release mouse cursor |
