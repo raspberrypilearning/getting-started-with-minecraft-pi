@@ -1,4 +1,4 @@
-## Co budeš potřebovat
+## What you will need
 
 ### Software
 
