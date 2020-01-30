@@ -12,17 +12,17 @@ You are now in a game of Minecraft! Go walk around, hack things, and build thing
 
 Use the mouse to look around and use the following keys on the keyboard:
 
-|      Key      |        Action        |
-|:-------------:|:--------------------:|
-|       W       |       Forward        |
-|       A       |         Left         |
-|       S       |       Backward       |
-|       D       |        Right         |
-|       E       |      Inventory       |
-| Verdensrommet |         Jump         |
-| Double Space  |      Fly / Fall      |
-|      Esc      |  Pause / Game menu   |
-|      Tab      | Release mouse cursor |
+|     Key      |        Action        |
+|:------------:|:--------------------:|
+|      W       |       Forward        |
+|      A       |         Left         |
+|      S       |       Backward       |
+|      D       |        Right         |
+|      E       |      Inventory       |
+|    Space     |         Jump         |
+| Double Space |      Fly / Fall      |
+|     Esc      |  Pause / Game menu   |
+|     Tab      | Release mouse cursor |
 
 You can select an item from the quick draw panel with the mouse's scroll wheel (or use the numbers on your keyboard), or press `E` and select something from the inventory.
 
