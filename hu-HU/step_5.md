@@ -9,11 +9,11 @@ If you want create a file, go to `File > New window` and `File > Save`. You'll p
 Start by importing the Minecraft library, creating a connection to the game and testing it by posting the message "Hello world" to the screen:
 
 ```python
-from mcpi.minecraft import Minecraft 
+from mcpi.minecraft import Minecraft
 
-mc = Minecraft.create () 
+mc = Minecraft.create()
 
-mc.postToChat ("Hello world")
+mc.postToChat("Hello world")
 ```
 
 If you're entering commands directly into the Python window, just hit `Enter` after each line. If it's a file, save with `Ctrl + S` and run with `F5`. When your code runs, you should see your message on screen in the game.
@@ -58,9 +58,8 @@ Try teleporting to somewhere else!
 You can place a single block at a given set of coordinates with `mc.setBlock()`:
 
 ```python
-x, y, z = mc.player.getPos () 
-
-mc.setBlock (x + 1, y, z, 1)
+x, y, z = mc.player.getPos()
+mc.setBlock(x+1, y, z, 1)
 ```
 
 Now a stone block should appear beside where you're standing. If it's not immediately in front of you it may be beside or behind you. Return to the Minecraft window and use the mouse to spin around on the spot until you see a grey block directly in front of you.
@@ -79,7 +78,7 @@ Other blocks you can try:
 Now with the block in sight, try changing it to something else:
 
 ```python
-mc.setBlock (x + 1, y, z, 2)
+mc.setBlock(x+1, y, z, 2)
 ```
 
 You should see the grey stone block change in front of your eyes!
