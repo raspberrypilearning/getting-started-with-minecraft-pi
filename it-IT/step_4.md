@@ -18,8 +18,8 @@ Use the mouse to look around and use the following keys on the keyboard:
 |      A       |         Left         |
 |      S       |       Backward       |
 |      D       |        Right         |
-|      E       |      Inventario      |
-|    Spazio    |         Jump         |
+|      E       |      Inventory       |
+|    Space     |         Jump         |
 | Double Space |      Fly / Fall      |
 |     Esc      |  Pause / Game menu   |
 |     Tab      | Release mouse cursor |
