@@ -1,6 +1,6 @@
-## Amire szükséged lesz
+## What you will need
 
-### Szoftver
+### Software
 
 #### Software installation
 
