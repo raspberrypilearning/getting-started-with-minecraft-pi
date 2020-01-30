@@ -1,4 +1,4 @@
-## 挑戰：改變鼓的造型
+## What next?
 
 There's plenty you can do now you know your way around the Minecraft world and how to use the Python interface.
 
