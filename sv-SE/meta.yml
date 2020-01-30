@@ -3,24 +3,24 @@ title: Getting Started with Minecraft Pi
 hero_image: images/banner.png
 description: Get your first taste of programming the world of Minecraft
 original_url: https://raspberrypi.org/learning/getting-started-with-minecraft-pi
-theme: gul
+theme: yellow
 duration: 2
 listed: true
 ingredient: false
 copyedit: true
-curriculum: 2, design-0, programmering-2, phys-comp-0, tillverkning-0, community-0
-interests: spel
+curriculum: 2, design-0, programming-2, phys-comp-0, manufacture-0, community-0
+interests: games
 technologies: python
-site_areas: projekt
+site_areas: projects
 hardware: ''
 software: python
 version: 3
 last_tested: 2017-01-01
 steps:
   - 
-    title: Introduktion
+    title: Introduction
   - 
-    title: Vad du kommer att behöva
+    title: What you will need
   - 
     title: Getting Started with Minecraft Pi
   - 
