@@ -1,10 +1,10 @@
-## 만들 작품
+## What you will make
 
 In this resource you will explore the virtual world of Minecraft Pi, the special edition of Minecraft made for Raspberry Pi.
 
 You will learn how to control the player, manually build with blocks and use the Python interface to manipulate the world around you.
 
-## 배울 지식
+## What you will learn
 
 By following this resource with your Raspberry Pi you will learn:
 
@@ -16,4 +16,4 @@ By following this resource with your Raspberry Pi you will learn:
 
 This resource covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](https://www.raspberrypi.org/curriculum/):
 
-- [기본 프로그래밍 구조를 이용해서 간단한 프로그램을 만듭니다](https://www.raspberrypi.org/curriculum/programming/creator)
+- [Use basic programming constructs to create simple programs](https://www.raspberrypi.org/curriculum/programming/creator)
