@@ -1,6 +1,6 @@
-## Neye ihtiyacınız olacak
+## What you will need
 
-### Yazılım
+### Software
 
 #### Software installation
 
