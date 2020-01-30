@@ -18,9 +18,9 @@ version: 3
 last_tested: 2017-01-01
 steps:
   - 
-    title: Увод
+    title: Introduction
   - 
-    title: Шта ће ти требати
+    title: What you will need
   - 
     title: Getting Started with Minecraft Pi
   - 
@@ -34,4 +34,4 @@ steps:
   - 
     title: Fun with flowing lava.
   - 
-    title: Шта је следеће?
+    title: What next?
