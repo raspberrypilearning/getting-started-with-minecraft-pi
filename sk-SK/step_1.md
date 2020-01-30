@@ -1,19 +1,19 @@
-## Čo vytvoríš
+## What you will make
 
-V tomto materiáli preskúmate virtuálny svet Minecraft Pi - špeciálne vydanie Minecraft-u pre Raspberry Pi.
+In this resource you will explore the virtual world of Minecraft Pi, the special edition of Minecraft made for Raspberry Pi.
 
-Naučíte sa ovládať hráča, manuálne stavať bloky a používať rozhranie jazyka Python na manipuláciu so svetom okolo vás.
+You will learn how to control the player, manually build with blocks and use the Python interface to manipulate the world around you.
 
-## Čo sa naučíš
+## What you will learn
 
-Nasledovaním tohto zdroja s Raspberry Pi sa naučíte:
+By following this resource with your Raspberry Pi you will learn:
 
-- Ako spustiť Minecraft Pi a vytvoriť nový svet
-- Ako použiť programovacie prostredie jazyka Python IDLE na pripojenie k Minecraft Pi
-- Ako používať Minecraft Python API na odosielanie textu do okna konverzácie, zistiť súradníce hráča, teleportovať sa a stavať budovy
-- Ako používať premenné na ukladanie ID pre rôzne typy blokov
-- Experimentovať s umiestňovaním rôznych typov blokov so špeciálnymi atribútmi
+- How to access Minecraft Pi and create a new world
+- How to use the Python programming environment IDLE to connect to Minecraft Pi
+- How to use the Minecraft Python API to post text to the chat window, find the player's coordinates, teleport and build structures
+- How to use variables to store IDs for different types of blocks
+- Experimenting with placing different types of blocks with special attributes
 
-Tento materiál pokrýva časti z nasledujúcich zdrojov kurikula [Raspberry Pi Digital Making](https://www.raspberrypi.org/curriculum/):
+This resource covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](https://www.raspberrypi.org/curriculum/):
 
-- [Používanie základných programovacích konštrukcií pre tvorbu jednoduchých programov](https://www.raspberrypi.org/curriculum/programming/creator)
+- [Use basic programming constructs to create simple programs](https://www.raspberrypi.org/curriculum/programming/creator)
