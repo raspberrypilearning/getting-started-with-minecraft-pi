@@ -1,6 +1,6 @@
-## Que necessitaràs
+## What you will need
 
-### Programari
+### Software
 
 #### Software installation
 
