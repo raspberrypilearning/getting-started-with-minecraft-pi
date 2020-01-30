@@ -1,6 +1,6 @@
-## Τι θα χρειαστείς
+## What you will need
 
-### Λογισμικό
+### Software
 
 #### Software installation
 
