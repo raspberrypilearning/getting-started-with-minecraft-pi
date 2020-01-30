@@ -1,12 +1,12 @@
-## Python प्रोग्रामिंग इंटरफेस का उपयोग करें
+## Use the Python programming interface
 
-जब Minecraft चल रहा हो, और दुनिया तैयार हो, तो `Tab` (टैब) कुंजी को दबाकर अपना ध्यान गेम से हटा लें, जिससे आपका माउस मुक्त हो जाएगा। एप्लीकेशन मेनू से Python 3 खोलें और विंडोज़ को खिसकाएँ ताकि दोनों एक दूसरे के आस-पास हों।
+With Minecraft running, and the world created, bring your focus away from the game by pressing the `Tab` key, which will free your mouse. Open Python 3 from the application menu and move the windows so they're side-by-side.
 
-आप कमांड या तो सीधे Python विंडो में टाइप कर सकते हैं या एक फाइल बना सकते हैं ताकि आप अपना कोड सहेज सकें और इसे बाद में फिर से चला सकें।
+You can either type commands directly into the Python window or create a file so you can save your code and run it again another time.
 
-यदि आप एक फ़ाइल बनाना चाहते हैं तो `File > New window` और `File > Save` पर जाएँ। आप शायद इसे अपने होम फ़ोल्डर या किसी नए प्रोजेक्ट फ़ोल्डर में सहेजना चाहेंगे।
+If you want create a file, go to `File > New window` and `File > Save`. You'll probably want to save this in your home folder or a new project folder.
 
-Minecraft लाइब्रेरी को आयात करके, गेम से कनेक्शन बनाकर और स्क्रीन पर "Hello world" ("हैलो वर्ल्ड") संदेश पोस्ट करके इसका परीक्षण करना आरंभ करें:
+Start by importing the Minecraft library, creating a connection to the game and testing it by posting the message "Hello world" to the screen:
 
 ```python
 from mcpi.minecraft import Minecraft
@@ -16,90 +16,90 @@ mc = Minecraft.create()
 mc.postToChat("Hello world")
 ```
 
-यदि आप सीधे Python विंडो में कमांड दर्ज कर रहे हैं, तो बस प्रत्येक पंक्ति के बाद `Enter` (एंटर) दबाएँ। यदि यह फ़ाइल है, तो `Ctrl + S` के साथ सहेजें और `F5` के साथ चलाएँ। जब आपका कोड चलता है, तो आपको गेम में स्क्रीन पर अपना संदेश दिखना चाहिए।
+If you're entering commands directly into the Python window, just hit `Enter` after each line. If it's a file, save with `Ctrl + S` and run with `F5`. When your code runs, you should see your message on screen in the game.
 
 ![](images/helloworld.gif)
 
-### अपनी लोकेशन ढूँढें
+### Find your location
 
-अपनी लोकेशन ढूँढने के लिए, टाइप करें:
+To find your location, type:
 
 ```python
 pos = mc.player.getPos()
 ```
 
-`pos` में अब आपकी लोकेशन सम्मिलित है; `pos.x`, `pos.y` और `pos.z` के साथ कोऑर्डिनेट्स (निर्देशांकों) के सेट के प्रत्येक हिस्से को एक्सेस करें।
+`pos` now contains your location; access each part of the set of coordinates with `pos.x`, `pos.y` and `pos.z`.
 
-वैकल्पिक रूप से, अलग-अलग वेरिएबल में निर्देशांक प्राप्त करने का एक अच्छा तरीका है Python की अनपैकिंग तकनीक का उपयोग करना:
+Alternatively, a nice way to get the coordinates into separate variables is to use Python's unpacking technique:
 
 ```python
 x, y, z = mc.player.getPos()
 ```
 
-अब `x`, `y`, और `z` आपकी स्थिति निर्देशांक के प्रत्येक भाग में शामिल हैं। `x` और `z` चलने की दिशाएँ (आगे/पीछे और बाएँ/दाएँ) हैं और `y` ऊपर/नीचे है।
+Now `x`, `y`, and `z` contain each part of your position coordinates. `x` and `z` are the walking directions (forward/back and left/right) and `y` is up/down.
 
-ध्यान दें कि `getPos()` उस समय खिलाड़ी के स्थान को दर्शाता है, और यदि आप स्थिति को बदल देते हैं तो आपको फ़ंक्शन को फिर से कॉल करना होगा या संगृहीत लोकेशन का उपयोग करना होगा।
+Note that `getPos()` returns the location of the player at the time, and if you move position you have to call the function again or use the stored location.
 
-### टेलीपोर्ट
+### Teleport
 
-अपनी वर्तमान लोकेशन को ढूँढने के साथ-साथ आप टेलीपोर्ट करने के लिए कोई विशेष स्थान निर्दिष्ट कर सकते हैं।
+As well as finding out your current location you can specify a particular location to teleport to.
 
 ```python
 x, y, z = mc.player.getPos()
 mc.player.setPos(x, y+100, z)
 ```
 
-यह आपके खिलाड़ी को हवा में 100 स्पेस तक पहुँचाएगा। इसका मतलब यह होगा कि आप आकाश के बीच में टेलीपोर्ट करेंगे और सीधे नीचे वहाँ तक गिर जाएँगे, जहाँ से आपने शुरू किया था।
+This will transport your player to 100 spaces in the air. This will mean you'll teleport to the middle of the sky and fall straight back down to where you started.
 
-किसी और जगह पर टेलीपोर्ट करने का प्रयास करें!
+Try teleporting to somewhere else!
 
-### ब्लॉक सेट करें
+### Set block
 
-आप `mc.setBlock()` के साथ निर्देशांक के दिए गए किसी सेट पर केवल एक अकेला ब्लॉक डाल सकते हैं:
+You can place a single block at a given set of coordinates with `mc.setBlock()`:
 
 ```python
 x, y, z = mc.player.getPos()
 mc.setBlock(x+1, y, z, 1)
 ```
 
-अब आप जहाँ खड़े हैं, उसके बगल में अब एक पत्थर का ब्लॉक दिखाई देना चाहिए। यदि यह एकदमआपके सामने नहीं है तो यह आपके बगल में या पीछे हो सकता है। Minecraft विंडो पर वापस आएँ और उस जगह पर घूमने के लिए स्पिन करने के लिए तब तक माउस का उपयोग करें जब तक आप सीधे अपने सामने एक भूरे रंग के ब्लॉक को न देख लें।
+Now a stone block should appear beside where you're standing. If it's not immediately in front of you it may be beside or behind you. Return to the Minecraft window and use the mouse to spin around on the spot until you see a grey block directly in front of you.
 
 ![](images/mcpi-setblock.png)
 
-`set block` (ब्लॉक सेट करें) के लिए दिए गए तर्क हैं `x`, `y`, `z` और `id`। `(x, y, z)` दुनिया में स्थिति को संदर्भित करता है (हमने उस स्थान से एक ब्लॉक दूर निर्दिष्ट किया जहाँ से खिलाड़ी `x + 1`) के साथ खड़ा है और `id` ब्लॉक के उस प्रकार को संदर्भित करता है जिसे हम रखना चाहते हैं। `1` पत्थर है।
+The arguments passed to `set block` are `x`, `y`, `z` and `id`. The `(x, y, z)` refers to the position in the world (we specified one block away from where the player is standing with `x + 1`) and the `id` refers to the type of block we'd like to place. `1` is stone.
 
-अन्य ब्लॉक जिन्हें आप आजमा सकते हैं:
+Other blocks you can try:
 
-    हवा:   0
-    घास: 2
-    गंदगी:  3
+    Air:   0
+    Grass: 2
+    Dirt:  3
     
 
-अब ब्लॉक दिखाई देने पर, इसे किसी और चीज़ में बदलने का प्रयास करें:
+Now with the block in sight, try changing it to something else:
 
 ```python
 mc.setBlock(x+1, y, z, 2)
 ```
 
-आपको अपनी आँखों के सामने भूरे पत्थर का ब्लॉक बदलता हुआ दिखना चाहिए!
+You should see the grey stone block change in front of your eyes!
 
 ![](images/mcpi-setblock2.png)
 
-#### ब्लॉक स्थिरांक
+#### Block constants
 
-आप अपने ब्लॉक सेट करने के लिए इनबिल्ट ब्लॉक स्थिरांक का उपयोग कर सकते हैं, बशर्ते आप उनके नाम जानते हों। हालांकि आपको पहले एक और `import` (आयात) लाइन की आवश्यकता होगी।
+You can use a inbuilt block constants to set your blocks, if you know their names. You'll need another `import` line first though.
 
 ```python
-mcpi (एमसीपीआई) आयात ब्लॉक से
+from mcpi import block
 ```
 
-अब आप किसी ब्लॉक को रखने के लिए निम्नलिखित लिख सकते हैं:
+Now you can write the following to place a block:
 
 ```python
 mc.setBlock(x+3, y, z, block.STONE.id)
 ```
 
-ब्लॉक आईडी अनुमान लगाने में बहुत आसान होते हैं, बस सभी अक्षर कैपिटल में लिखें, लेकिन यहाँ कुछ उदाहरण दिए गए हैं जिनसे आप उनके नामकरण करने के तरीके से परिचित हो सकें।
+Block ids are pretty easy to guess, just use ALL CAPS, but here are a few examples to get you used to the way they are named.
 
     WOOD_PLANKS
     WATER_STATIONARY
@@ -109,45 +109,45 @@ mc.setBlock(x+3, y, z, block.STONE.id)
     NETHER_REACTOR_CORE
     
 
-### ब्लॉक वेरिएबल के रूप में
+### Block as variable
 
-यदि आपको ब्लॉक की आईडी पता है तो यह इसे वेरिएबल के रूप में सेट करने के लिए उपयोगी हो सकती है। आप नाम का उपयोग कर सकते हैं या integer id (पूरे नाम की पहचान) का।
+If you know the id of a block it can be useful to set it as a variable. You can use the name or the integer id.
 
 ```python
 dirt = 3
 mc.setBlock(x, y, z, dirt)
 ```
 
-या
+or
 
 ```python
 dirt = block.DIRT.id
 mc.setBlock(x, y, z, dirt)
 ```
 
-### विशेष ब्लॉक
+### Special blocks
 
-कुछ ऐसे ब्लॉक हैं जिनमें अतिरिक्त गुण हैं, जैसे ऊन जिसमें एक अतिरिक्त सेटिंग है जिससे आप रंग निर्दिष्ट कर सकते हैं। इसे सेट करने के लिए वैकल्पिक चौथे पैरामीटर `setBlock` (ब्लॉक सेट करें) का उपयोग करें।
+There are some blocks which have extra properties, such as Wool which has an extra setting you can specify the colour. To set this use the optional fourth parameter in `setBlock`:
 
 ```python
 wool = 35
 mc.setBlock(x, y, z, wool, 1)
 ```
 
-यहाँ चौथा पैरामीटर `1` ऊन के रंग को नारंगी रंग के रूप में सेट करता है। चौथे पैरामीटर के बिना यह डिफ़ॉल्ट (`0`) पर सेट है जो सफेद है। कुछ और रंग हैं:
+Here the fourth parameter `1` sets the wool colour to orange. Without the fourth parameter it is set to the default (`0`) which is white. Some more colours are:
 
-    2: मैजेंटा
-    3: लाइट ब्लू
-    4: पीला
+    2: Magenta
+    3: Light Blue
+    4: Yellow
     
 
-कुछ और संख्याओं को आजमाएँ और ब्लॉक को बदलता हुआ देखें!
+Try some more numbers and watch the block change!
 
-अतिरिक्त गुणों वाले अन्य ब्लॉक हैं लकड़ी (`17`): ओक (बलूत), स्प्रूस (देवदार), बर्च (बेंत), आदि; लंबी घास (`31`): झाड़ी, घास, फर्न; मशाल (`50`): पूर्व, पश्चिम, उत्तर, दक्षिण की ओर संकेत करने वाले; तथा और बहुत से। पूर्ण विवरण के लिए [API reference](http://www.stuffaboutcode.com/p/minecraft-api-reference.html) (API संदर्भ) देखें।
+Other blocks which have extra properties are wood (`17`): oak, spruce, birch, etc; tall grass (`31`): shrub, grass, fern; torch (`50`): pointing east, west, north, south; and more. See the [API reference](http://www.stuffaboutcode.com/p/minecraft-api-reference.html) for full details.
 
-### एकाधिक ब्लॉक सेट करें
+### Set multiple blocks
 
-`setBlock` के साथ एक अकेला ब्लॉक बनाने के साथ-साथ आप `setBlocks` के साथ एक ही बार में काफी सारी जगह भी भर सकते हैं:
+As well as setting a single block with `setBlock` you can fill in a volume of space in one go with `setBlocks`:
 
 ```python
 stone = 1
@@ -155,8 +155,8 @@ x, y, z = mc.player.getPos()
 mc.setBlocks(x+1, y+1, z+1, x+11, y+11, z+11, stone)
 ```
 
-इससे 10 x 10 x 10 घन ठोस पत्थर भर जाएगा।
+This will fill in a 10 x 10 x 10 cube of solid stone.
 
 ![](images/mcpi-setblocks.png)
 
-आप `setBlocks` फंक्शन के साथ बड़ी मात्रा में ब्लॉक बना सकते हैं लेकिन इन्हें तैयार करने में अधिक समय लग सकता है!
+You can create bigger volumes with the `setBlocks` function but it may take longer to generate!
