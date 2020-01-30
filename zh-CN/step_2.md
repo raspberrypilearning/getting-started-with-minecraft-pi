@@ -1,6 +1,6 @@
-## 项目准备
+## What you will need
 
-### 软件
+### Software
 
 #### Software installation
 
