@@ -15,19 +15,19 @@ sudo apt-get update
 sudo apt-get install minecraft-pi
 ```
 
-Sobald dies abgeschlossen ist, sollten Minecraft Pi und die Python-Bibliothek installiert werden.
+Sobald dies abgeschlossen ist, sollten Minecraft Pi und die Python-Bibliothek installiert sein.
 
-#### Test Minecraft
+#### Minecraft testen
 
-To run Minecraft double click the desktop icon or enter `minecraft-pi` in the terminal.
+Um Minecraft auszuführen, doppelklicke auf das Desktop-Symbol oder gib `minecraft-pi` in das Terminal ein.
 
 ![](images/mcpi-start.png)
 
-When Minecraft Pi has loaded, click on **Start Game**, followed by **Create new**. You'll notice that the containing window is offset slightly. This means to drag the window around you have to grab the title bar behind the Minecraft window.
+Wenn Minecraft Pi geladen wurde, klicke auf **Start Game**, danach auf **Create new**. Du wirst feststellen, dass das enthaltene Fenster leicht versetzt ist. Dies bedeutet, dass du zum Ziehen des Fensters die Titelleiste hinter dem Minecraft-Fenster greifen musst.
 
 ![](images/mcpi-game.png)
 
-You are now in a game of Minecraft!
+Du bist jetzt in einem Minecraft-Spiel!
 
 #### Test Python
 
