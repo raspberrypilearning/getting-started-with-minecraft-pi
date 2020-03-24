@@ -1,21 +1,21 @@
-## What you will need
+## Was du brauchen wirst
 
 ### Software
 
 #### Software installation
 
-Minecraft has been installed by default in Raspbian since September 2014.
+Minecraft ist seit September 2014 standardmäßig in Raspbian installiert.
 
 ![Minecraft Pi desktop icon](images/minecraft-pi-shortcut.png)
 
-If you're using an older version of Raspbian, open a terminal window and type the following commands (you must be online):
+Wenn Sie eine ältere Version von Raspbian verwenden, öffnen Sie ein Terminalfenster und geben Sie die folgenden Befehle ein (Sie müssen online sein):
 
 ```bash
 sudo apt-get update
 sudo apt-get install minecraft-pi
 ```
 
-Once that finishes, Minecraft Pi and the Python library should be installed.
+Sobald dies abgeschlossen ist, sollten Minecraft Pi und die Python-Bibliothek installiert werden.
 
 #### Test Minecraft
 
