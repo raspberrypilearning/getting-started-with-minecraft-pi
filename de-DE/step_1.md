@@ -14,6 +14,6 @@ By following this resource with your Raspberry Pi you will learn:
 - Das Verwenden von Variablen zum Speichern von IDs für verschiedene Arten von Blöcken
 - Experimenting with placing different types of blocks with special attributes
 
-This resource covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](https://www.raspberrypi.org/curriculum/):
+Diese Ressource umfasst Elemente aus den folgenden Abschnitten des [Raspberry Pi Digital Making Curriculum](https://www.raspberrypi.org/curriculum/):
 
-- [Use basic programming constructs to create simple programs](https://www.raspberrypi.org/curriculum/programming/creator)
+- [Verwendung elementarer Programmiersprachelemente zur Erstellung einfacher Programme](https://www.raspberrypi.org/curriculum/programming/creator)
