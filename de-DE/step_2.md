@@ -2,11 +2,11 @@
 
 ### Software
 
-#### Software installation
+#### Softwareinstallation
 
 Minecraft ist seit September 2014 standardmäßig in Raspbian installiert.
 
-![Minecraft Pi desktop icon](images/minecraft-pi-shortcut.png)
+![Minecraft Pi Desktop-Symbol](images/minecraft-pi-shortcut.png)
 
 Wenn Sie eine ältere Version von Raspbian verwenden, öffnen Sie ein Terminalfenster und geben Sie die folgenden Befehle ein (Sie müssen online sein):
 
@@ -29,26 +29,26 @@ Wenn Minecraft Pi geladen wurde, klicke auf **Start Game**, danach auf **Create 
 
 Du bist jetzt in einem Minecraft-Spiel!
 
-#### Test Python
+#### Python testen
 
-With Minecraft running, and the world created, bring your focus away from the game by pressing the `Tab` key, which will free your mouse. Open Python 3 (IDLE) on the Desktop and move the windows so they're side-by-side.
+Wenn Minecraft läuft und die Welt erstellt ist, lenke deinen Fokus vom Spiel weg, indem du die Taste `Tab` drückst, wodurch der Mauszeiger frei wird. Öffne Python 3 (IDLE) auf dem Desktop und verschiebe die Fenster so, dass sie nebeneinander liegen.
 
-You can either type commands directly in to the Python window or create a file so you can save your code and run it again another time.
+Du kannst entweder Befehle direkt in das Python-Fenster eingeben oder eine Datei erstellen, um deinen Code zu speichern und ein anderes Mal erneut auszuführen.
 
-If you want create a file go to `File > New window` and `File > Save`. You'll probably want to save this in your home folder or a new project folder.
+Wenn du eine Datei erstellen möchtest, gehe zu `Datei > Neues Fenster` und `Datei > Speichern`. Du möchtest das wahrscheinlich in deinem Home-Ordner oder einem neuen Projektordner speichern.
 
-Start by importing the Minecraft library, creating a connection to the game and testing it by posting the message "Hello world" to the screen:
+Importiere zunächst die Minecraft-Bibliothek, stelle eine Verbindung zum Spiel her und teste sie, indem du die Meldung "Hello World" auf den Bildschirm schreibst:
 
 ```python
 from mcpi import minecraft
 
 mc = minecraft.Minecraft.create()
 
-mc.postToChat("Hello world")
+mc.postToChat("Hello World")
 ```
 
-If you're entering commands directly in to the Python window, just hit `Enter` after each line. If it's a file, save with `Ctrl + S` and run with `F5`. When your code runs, you should see your message on screen in the game.
+Wenn du Befehle direkt in das Python-Fenster eingibst, drücke einfach nach jeder Zeile `Enter`. Wenn es sich um eine Datei handelt, speichere sie mit `Strg + S` und führe sie mit `F5` aus. Wenn dein Code ausgeführt wird, sollte deine Nachricht im Spiel auf dem Bildschirm angezeigt werden.
 
 ![](images/mcpi-idle.png)
 
-If you see "Hello world" in the Minecraft window, you're good to proceed to the next step.
+Wenn du im Minecraft-Fenster "Hello World" siehst, kannst du mit dem nächsten Schritt fortfahren.
