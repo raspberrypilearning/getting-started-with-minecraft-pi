@@ -1,6 +1,6 @@
-## Fun with flowing lava.
+## Spaß mit fließender Lava.
 
-One block that's a lot of fun to play with is flowing lava.
+Ein Block, mit dem es viel Spaß macht zu spielen, ist fließende Lava.
 
 ```python
 from mcpi.minecraft import Minecraft
@@ -14,9 +14,9 @@ lava = 10
 mc.setBlock(x+3, y+3, z, lava)
 ```
 
-Find the block you've just placed, and you should see lava flowing from the block to the ground.
+Suche den Block, den du gerade platziert hast und du solltest sehen, wie Lava vom Block zum Boden fließt.
 
-The cool thing about lava is that when it cools down it becomes rock. Move to another location in your world and try this:
+Das Coole an Lava ist, dass sie beim Abkühlen zu Fels wird. Bewege dich an einen anderen Ort in deiner Welt und versuche Folgendes:
 
 ```python
 from mcpi.minecraft import Minecraft
@@ -27,17 +27,17 @@ mc = Minecraft.create()
 x, y, z = mc.player.getPos()
 
 lava = 10
-water = 8
-air = 0
+wasser = 8
+luft = 0
 
 mc.setBlock(x+3, y+3, z, lava)
 sleep(20)
-mc.setBlock(x+3, y+5, z, water)
+mc.setBlock(x+3, y+5, z, wasser)
 sleep(4)
-mc.setBlock(x+3, y+5, z, air)
+mc.setBlock(x+3, y+5, z, luft)
 
 ```
 
-You can adjust the `sleep` parameters to allow more or less lava to flow.
+Du kannst die `sleep`-Parameter anpassen, damit mehr oder weniger Lava fließen kann.
 
-![lava](images/lava.png)
+![Lava](images/lava.png)
