@@ -1,162 +1,162 @@
-## Use the Python programming interface
+## Die Python-Programmierschnittstelle verwenden
 
-With Minecraft running, and the world created, bring your focus away from the game by pressing the `Tab` key, which will free your mouse. Open Python 3 from the application menu and move the windows so they're side-by-side.
+Wenn Minecraft läuft und die Welt erschaffen wurde, bringe deinen Fokus vom Spiel weg, indem du die Taste `Tab` drückst, wodurch deine Maus frei wird. Öffne Python 3 über das Anwendungsmenü und verschiebe die Fenster so, dass sie nebeneinander liegen.
 
-You can either type commands directly into the Python window or create a file so you can save your code and run it again another time.
+Du kannst entweder Befehle direkt in das Python-Fenster eingeben oder eine Datei erstellen, um deinen Code zu speichern und ein anderes Mal erneut auszuführen.
 
-If you want create a file, go to `File > New window` and `File > Save`. You'll probably want to save this in your home folder or a new project folder.
+Wenn du eine Datei erstellen möchtest, gehe zu `Datei > Neues Fenster` und `Datei > Speichern`. Du möchtest das wahrscheinlich in deinem Home-Ordner oder einem neuen Projektordner speichern.
 
-Start by importing the Minecraft library, creating a connection to the game and testing it by posting the message "Hello world" to the screen:
+Importiere zunächst die Minecraft-Bibliothek, stelle eine Verbindung zum Spiel her und teste sie, indem du die Meldung "Hallo Welt" auf den Bildschirm schreibst:
 
 ```python
 from mcpi.minecraft import Minecraft
 
 mc = Minecraft.create()
 
-mc.postToChat("Hello world")
+mc.postToChat("Hallo Welt")
 ```
 
-If you're entering commands directly into the Python window, just hit `Enter` after each line. If it's a file, save with `Ctrl + S` and run with `F5`. When your code runs, you should see your message on screen in the game.
+Wenn du Befehle direkt in das Python-Fenster eingibst, drücke einfach nach jeder Zeile `Enter`. Wenn es sich um eine Datei handelt, speichere sie mit `Strg + S` und führe sie mit `F5` aus. Wenn dein Code ausgeführt wird, sollte deine Nachricht im Spiel auf dem Bildschirm angezeigt werden.
 
 ![](images/helloworld.gif)
 
-### Find your location
+### Finde deinen Standort
 
-To find your location, type:
+Um deinen Standort herauszufinden, tippe folgendes ein:
 
 ```python
 pos = mc.player.getPos()
 ```
 
-`pos` now contains your location; access each part of the set of coordinates with `pos.x`, `pos.y` and `pos.z`.
+`pos` enthält jetzt deinen Standort; Greife auf jeden Teil des Koordinatensatzes mit `pos.x`, `pos.y` und `pos.z` zu.
 
-Alternatively, a nice way to get the coordinates into separate variables is to use Python's unpacking technique:
+Alternativ kann man die Koordinaten in getrennte Variablen umwandeln, indem man Pythons Auspackungstechnik verwendet:
 
 ```python
 x, y, z = mc.player.getPos()
 ```
 
-Now `x`, `y`, and `z` contain each part of your position coordinates. `x` and `z` are the walking directions (forward/back and left/right) and `y` is up/down.
+Jetzt enthalten `x`, `y`und `z` jeden Teil deiner Positionskoordinaten. `x` und `z` sind die Laufrichtungen (vorwärts/rückwärts und links/rechts) und `y` ist oben/unten.
 
-Note that `getPos()` returns the location of the player at the time, and if you move position you have to call the function again or use the stored location.
+Beachte, dass `getPos()` den aktuellen Standort des Spielers zurückgibt. Wenn du die Position veränderst, musst du die Funktion erneut aufrufen oder den gespeicherten Standort verwenden.
 
-### Teleport
+### Teleportieren
 
-As well as finding out your current location you can specify a particular location to teleport to.
+Du kannst nicht nur deinen aktuellen Standort ermitteln, sondern auch eine bestimmte Stelle angeben, zu der du teleportieren möchten.
 
 ```python
 x, y, z = mc.player.getPos()
 mc.player.setPos(x, y+100, z)
 ```
 
-This will transport your player to 100 spaces in the air. This will mean you'll teleport to the middle of the sky and fall straight back down to where you started.
+Das wird deinen Spieler 100 Felder in die Luft transportieren. Das bedeutet, dass du in die Mitte des Himmels teleportiert wirst und direkt wieder dorthin zurück fällst, wo du gestartet bist.
 
-Try teleporting to somewhere else!
+Versuche dich an einen anderen Ort zu teleportieren!
 
-### Set block
+### Block setzen
 
-You can place a single block at a given set of coordinates with `mc.setBlock()`:
+Du kannst einen einzelnen Block an einem bestimmten Koordinatensatz mit `mc.setBlock()` setzen:
 
 ```python
 x, y, z = mc.player.getPos()
 mc.setBlock(x+1, y, z, 1)
 ```
 
-Now a stone block should appear beside where you're standing. If it's not immediately in front of you it may be beside or behind you. Return to the Minecraft window and use the mouse to spin around on the spot until you see a grey block directly in front of you.
+Jetzt sollte ein Steinblock neben deiner Position erscheinen. Wenn er nicht unmittelbar vor dir liegt, kann er neben oder hinter dir sein. Kehre zum Minecraft-Fenster zurück und drehe dich mit der Maus an Ort und Stelle, bis du einen grauen Block direkt vor dir siehst.
 
 ![](images/mcpi-setblock.png)
 
-The arguments passed to `set block` are `x`, `y`, `z` and `id`. The `(x, y, z)` refers to the position in the world (we specified one block away from where the player is standing with `x + 1`) and the `id` refers to the type of block we'd like to place. `1` is stone.
+Die an `setBlock` übergebenen Argumente sind `x`, `y`, `z` und `id`. `(x, y, z)` bezieht sich auf die Position in der Welt (wir haben einen Block von der Stelle angegeben, an der der Spieler steht mit `x + 1`) und die `id` bezieht sich auf die Art des Blocks, den wir platzieren wollen. `1` ist Stein.
 
-Other blocks you can try:
+Andere Blöcke, die du ausprobieren kannst:
 
-    Air:   0
-    Grass: 2
-    Dirt:  3
+    Luft: 0
+    Gras: 2
+    Erde: 3
     
 
-Now with the block in sight, try changing it to something else:
+Versuche nun, mit dem Block im Blick, ihn in etwas anderes zu verwandeln:
 
 ```python
 mc.setBlock(x+1, y, z, 2)
 ```
 
-You should see the grey stone block change in front of your eyes!
+Du solltest sehen, wie sich der graue Steinblock vor deinen Augen verändert!
 
 ![](images/mcpi-setblock2.png)
 
-#### Block constants
+#### Blockkonstanten
 
-You can use a inbuilt block constants to set your blocks, if you know their names. You'll need another `import` line first though.
+Du kannst eine eingebaute Blockkonstante verwenden, um deine Blöcke zu setzen, wenn du deren Namen kennst. Du benötigst jedoch zuerst eine weitere `Import` Zeile.
 
 ```python
 from mcpi import block
 ```
 
-Now you can write the following to place a block:
+Jetzt kannst du Folgendes schreiben, um einen Block zu platzieren:
 
 ```python
 mc.setBlock(x+3, y, z, block.STONE.id)
 ```
 
-Block ids are pretty easy to guess, just use ALL CAPS, but here are a few examples to get you used to the way they are named.
+Block-IDs sind ziemlich einfach zu erraten. Verwende einfach NUR GROSSBUCHSTABEN (und die englischen Namen der Blöcke). Hier sind einige Beispiele, um dich an die Art und Weise zu gewöhnen, wie sie benannt sind.
 
-    WOOD_PLANKS
-    WATER_STATIONARY
-    GOLD_ORE
-    GOLD_BLOCK
-    DIAMOND_BLOCK
-    NETHER_REACTOR_CORE
+    WOOD_PLANKS #Holzplanken
+    WATER_STATIONARY #stehendes Wasser
+    GOLD_ORE #Golderz
+    GOLD_BLOCK #Goldblock
+    DIAMOND_BLOCK #Diamandblock
+    NETHER_REACTOR_CORE #Netherreaktorkern
     
 
-### Block as variable
+### Block als Variable
 
-If you know the id of a block it can be useful to set it as a variable. You can use the name or the integer id.
-
-```python
-dirt = 3
-mc.setBlock(x, y, z, dirt)
-```
-
-or
+Wenn du die ID eines Blocks kennst, kann es hilfreich sein, ihn als Variable festzulegen. Du kannst den Namen oder die Ganzzahl-ID verwenden.
 
 ```python
-dirt = block.DIRT.id
-mc.setBlock(x, y, z, dirt)
+erde = 3
+mc.setBlock(x, y, z, erde)
 ```
 
-### Special blocks
-
-There are some blocks which have extra properties, such as Wool which has an extra setting you can specify the colour. To set this use the optional fourth parameter in `setBlock`:
+oder
 
 ```python
-wool = 35
-mc.setBlock(x, y, z, wool, 1)
+erde = block.DIRT.id
+mc.setBlock(x, y, z, erde)
 ```
 
-Here the fourth parameter `1` sets the wool colour to orange. Without the fourth parameter it is set to the default (`0`) which is white. Some more colours are:
+### Spezielle Blöcke
+
+Es gibt einige Blöcke mit zusätzlichen Eigenschaften, z. B. Wolle mit einer zusätzlichen Einstellung, mit der du die Farbe festlegen kannst. Um dies einzustellen, verwende den optionalen vierten Parameter in `setBlock`:
+
+```python
+wolle = 35
+mc.setBlock(x, y, z, wolle, 1)
+```
+
+Hier setzt der vierte Parameter `1` die Wollfarbe auf Orange. Ohne den vierten Parameter wird sie auf den Standardwert (`0`) gesetzt, der weiß ist. Einige weitere Farben sind:
 
     2: Magenta
-    3: Light Blue
-    4: Yellow
+    3: Hellblau
+    4: Gelb
     
 
-Try some more numbers and watch the block change!
+Probiere weitere Zahlen aus und beobachte wie sich der Block verändert!
 
-Other blocks which have extra properties are wood (`17`): oak, spruce, birch, etc; tall grass (`31`): shrub, grass, fern; torch (`50`): pointing east, west, north, south; and more. See the [API reference](http://www.stuffaboutcode.com/p/minecraft-api-reference.html) for full details.
+Andere Blöcke mit zusätzlichen Eigenschaften sind Holz (`17`): Eiche, Fichte, Birke usw.; hohes Gras (`31`): Strauch, Gras, Farn; Fackel (`50`): zeigt nach Osten, Westen, Norden, Süden; und mehr. Ausführliche Informationen findest du in der [API-Referenz](http://www.stuffaboutcode.com/p/minecraft-api-reference.html).
 
-### Set multiple blocks
+### Mehrere Blöcke setzen
 
-As well as setting a single block with `setBlock` you can fill in a volume of space in one go with `setBlocks`:
+Genau wie du einen einzelnen Block mit `setBlock` setzen kannst, kannst du auch mit `setBlocks` ein Raumvolumen auf einmal ausfüllen:
 
 ```python
-stone = 1
+stein = 1
 x, y, z = mc.player.getPos()
-mc.setBlocks(x+1, y+1, z+1, x+11, y+11, z+11, stone)
+mc.setBlocks(x+1, y+1, z+1, x+11, y+11, z+11, stein)
 ```
 
-This will fill in a 10 x 10 x 10 cube of solid stone.
+Dadurch wird ein 10 x 10 x 10 Würfel mit massivem Stein gefüllt.
 
 ![](images/mcpi-setblocks.png)
 
-You can create bigger volumes with the `setBlocks` function but it may take longer to generate!
+Du kannst auch größere Volumen mit der Funktion `setBlocks` erstellen, die Generierung kann jedoch länger dauern!
