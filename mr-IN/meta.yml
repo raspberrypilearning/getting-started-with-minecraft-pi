@@ -1,0 +1,28 @@
+---
+title: Minecraft Pi सह प्रारंभ करणे
+hero_image: images/banner.png
+description: Minecraftच्या जगात प्रोग्रामिंगचा आपला पहिला अनुभव मिळवा
+original_url: https://raspberrypi.org/learning/getting-started-with-minecraft-pi
+theme: yellow
+duration: 2
+listed: true
+ingredient: false
+copyedit: true
+curriculum: 2, design-0, programming-2, phys-comp-0, manufacture-0, community-0
+interests: games
+technologies: python
+site_areas: projects
+hardware: ''
+software: python
+version: 3
+last_tested: 2017-01-01
+steps:
+  - title: परिचय
+  - title: तुम्हाला कशाची आवश्यकता असेल
+  - title: Minecraft Pi सह प्रारंभ करणे
+  - title: Minecraft चालवा
+  - title: Python प्रोग्रामिंग इंटरफेस वापरा
+  - title: आपण चालता चालता ब्लॉक टाकणे
+  - title: TNT ब्लॉक्ससह खेळा
+  - title: वाहत्या लावा सह मजा.
+  - title: पुढे काय?
