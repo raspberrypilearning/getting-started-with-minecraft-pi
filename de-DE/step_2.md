@@ -8,7 +8,7 @@ Minecraft ist seit September 2014 standardmäßig in Raspbian installiert.
 
 ![Minecraft Pi Desktop-Symbol](images/minecraft-pi-shortcut.png)
 
-Wenn Sie eine ältere Version von Raspbian verwenden, öffnen Sie ein Terminalfenster und geben Sie die folgenden Befehle ein (Sie müssen online sein):
+Wenn du eine ältere Version von Raspbian verwendest, öffne ein Terminalfenster und gebe die folgenden Befehle ein (du musst hierfür online sein):
 
 ```bash
 sudo apt-get update
