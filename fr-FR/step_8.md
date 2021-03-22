@@ -1,6 +1,6 @@
-## Fun with flowing lava.
+## S'amuser avec de la lave qui coule.
 
-One block that's a lot of fun to play with is flowing lava.
+Un bloc avec lequel il est très amusant de jouer est la lave qui coule.
 
 ```python
 from mcpi.minecraft import Minecraft
@@ -14,9 +14,9 @@ lava = 10
 mc.setBlock(x+3, y+3, z, lava)
 ```
 
-Find the block you've just placed, and you should see lava flowing from the block to the ground.
+Trouve le bloc que tu viens de placer et tu devrais voir de la lave couler du bloc vers le sol.
 
-The cool thing about lava is that when it cools down it becomes rock. Move to another location in your world and try this:
+Ce qui est cool à propos de la lave, c'est que lorsqu'elle refroidit, elle devient de la roche. Déplace-toi vers un autre endroit de votre monde et essaye ceci:
 
 ```python
 from mcpi.minecraft import Minecraft
@@ -38,6 +38,6 @@ mc.setBlock(x+3, y+5, z, air)
 
 ```
 
-You can adjust the `sleep` parameters to allow more or less lava to flow.
+Tu peux ajuster les `sleep` pour permettre à plus ou moins de lave de couler.
 
-![lava](images/lava.png)
+![lave](images/lava.png)
