@@ -1,43 +1,43 @@
-## What you will need
+## Ce dont tu auras besoin
 
-### Software
+### Logiciel
 
-#### Software installation
+#### Installation du logiciel
 
-Minecraft has been installed by default in Raspbian since September 2014.
+Minecraft est installé par défaut dans Raspbian depuis septembre 2014.
 
-![Minecraft Pi desktop icon](images/minecraft-pi-shortcut.png)
+![Icône de bureau Minecraft Pi](images/minecraft-pi-shortcut.png)
 
-If you're using an older version of Raspbian, open a terminal window and type the following commands (you must be online):
+Si tu utilises une ancienne version de Raspbian, ouvre une fenêtre de terminal et tape les commandes suivantes (tu dois être en ligne) :
 
 ```bash
 sudo apt-get update
 sudo apt-get install minecraft-pi
 ```
 
-Once that finishes, Minecraft Pi and the Python library should be installed.
+Une fois cela terminé, Minecraft Pi et la bibliothèque Python devraient être installés.
 
-#### Test Minecraft
+#### Tester Minecraft
 
-To run Minecraft double click the desktop icon or enter `minecraft-pi` in the terminal.
+Pour exécuter Minecraft, double-clique sur l'icône du bureau ou tape la commande `minecraft-pi` dans le terminal.
 
 ![](images/mcpi-start.png)
 
-When Minecraft Pi has loaded, click on **Start Game**, followed by **Create new**. You'll notice that the containing window is offset slightly. This means to drag the window around you have to grab the title bar behind the Minecraft window.
+Une fois Minecraft lancé, clique sur **Start Game**, suivi de **Create New**. Tu remarqueras que la fenêtre contenant est légèrement décalée. Cela signifie que pour faire glisser la fenêtre, tu dois saisir la barre de titre derrière la fenêtre Minecraft.
 
 ![](images/mcpi-game.png)
 
-You are now in a game of Minecraft!
+Tu es maintenant dans une partie de Minecraft!
 
-#### Test Python
+#### Tester Python
 
-With Minecraft running, and the world created, bring your focus away from the game by pressing the `Tab` key, which will free your mouse. Open Python 3 (IDLE) on the Desktop and move the windows so they're side-by-side.
+Avec Minecraft en cours d'exécution, et le monde créé, éloignez-vous du jeu en appuyant sur la touche `Tab` qui libérera votre souris. Ouvre Python 3 (IDLE) sur le bureau et déplace les fenêtres pour qu'elles soient côte à côte.
 
-You can either type commands directly in to the Python window or create a file so you can save your code and run it again another time.
+Tu peux taper soit des commandes directement dans la fenêtre Python ou créer un fichier afin de pouvoir enregistrer ton code et le réexécuter une autre fois.
 
-If you want create a file go to `File > New window` and `File > Save`. You'll probably want to save this in your home folder or a new project folder.
+Si tu veux créer un fichier, va dans `File > New File` et `File > Save `. Tu voudras probablement l'enregistrer dans votre dossier de départ ou dans un nouveau dossier spécifique à ton projet.
 
-Start by importing the Minecraft library, creating a connection to the game and testing it by posting the message "Hello world" to the screen:
+Commence par importer la bibliothèque Minecraft, crée une connexion au jeu et teste-la en affichant le message «Hello world» (bonjour le monde) à l'écran:
 
 ```python
 from mcpi import minecraft
@@ -47,8 +47,8 @@ mc = minecraft.Minecraft.create()
 mc.postToChat("Hello world")
 ```
 
-If you're entering commands directly in to the Python window, just hit `Enter` after each line. If it's a file, save with `Ctrl + S` and run with `F5`. When your code runs, you should see your message on screen in the game.
+Si tu entres des commandes directement dans la fenêtre Python, appuie simplement sur `Entrer` après chaque ligne. S'il s'agit d'un fichier, enregistre avec `Ctrl + S` et exécute avec `F5`. Lorsque ton code s'exécute, tu devrais voir ton message dans l'écran du jeu.
 
 ![](images/mcpi-idle.png)
 
-If you see "Hello world" in the Minecraft window, you're good to proceed to the next step.
+Si tu vois "Hello world" dans la fenêtre Minecraft, tu es prêt à passer à l'étape suivante.
