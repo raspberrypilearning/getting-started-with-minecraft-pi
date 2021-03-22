@@ -1,4 +1,4 @@
-## S'amuser avec de la lave qui coule.
+## S'amuser avec de la lave qui coule
 
 Un bloc avec lequel il est très amusant de jouer est la lave qui coule.
 
