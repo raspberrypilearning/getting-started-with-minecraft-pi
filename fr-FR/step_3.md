@@ -1,5 +1,5 @@
-## Getting Started with Minecraft Pi
+## Démarrer avec Minecraft Pi
 
-Minecraft is a popular sandbox open-world building game. A free version of Minecraft is available for the Raspberry Pi; it also comes with a programming interface. This means you can write commands and scripts in Python code to build things in the game automatically. It's a great way to learn Python!
+Minecraft est un jeu de construction populaire comme un bac à sable à monde ouvert. Une version gratuite de Minecraft est disponible pour le Raspberry Pi; il est également livré avec une interface de programmation. Cela signifie que tu peux écrire des commandes et des scripts en code Python pour créer automatiquement des éléments dans le jeu. C'est un excellent moyen d'apprendre Python!
 
-![Minecraft Pi banner](images/minecraft-pi-banner.png)
+![Bannière Minecraft Pi](images/minecraft-pi-banner.png)
