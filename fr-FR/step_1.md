@@ -1,19 +1,19 @@
-## What you will make
+## Introduction
 
-In this resource you will explore the virtual world of Minecraft Pi, the special edition of Minecraft made for Raspberry Pi.
+Au cours de ce projet, tu vas explorer le monde virtuel de Minecraft Pi, l'édition spéciale de Minecraft développée pour le Raspberry Pi.
 
-You will learn how to control the player, manually build with blocks and use the Python interface to manipulate the world around you.
+Tu apprendras à contrôler le joueur, à construire manuellement avec des blocs et à utiliser l'interface Python pour manipuler le monde autour de toi.
 
-## What you will learn
+## Ce que tu vas apprendre
 
-By following this resource with your Raspberry Pi you will learn:
+En suivant ce tutoriel avec ton Raspberry Pi, tu apprendras :
 
-- How to access Minecraft Pi and create a new world
-- How to use the Python programming environment IDLE to connect to Minecraft Pi
-- How to use the Minecraft Python API to post text to the chat window, find the player's coordinates, teleport and build structures
-- How to use variables to store IDs for different types of blocks
-- Experimenting with placing different types of blocks with special attributes
+- Comment accéder à Minecraft Pi et créer un nouveau monde
+- Comment utiliser l'environnement de programmation Python IDLE pour se connecter à Minecraft Pi
+- Comment utiliser Minecraft Python API pour écrire du texte sur la fenêtre de chat, trouver les coordonnées d'un joueur, se téléporter et construire des structures
+- Comment utiliser des variables pour stocker les identifiants de différents types de blocs
+- Expérimenter le placement de différents types de blocs avec des attributs spéciaux
 
-This resource covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](https://www.raspberrypi.org/curriculum/):
+Ce projet couvre les éléments suivants du [Programme de Créativité Numérique de Raspberry Pi](https://www.raspberrypi.org/curriculum/) :
 
-- [Use basic programming constructs to create simple programs](https://www.raspberrypi.org/curriculum/programming/creator)
+- [Utiliser des concepts de base de programmation pour élaborer un programme simple](https://www.raspberrypi.org/curriculum/programming/creator)
