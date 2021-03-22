@@ -1,80 +1,35 @@
-## Placer des blocs en marchant
+## Exécuter Minecraft
 
-### Liste de contrôle d'activité 
+Pour exécuter Minecraft Pi, ouvre-le à partir du menu du bureau ou tape `minecraft-pi` dans le terminal.
 
-Maintenant que vous savez comment placer des blocs, utilisons votre position en mouvement pour placer des blocs lorsque vous vous déplacez.
+![](images/menu.png)
 
-+ Le code suivant placera une fleure derrière vous partout où vous irez:
-```Python
-    from mcpi.minecraft import Minecraft
-    from time import sleep
+Une fois Minecraft lancé, clique sur **Start Game**, suivi de **Create New**. Tu remarqueras que la fenêtre est légèrement décalée. Cela signifie que pour faire glisser la fenêtre, tu dois saisir la barre de titre derrière la fenêtre Minecraft.
 
-    mc = Minecract.create()
+![](images/mcpi-game.png)
 
-    fleur = 38
+Tu es maintenant dans une partie de Minecraft! Va te promener, hacker des trucs et construire des choses!
 
-    while True:
-        x, y, z = mc.player.getPos()
-        mc.setBlock(x, y, z, fleur)
-        sleep(0.1)
-```
+Utilise la souris pour regarder autour de toi et utilise les touches suivantes sur le clavier:
 
-+ Maintenant, marchez un certain temps puis tournez vous pour voir les fleurs que vous avez placées derrière vous.
+|    Touche     |              Action              |
+|:-------------:|:--------------------------------:|
+|       W       |              Avant               |
+|       A       |              Gauche              |
+|       S       |             Arrière              |
+|       D       |              Droite              |
+|       E       |            Inventaire            |
+|    Espace     |              Sauter              |
+| Double espace |          Voler / Tomber          |
+|      Esc      |       Pause / Menu du Jeu        |
+|      Tab      | Relâcher le curseur de la souris |
 
-![Capture d'écran](images/mcpi-flowers.png)
+Tu peux sélectionner un élément dans le panneau de dessin rapide avec la molette de défilement de la souris (ou utiliser les chiffres de ton clavier), ou appuyer sur `E` et sélectionner quelque chose dans l'inventaire.
 
-Puisque nous avons utilisé une boucle `while True`, celle-ci continuera indéfiniment. Pour l'arrêter, faites `Ctrl + c` dans la fenêtre Python.
+![](images/mcpi-inventory.png)
 
-+ Essayez de vous déplacer dans les airs et regardez les fleurs que vous laissez dans le ciel:
+Tu peux également appuyer deux fois sur la barre d'espace pour voler dans les airs. Tu arrêteras de voler lorsque tu relâcheras la barre d'espace, et si tu appuies deux fois dessus à nouveau, tu retomberas au sol.
 
-![Capture d'écran](images/mcpi-flowers-sky.png)
+![](images/mcpi-flying.png)
 
-+ Que faire si on ne voulait placer des fleurs que si le joueur est sur du gazon? Nous pouvons utiliser `getBlock` pour trouver de quoi est fait un bloc à une position donnée.
-```Python
-    x, y, z = mc.player.getPos()  # Position du joueur (x, y, z)
-    ce_bloc = mc.getBlock(x, y, z)  # id du bloc
-    print(ce_bloc)
-```
-
-Ceci nous indique l'`id` du bloc à la position _où_ le joueur se trouve (il s'agira de `0`, c'est à dire un bloc d'air). Nous voulons connaître le type de bloc _sur lequel_ le joueur se tient Pour ce faire, nous soustrayons 1 à la valeur `y` et utilisons `getBlock` pour déterminer le l'`id` du bloc sur lequel nous nous trouvons:
-```Python
-    x, y, z = mc.player.getPos()  # Position du joueur (x, y, z)
-    bloc_dessous = mc.getBlock(x, y-1, z)  # id du bloc
-    print(bloc_dessous)
-```
-
-+ Testez le un exécutant une boucle qui imprime l'`id` du bloc sur lequel le joueur se tient.
-```Python
-    while True:
-        x, y, z = mc.player.getPos()  # Position du joueur (x, y, z)
-        bloc_dessous = mc.getBlock(x, y-1, z)  # id du bloc
-        print(bloc_dessous)
-```
-
-![Capture d'écran](images/blockbeneath.gif)
-
-+ Nous pouvons utiliser une condition `if` pour choisir si nous voulons placer une fleur ou non:
-```Python
-    gazon = 2
-    fleur = 38
-
-    while True:
-        x, y, z = mc.player.getPos()  # Position du joueur (x, y, z)
-        bloc_dessous = mc.getBlock(x, y-1, z)  # id du bloc
-
-        if bloc dessous == gazon:
-          mc.setBlock(x, y, z, fleur)
-        sleep(0.1)
-```
-
-+ Peut-être voudriez vous changer le bloc sur lequel le joueur se tient en gazon s'il n'en est pas déjà? :
-```Python
-    if bloc_dessous == gazon:
-      mc.setBlock(x, y, z, fleur)
-    else:
-      mc.setBlock(x, y-1, z, gazon)
-```
-
-Maintenant nous pouvons marcher et si nous marchons sur du gazon, nous y plaçons une fleur. Si le bloc n'est pas du gazon, nous le changeons en gazon. Lorsque nous nous tournons et rebroussons chemin, nous laissons maintenant une fleur derrière nous.
-
-![Capture d'écran](images/mcpi-flowers-grass.png)
+Avec l'épée à la main, tu peux cliquer sur des blocs devant toi pour les supprimer (ou pour creuser). Avec un bloc dans ta main, tu peux utiliser le clic droit pour placer ce bloc devant toi, ou le clic gauche pour supprimer un bloc.

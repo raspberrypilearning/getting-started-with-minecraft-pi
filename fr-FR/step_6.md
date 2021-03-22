@@ -1,42 +1,86 @@
-## Du plaisir avec la lave en fusion!
+## Laisser tomber des blocs en marchant
 
-### Liste de contrôle d'activité
+Maintenant que tu sais comment déposer des blocs, utilisons notre emplacement de déplacement pour déposer des blocs lorsque tu marches.
 
-+ Un bloc qui est très amusant à utiliser est la lave en fusion.
-```Python
-    from mcpi.minecraft import Minecraft
+Le code suivant laissera tomber une fleur derrière toi partout où tu marcheras:
 
-    mc = Minecraft.create()
+```python
+from mcpi.minecraft import Minecraft
+from time import sleep
 
+mc = Minecraft.create()
+
+flower = 38
+
+while True:
     x, y, z = mc.player.getPos()
-
-    lave = 10
-
-    mc.setBlock(x+3, y+3, z = lave)
+    mc.setBlock(x, y, z, flower)
+    sleep(0.1)
 ```
 
-Trouvez le bloc que vous venez de placer et vous devriez voir de la lave en fusion couler du bloc vers le sol.
+Maintenant, avance pendant un moment et fais demi-tour pour voir les fleurs que tu as laissées derrière toi.
 
-+ Ce qui intéressant avec la lave c'est qu'en refroidissant elle devient de la pierre. Déplacez vous à une autre position dans le monde et essayez ceci:
-```Python
-    from mcpi.minecraft import Minecraft
-    from time import sleep
+![](images/mcpi-flowers.png)
 
-    mc = Minecraft.create()
+Puisque nous avons utilisé une boucle `while True` , cela durera indéfiniment. Pour l'arrêter, appuie sur `Ctrl + C` dans la fenêtre Python.
 
-    x, y, z = mc.player.getPos()
+Essaye de voler dans les airs et regarde les fleurs que tu laisses dans le ciel:
 
-    lave = 10
-    eau = 8
-    air = 0
+![](images/mcpi-flowers-sky.png)
 
-    mc.setBlock(x+3, y+3, z, lave)
-    sleep(20)
-    mc.estBlock(x+3, y+5, z, eau)
-    sleep(4)
-    mc.setBlock(x+3, y+5, z, air)
+Et si nous voulions seulement déposer des fleurs lorsque le joueur marche sur l'herbe? Nous pouvons utiliser `getBlock` pour savoir de quel type est un bloc :
+
+```python
+x, y, z = mc.player.getPos()  # player position (x, y, z)
+this_block = mc.getBlock(x, y, z)  # block ID
+print(this_block)
 ```
 
-Vous pouvez ajuster les paramètres de la fonction `sleep` pour laisser plus ou moins de lave couler.
+Cela t'indique l'emplacement du bloc sur lequel tu te trouves (ce sera `0` - un bloc air). Nous voulons savoir *sur* quel type de bloc nous nous tenons . Pour cela, soustrayons 1 de `y` et utilisons `getBlock ()` pour déterminer sur quel type de bloc nous nous tenons:
 
-![Capture d'écran](images/mcpi-lava.png)
+```python
+x, y, z = mc.player.getPos()  # player position (x, y, z)
+block_beneath = mc.getBlock(x, y-1, z)  # block ID
+print(block_beneath)
+```
+
+Cela nous indique l'ID du bloc sur lequel se trouve le joueur.
+
+Teste cela en exécutant une boucle pour imprimer l'ID du bloc sur n'importe lequel tu te trouves actuellement:
+
+```python
+while True:
+    x, y, z = mc.player.getPos()
+    block_beneath = mc.getBlock(x, y-1, z)
+    print(block_beneath)
+```
+
+![](images/blockbeneath.gif)
+
+Nous pouvons utiliser un `if` pour choisir de planter ou non une fleur:
+
+```python
+grass = 2
+flower = 38
+
+while True:
+    x, y, z = mc.player.getPos()  # player position (x, y, z)
+    block_beneath = mc.getBlock(x, y-1, z)  # block ID
+
+    if block_beneath == grass:
+        mc.setBlock(x, y, z, flower)
+    sleep(0.1)
+```
+
+Peut-être pourrions-nous ensuite transformer la dalle sur laquelle nous sommes debout en herbe si ce n'est pas déjà de l'herbe :
+
+```python
+if block_beneath == grass:
+    mc.setBlock(x, y, z, flower)
+else:
+    mc.setBlock(x, y-1, z, grass)
+```
+
+Maintenant, nous pouvons avancer et si nous marchons sur l'herbe, nous laisserons une fleur derrière nous. Si le bloc suivant n'est pas de l'herbe, il se transforme en herbe. Lorsque nous nous retournons et revenons en arrière, nous laissons maintenant une fleur derrière nous.
+
+![](images/mcpi-flowers-grass.png)

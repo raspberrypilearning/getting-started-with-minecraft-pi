@@ -1,39 +1,54 @@
-## Lancer et utiliser Minecraft
+## Ce dont tu auras besoin
 
-### Liste de contrôle d'activité
+### Logiciel
 
-+ Lancez Minecraft à partir du menu ou bien tapez `minecraft-pi` dans le terminal.
+#### Installation du logiciel
 
-![Capture d'écran](images/menu.png)
+Minecraft est installé par défaut dans Raspbian depuis septembre 2014.
 
-+ Une fois Minecraft lancé, cliquez sur __Start Game__, suivi de __Create New__.
+![Icône de bureau Minecraft Pi](images/minecraft-pi-shortcut.png)
 
-(Dans certains cas, il se peut que la fenêtre apparaisse légèrement décalée par rapport à l'affichage du jeu. Cela veut dire que pour déplacer la fenêtre, vous devez attraper la barre de titre derrière l'affichage du jeu.)
+Si tu utilises une ancienne version de Raspbian, ouvre une fenêtre de terminal et tape les commandes suivantes (tu dois être en ligne) :
 
-![Capture d'écran](images/mcpi-game.png)
+```bash
+sudo apt-get update
+sudo apt-get install minecraft-pi
+```
 
-Vous êtes maintenant dans une partie de Minecraft! Promenez-vous, modifiez et construisez des choses!
+Une fois cela terminé, Minecraft Pi et la bibliothèque Python devraient être installés.
 
-+ Utilisez la souris pour regarder autour de vous et utilisez les touches suivantes du clavier:
+#### Tester Minecraft
 
-Touche | Action
-----|-------
-W | Déplacement avant
-A | Déplacement à gauche
-S | Déplacement arrière
-D | Déplacement à droite
-E | Afficher l'inventaire
-Espace | Sauter
-Double Espace | Voler / Tomber
-Esc | Pause / Menu du jeu
-Tab | Relâcher le curseur de souris
+Pour exécuter Minecraft, double-clique sur l'icône du bureau ou tape la commande `minecraft-pi` dans le terminal.
 
-+ Vous pouvez choisir des items du panneau d'accès rapide situé au bas de la fenêtre en utilisant la roulette de la souris (ou les chiffres du pavé numérique). Vous pouvez presser `E` et choisir un item de votre inventaire complet.
+![](images/mcpi-start.png)
 
-![Capture d'écran](images/mcpi-inventory.png)
+Une fois Minecraft lancé, clique sur **Start Game**, suivi de **Create New**. Tu remarqueras que la fenêtre contenant est légèrement décalée. Cela signifie que pour faire glisser la fenêtre, tu dois saisir la barre de titre derrière la fenêtre Minecraft.
 
-+ Vous pouvez presser deux fois la barre d'espace pour voler dans les airs. Vous arrêterez de monter en relâchant la barre d'espace et retomberez au sol si vous la pressez deux fois à nouveau.
+![](images/mcpi-game.png)
 
-![Capture d'écran](images/mcpi-flying.png)
+Tu es maintenant dans une partie de Minecraft!
 
-+ Avec l'épée en main, vous pouvez cliquer sur des blocs devant vous pour les enlever (ou creuser). Avec un bloc en main, vous pouvez utiliser le clic droit pour placer le bloc devant vous ou le clic gauche pour enlever un bloc.
+#### Tester Python
+
+Avec Minecraft en cours d'exécution, et le monde créé, éloignez-vous du jeu en appuyant sur la touche `Tab` qui libérera votre souris. Ouvre Python 3 (IDLE) sur le bureau et déplace les fenêtres pour qu'elles soient côte à côte.
+
+Tu peux taper soit des commandes directement dans la fenêtre Python ou créer un fichier afin de pouvoir enregistrer ton code et le réexécuter une autre fois.
+
+Si tu veux créer un fichier, va dans `File > New File` et `File > Save`. Tu voudras probablement l'enregistrer dans votre dossier de départ ou dans un nouveau dossier spécifique à ton projet.
+
+Commence par importer la bibliothèque Minecraft, crée une connexion au jeu et teste-la en affichant le message «Hello world» (bonjour le monde) à l'écran:
+
+```python
+from mcpi import minecraft
+
+mc = minecraft.Minecraft.create()
+
+mc.postToChat("Hello world")
+```
+
+Si tu entres des commandes directement dans la fenêtre Python, appuie simplement sur `Entrer` après chaque ligne. S'il s'agit d'un fichier, enregistre avec `Ctrl + S` et exécute avec `F5`. Lorsque ton code s'exécute, tu devrais voir ton message dans l'écran du jeu.
+
+![](images/mcpi-idle.png)
+
+Si tu vois "Hello world" dans la fenêtre Minecraft, tu es prêt à passer à l'étape suivante.
