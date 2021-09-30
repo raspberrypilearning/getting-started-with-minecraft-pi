@@ -1,9 +1,9 @@
-## Fun with flowing lava.
+## المرح مع الحمم المتدفقة.
 
-One block that's a lot of fun to play with is flowing lava.
+كتلة ممتع جداً اللّعب بها هي الحمم المتدفقة.
 
 ```python
-from mcpi.minecraft import Minecraft
+من mcpi.minecraft استورد Minecraft
 
 mc = Minecraft.create()
 
@@ -14,13 +14,13 @@ lava = 10
 mc.setBlock(x+3, y+3, z, lava)
 ```
 
-Find the block you've just placed, and you should see lava flowing from the block to the ground.
+جد الكتلة التي وضعتها للتو ، و يفترض أن ترى الحمم تتدفق من الكتلة إلى الأرض.
 
-The cool thing about lava is that when it cools down it becomes rock. Move to another location in your world and try this:
+الجميل في الحمم هو أنها عندما تبرد تتحول إلى صخرة. انتقل لمكان آخر في عالمك وجرب هذا:
 
 ```python
-from mcpi.minecraft import Minecraft
-from time import sleep
+من mcpi.minecraft استورد Minecraft
+من time استورد sleep
 
 mc = Minecraft.create()
 
@@ -38,6 +38,6 @@ mc.setBlock(x+3, y+5, z, air)
 
 ```
 
-You can adjust the `sleep` parameters to allow more or less lava to flow.
+يمكنك تعديل خيار `sleep` للسماح بتدفق أكثر أو أقل من الحمم.
 
-![lava](images/lava.png)
+![الحمم](images/lava.png)
