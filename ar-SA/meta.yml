@@ -1,7 +1,7 @@
 ---
-title: Getting Started with Minecraft Pi
+title: الشروع في البداية مع ماينكرافت باي
 hero_image: images/banner.png
-description: Get your first taste of programming the world of Minecraft
+description: تذوق لأول مرة برمجة عالم الماينكرافت
 original_url: https://raspberrypi.org/learning/getting-started-with-minecraft-pi
 theme: yellow
 duration: 2
@@ -18,20 +18,20 @@ version: 3
 last_tested: 2017-01-01
 steps:
   - 
-    title: Introduction
+    title: المقدمة
   - 
-    title: What you will need
+    title: ما ستحتاج إليه
   - 
-    title: Getting Started with Minecraft Pi
+    title: الشروع في البداية مع ماينكرافت باي
   - 
-    title: Run Minecraft
+    title: شغّل ماينكرافت
   - 
-    title: Use the Python programming interface
+    title: استخدم الواجهة البرمجية لبايثون
   - 
-    title: Dropping blocks as you walk
+    title: إسقاط الكتل بينما تمشي
   - 
-    title: Playing with TNT blocks
+    title: اللّعب بكتل المتفجرات (التِّي أَنْ تِي)
   - 
-    title: Fun with flowing lava.
+    title: المرح مع الحمم المتدفقة.
   - 
-    title: What next?
+    title: ما التالي؟
