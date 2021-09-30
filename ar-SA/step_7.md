@@ -1,6 +1,6 @@
-## Playing with TNT blocks
+## اللّعب بكتل المتفجرات (التي ان تي)
 
-Another interesting block is TNT! To place a normal TNT block use:
+كتلة أخرى مثيرة للاهتمام هي التيانتي! لوضع كتلة تيانتي عادية استخدم:
 
 ```python
 tnt = 46
@@ -9,16 +9,16 @@ mc.setBlock(x, y, z, tnt)
 
 ![](images/mcpi-tnt.png)
 
-However, this TNT block is fairly boring. Try applying `data` as `1`:
+مع ذلك, كتلة التيانتي هذه حقاً مملة. حاول تطبيق `data` ك `1`:
 
 ```python
 tnt = 46
 mc.setBlock(x, y, z, tnt, 1)
 ```
 
-Now use your sword and left click the TNT block: it will be activated and will explode in a matter of seconds!
+الآن استخدم سيفك و انقر بالأيسر على كتلة التيانتي: ستفعل و ستنفجر في غضون ثوان!
 
-Now try making a big cube of TNT blocks!
+حاول الآن صنع مكعب كبير من كتل التيانتي!
 
 ```python
 tnt = 46
@@ -27,6 +27,6 @@ mc.setBlocks(x+1, y+1, z+1, x+11, y+11, z+11, tnt, 1)
 
 ![](images/mcpi-tnt-blocks.png)
 
-Now you'll see a big cube full of TNT blocks. Go and activate one of the blocks and then run away to watch the show! It'll be really slow to render the graphics as so many things are changing at once.
+الآن سترى مكعبًا كبيرًا مليئًا بكتل التيانتي. انطلق ونشط إحدى الكتل و اهرب بعيداً لمشاهدة العرض! سيكون عرض الرسومات بطيئًا جداً للعدد الكبير من الأشياء المتغيرة في آن.
 
 ![](images/mcpi-tnt-explode.png)
