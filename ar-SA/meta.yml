@@ -1,0 +1,28 @@
+---
+title: الشروع في البداية مع ماينكرافت باي
+hero_image: images/banner.png
+description: تذوق لأول مرة برمجة عالم الماينكرافت
+original_url: https://raspberrypi.org/learning/getting-started-with-minecraft-pi
+theme: yellow
+duration: 2
+listed: true
+ingredient: false
+copyedit: true
+curriculum: 2, design-0, programming-2, phys-comp-0, manufacture-0, community-0
+interests: games
+technologies: python
+site_areas: projects
+hardware: ''
+software: python
+version: 3
+last_tested: 2017-01-01
+steps:
+  - title: المقدمة
+  - title: ما ستحتاج إليه
+  - title: الشروع في البداية مع ماينكرافت باي
+  - title: شغّل ماينكرافت
+  - title: استخدم الواجهة البرمجية لبايثون
+  - title: إسقاط الكتل بينما تمشي
+  - title: اللّعب بكتل المتفجرات (التِّي أَنْ تِي)
+  - title: المرح مع الحمم المتدفقة.
+  - title: ما التالي؟
