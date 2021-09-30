@@ -1,11 +1,11 @@
-## What next?
+## ما التالي؟
 
-There's plenty you can do now you know your way around the Minecraft world and how to use the Python interface.
+يمكنك القيام بالكثير الآن أنت تعرف طريقك حول عالم مينيكرافت Minecraft وكيفية استخدام واجهة بايثون Python.
 
-### Networked game
+### لعبة شبكية
 
-If multiple people connect Raspberry Pis to a local network, they can join the same Minecraft world and play together. Players can see each other in the Minecraft world.
+إذا قام عدة أشخاص بتوصيل العديد من رازبيري باي Raspberry Pis بشبكة محلية، يمكنهم الإنضمام إلى نفس عالم ماينكرافت Minecraft واللعب معًا. يمكن للاعبين رؤية بعضهم البعض في عالم ماينكرافت Minecraft.
 
-### API reference
+### واجهة برمجة التطبيق API
 
-For a more extensive documentation of functions and a full list of block IDs see an API reference at [stuffaboutcode.com](http://www.stuffaboutcode.com/p/minecraft-api-reference.html).
+لمزيد من التوثيقات الأوسع حول الدوال و لائحة كاملة لمعرفات الكتل انظر مرجع واجهة برمجة التطبيق API على [stuffaboutcode.com](http://www.stuffaboutcode.com/p/minecraft-api-reference.html).
