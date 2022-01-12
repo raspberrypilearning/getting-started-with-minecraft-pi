@@ -17,12 +17,14 @@ software: python (पायथन)
 version: 3
 last_tested: 2017-01-01
 steps:
-  - title: परिचय
-  - title: आपको किन चीज़ों की आवश्यकता होगी
-  - title: Minecraft Pi के साथ शुरू करना
-  - title: Minecraft चलाएँ
-  - title: Python प्रोग्रामिंग इंटरफेस का उपयोग करें
-  - title: आपके चलने के साथ-साथ ब्लॉक गिराना
-  - title: TNT ब्लॉक के साथ खेलना
-  - title: बहते लावा के साथ मज़ा।
-  - title: आगे क्या?
+- title: परिचय
+- title: आपको किन चीज़ों की आवश्यकता होगी
+  completion: engaged
+- title: Minecraft Pi के साथ शुरू करना
+- title: Minecraft चलाएँ
+- title: Python प्रोग्रामिंग इंटरफेस का उपयोग करें
+- title: आपके चलने के साथ-साथ ब्लॉक गिराना
+- title: TNT ब्लॉक के साथ खेलना
+  completion: internal
+- title: बहते लावा के साथ मज़ा।
+- title: आगे क्या?

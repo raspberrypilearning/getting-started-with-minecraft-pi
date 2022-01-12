@@ -17,12 +17,14 @@ software: python
 version: 3
 last_tested: 2017-01-01
 steps:
-  - title: Úvod
-  - title: Čo budete potrebovať
-  - title: Začíname s Minecraft Pi
-  - title: Spustite Minecraft
-  - title: Použite rozhranie programovacieho jazyka Python
-  - title: Kladenie blokov počas chôdze
-  - title: Zábava s blokmi TNT
-  - title: Zábava s tečúcou lávou.
-  - title: Čo ďalej?
+- title: Úvod
+- title: Čo budete potrebovať
+  completion: engaged
+- title: Začíname s Minecraft Pi
+- title: Spustite Minecraft
+- title: Použite rozhranie programovacieho jazyka Python
+- title: Kladenie blokov počas chôdze
+- title: Zábava s blokmi TNT
+  completion: internal
+- title: Zábava s tečúcou lávou.
+- title: Čo ďalej?

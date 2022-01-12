@@ -16,13 +16,15 @@ hardware: ''
 software: python
 version: 3
 last_tested: 2017-01-01
-steps: 
+steps:
 - title: Introduction
 - title: What you will need
+  completion: engaged
 - title: Getting Started with Minecraft Pi
 - title: Run Minecraft
 - title: Use the Python programming interface
 - title: Dropping blocks as you walk
 - title: Playing with TNT blocks
+  completion: internal
 - title: Fun with flowing lava.
 - title: What next?

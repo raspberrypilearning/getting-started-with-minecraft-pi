@@ -17,12 +17,14 @@ software: python
 version: 3
 last_tested: 2017-01-01
 steps:
-  - title: ಪರಿಚಯ
-  - title: ನಿಮಗೆ ಬೇಕಾದುದು
-  - title: Minecraft Pi ನೊಂದಿಗೆ ಪ್ರಾರಂಭಿಸುವುದು
-  - title: Minecraft ಅನ್ನು ಚಲಾಯಿಸಿ
-  - title: Python ಪ್ರೋಗ್ರಾಮಿಂಗ್ ಇಂಟರ್ಫೇಸ್ ಬಳಸಿ
-  - title: ನೀವು ನಡೆಯುವಾಗ ಬ್ಲಾಕ್ ಗಳನ್ನು ಬೀಳಿಸುವುದು
-  - title: TNT ಬ್ಲಾಕ್ ಗಳೊಂದಿಗೆ ಆಡುವುದು
-  - title: ಹರಿಯುವ ಲಾವಾದೊಂದಿಗೆ ಮೋಜು.
-  - title: ಮುಂದೆ ಏನು?
+- title: ಪರಿಚಯ
+- title: ನಿಮಗೆ ಬೇಕಾದುದು
+  completion: engaged
+- title: Minecraft Pi ನೊಂದಿಗೆ ಪ್ರಾರಂಭಿಸುವುದು
+- title: Minecraft ಅನ್ನು ಚಲಾಯಿಸಿ
+- title: Python ಪ್ರೋಗ್ರಾಮಿಂಗ್ ಇಂಟರ್ಫೇಸ್ ಬಳಸಿ
+- title: ನೀವು ನಡೆಯುವಾಗ ಬ್ಲಾಕ್ ಗಳನ್ನು ಬೀಳಿಸುವುದು
+- title: TNT ಬ್ಲಾಕ್ ಗಳೊಂದಿಗೆ ಆಡುವುದು
+  completion: internal
+- title: ಹರಿಯುವ ಲಾವಾದೊಂದಿಗೆ ಮೋಜು.
+- title: ಮುಂದೆ ಏನು?

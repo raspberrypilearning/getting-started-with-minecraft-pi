@@ -17,12 +17,14 @@ software: python
 version: 3
 last_tested: 2017-01-01
 steps:
-  - title: Introduction
-  - title: Ce dont tu auras besoin
-  - title: Démarrer avec Minecraft Pi
-  - title: Exécuter Minecraft
-  - title: Utiliser l'interface de programmation Python
-  - title: Laisser tomber des blocs en marchant
-  - title: Jouer avec des blocs TNT
-  - title: S'amuser avec de la lave qui coule
-  - title: Et ensuite ?
+- title: Introduction
+- title: Ce dont tu auras besoin
+  completion: engaged
+- title: Démarrer avec Minecraft Pi
+- title: Exécuter Minecraft
+- title: Utiliser l'interface de programmation Python
+- title: Laisser tomber des blocs en marchant
+- title: Jouer avec des blocs TNT
+  completion: internal
+- title: S'amuser avec de la lave qui coule
+- title: Et ensuite ?

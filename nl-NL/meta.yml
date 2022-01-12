@@ -1,7 +1,8 @@
 ---
 title: Aan de slag met Minecraft Pi
 hero_image: images/banner.png
-description: Dit is je eerste kennismaking met het programmeren van de wereld van Minecraft
+description: Dit is je eerste kennismaking met het programmeren van de wereld van
+  Minecraft
 original_url: https://raspberrypi.org/learning/getting-started-with-minecraft-pi
 theme: yellow
 duration: 2
@@ -17,12 +18,14 @@ software: python
 version: 3
 last_tested: 2017-01-01
 steps:
-  - title: Wat ga je maken?
-  - title: Wat heb je nodig
-  - title: Aan de slag met Minecraft Pi
-  - title: Voer Minecraft uit
-  - title: Gebruik de programmeerinterface van Python
-  - title: Blokken laten vallen terwijl je loopt
-  - title: Spelen met TNT-blokken
-  - title: Plezier met vloeiende lava.
-  - title: Wat kun je verder nog doen?
+- title: Wat ga je maken?
+- title: Wat heb je nodig
+  completion: engaged
+- title: Aan de slag met Minecraft Pi
+- title: Voer Minecraft uit
+- title: Gebruik de programmeerinterface van Python
+- title: Blokken laten vallen terwijl je loopt
+- title: Spelen met TNT-blokken
+  completion: internal
+- title: Plezier met vloeiende lava.
+- title: Wat kun je verder nog doen?
